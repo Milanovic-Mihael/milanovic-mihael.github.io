@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import sys, shutil, os, re
 from pathlib import Path
+import yaml
 
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".gif", ".webp"}
 
@@ -22,6 +23,7 @@ def main():
     if len(sys.argv) < 2:
         print("Usage: python scripts/ingest_oc_storage.py '/path/to/OC STORAGE'")
         sys.exit(1)
+
     src_root = Path(sys.argv[1]).expanduser().resolve()
     site_root = Path(__file__).resolve().parents[1]
     images_root = site_root / "assets" / "images"
@@ -33,7 +35,7 @@ def main():
         print(f"Source folder not found: {src_root}")
         sys.exit(1)
 
-    # Traverse universes → ocs → images
+    # Traverse universes → OCs → images
     for universe_dir in [p for p in src_root.iterdir() if p.is_dir()]:
         universe_name = universe_dir.name
         u_slug = slugify(universe_name)
@@ -55,7 +57,7 @@ def main():
             copied = []
             for img in imgs:
                 dest_path = dest_dir / img.name
-                # If file exists, avoid overwrite by appending a number
+                # Avoid overwrite by appending a number
                 if dest_path.exists():
                     stem, ext = img.stem, img.suffix
                     i = 2
@@ -68,34 +70,43 @@ def main():
                 shutil.copy2(img, dest_path)
                 copied.append(dest_path)
 
+            # Pick featured image
             featured = pick_featured(copied)
             gallery_rel = [str(p.relative_to(site_root).as_posix()) for p in sorted(copied)]
             featured_rel = str(featured.relative_to(site_root).as_posix()) if featured else ""
 
-            # Create OC markdown
-            # Prefix filename with universe slug to avoid collisions
+            # Prepare OC markdown
             md_name = f"{u_slug}__{oc_slug}.md"
             md_path = ocs_root / md_name
 
-            front_matter = [
-                "---",
-                f'title: "{oc_name}"',
-                f'universe: "{universe_name}"',
-                'species: ""',
-                "tags: []",
-                f'featured: "{featured_rel}"',
-                "gallery:",
-            ]
-            for g in gallery_rel:
-                front_matter.append(f'  - "{g}"')
-            front_matter += [
-                'bio: ""',
-                "---",
-                ""
-            ]
+            # Default OC data
+            data = {
+                "title": oc_name,
+                "universe": universe_name,
+                "species": "",
+                "tags": [],
+                "bio": "",
+            }
 
+            # Preserve existing fields if file exists
+            if md_path.exists():
+                with open(md_path, "r", encoding="utf-8") as f:
+                    try:
+                        old = yaml.safe_load(f)
+                        if isinstance(old, dict):
+                            data.update(old)
+                    except Exception:
+                        pass
+
+            # Always refresh featured + gallery
+            data["featured"] = featured_rel
+            data["gallery"] = gallery_rel
+
+            # Write back to file
             with open(md_path, "w", encoding="utf-8") as f:
-                f.write("\n".join(front_matter))
+                f.write("---\n")
+                yaml.safe_dump(data, f, sort_keys=False)
+                f.write("---\n")
 
             print(f"[OK] Imported: {oc_name} ({universe_name}) with {len(copied)} images")
 
