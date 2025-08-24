@@ -1,6 +1,5 @@
 ---
 layout: default
-title: "My OC Gallery"
 ---
 
 <div class="filters">
@@ -12,7 +11,8 @@ title: "My OC Gallery"
 </div>
 
 <div class="oc-grid">
-  {% for oc in site.ocs %}
+  {% assign sorted_ocs = site.ocs | sort: "order" %}
+  {% for oc in sorted_ocs %}
   <a class="oc-card" href="{{ oc.url | relative_url }}" data-universe="{{ oc.universe | escape }}">
     <div class="oc-thumb">
       {% if oc.featured %}
