@@ -4,7 +4,7 @@ universe: Progenies
 species: ''
 tags: []
 bio: ''
-featured: assets/images/progenies/the-thief/idknewguy-2.png
+featured: assets/images/progenies/the-thief/idknewguy-3.png
 gallery:
-- assets/images/progenies/the-thief/idknewguy-2.png
+- assets/images/progenies/the-thief/idknewguy-3.png
 ---
