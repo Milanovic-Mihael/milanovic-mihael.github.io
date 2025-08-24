@@ -149,7 +149,7 @@ h3 {
     object-fit: cover;
 }
 
-.site-header .brand img {
+.container .brand img {
     border-radius: 50%;
     height: 40px;
     width: 40px;
