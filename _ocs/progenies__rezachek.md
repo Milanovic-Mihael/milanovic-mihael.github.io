@@ -1,11 +1,11 @@
 ---
-title: "Rezachek"
-universe: "Progenies"
-species: ""
+title: Rezachek
+universe: Progenies
+species: ''
 tags: []
-featured: "assets/images/progenies/rezachek/old_katana_fella.png"
+bio: ''
+featured: assets/images/progenies/rezachek/old_katana_fella-2.png
 gallery:
-  - "assets/images/progenies/rezachek/old_katana_fella.png"
-  - "assets/images/progenies/rezachek/rezachekjustpassing.png"
-bio: ""
+- assets/images/progenies/rezachek/old_katana_fella-2.png
+- assets/images/progenies/rezachek/rezachekjustpassing-2.png
 ---

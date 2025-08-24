@@ -1,10 +1,10 @@
 ---
-title: "Adarim"
-universe: "Progenies"
-species: ""
+title: Adarim
+universe: Progenies
+species: ''
 tags: []
-featured: "assets/images/progenies/adarim/armarguy.png"
+bio: ''
+featured: assets/images/progenies/adarim/armarguy-2.png
 gallery:
-  - "assets/images/progenies/adarim/armarguy.png"
-bio: ""
+- assets/images/progenies/adarim/armarguy-2.png
 ---

@@ -1,10 +1,10 @@
 ---
-title: "Rovilia"
-universe: "Strength Seeker"
-species: ""
+title: Rovilia
+universe: Strength Seeker
+species: ''
 tags: []
-featured: "assets/images/strength-seeker/rovilia/avrena_daughter.png"
+bio: ''
+featured: assets/images/strength-seeker/rovilia/avrena_daughter-2.png
 gallery:
-  - "assets/images/strength-seeker/rovilia/avrena_daughter.png"
-bio: ""
+- assets/images/strength-seeker/rovilia/avrena_daughter-2.png
 ---

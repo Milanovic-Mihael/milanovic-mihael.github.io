@@ -1,12 +1,12 @@
 ---
-title: "Nia Evans"
-universe: "Post-AP"
-species: ""
+title: Nia Evans
+universe: Post-AP
+species: ''
 tags: []
-featured: "assets/images/post-ap/nia-evans/newocdrop.png"
+bio: ''
+featured: assets/images/post-ap/nia-evans/newocdrop-2.png
 gallery:
-  - "assets/images/post-ap/nia-evans/newocdrop.png"
-  - "assets/images/post-ap/nia-evans/NIA.png"
-  - "assets/images/post-ap/nia-evans/nia_pulpfiction.png"
-bio: ""
+- assets/images/post-ap/nia-evans/newocdrop-2.png
+- assets/images/post-ap/nia-evans/NIA-2.png
+- assets/images/post-ap/nia-evans/nia_pulpfiction-2.png
 ---

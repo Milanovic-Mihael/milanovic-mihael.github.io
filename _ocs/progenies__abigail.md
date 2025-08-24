@@ -1,11 +1,11 @@
 ---
-title: "Abigail"
-universe: "Progenies"
-species: ""
+title: Abigail
+universe: Progenies
+species: ''
 tags: []
-featured: "assets/images/progenies/abigail/abigail_2025.png"
+bio: ''
+featured: assets/images/progenies/abigail/abigail_2025-2.png
 gallery:
-  - "assets/images/progenies/abigail/abigail_2025.png"
-  - "assets/images/progenies/abigail/idk_goblin.png"
-bio: ""
+- assets/images/progenies/abigail/abigail_2025-2.png
+- assets/images/progenies/abigail/idk_goblin-2.png
 ---

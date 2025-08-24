@@ -1,10 +1,10 @@
 ---
-title: "The Thief"
-universe: "Progenies"
-species: ""
+title: The Thief
+universe: Progenies
+species: ''
 tags: []
-featured: "assets/images/progenies/the-thief/idknewguy.png"
+bio: ''
+featured: assets/images/progenies/the-thief/idknewguy-2.png
 gallery:
-  - "assets/images/progenies/the-thief/idknewguy.png"
-bio: ""
+- assets/images/progenies/the-thief/idknewguy-2.png
 ---

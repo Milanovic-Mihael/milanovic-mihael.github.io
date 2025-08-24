@@ -1,16 +1,16 @@
 ---
-title: "Brielle"
-universe: "Progenies"
-species: ""
+title: Brielle
+universe: Progenies
+species: ''
 tags: []
-featured: "assets/images/progenies/brielle/Brielle.png"
+bio: ''
+featured: assets/images/progenies/brielle/Brielle-2.png
 gallery:
-  - "assets/images/progenies/brielle/Brielle.png"
-  - "assets/images/progenies/brielle/Brielle_2.png"
-  - "assets/images/progenies/brielle/brielle_by_chloraide.png"
-  - "assets/images/progenies/brielle/brielle_chilling.png"
-  - "assets/images/progenies/brielle/brielle_cold.png"
-  - "assets/images/progenies/brielle/brielleeyeay.png"
-  - "assets/images/progenies/brielle/briellelelele.png"
-bio: ""
+- assets/images/progenies/brielle/Brielle-2.png
+- assets/images/progenies/brielle/Brielle_2-2.png
+- assets/images/progenies/brielle/brielle_by_chloraide-2.png
+- assets/images/progenies/brielle/brielle_chilling-2.png
+- assets/images/progenies/brielle/brielle_cold-2.png
+- assets/images/progenies/brielle/brielleeyeay-2.png
+- assets/images/progenies/brielle/briellelelele-2.png
 ---

@@ -1,10 +1,10 @@
 ---
-title: "Teuta Bakalli"
-universe: "Post-AP"
-species: ""
+title: Teuta Bakalli
+universe: Post-AP
+species: ''
 tags: []
-featured: "assets/images/post-ap/teuta-bakalli/GzEhTmUW0AAghHv.jpg"
+bio: ''
+featured: assets/images/post-ap/teuta-bakalli/GzEhTmUW0AAghHv-2.jpg
 gallery:
-  - "assets/images/post-ap/teuta-bakalli/GzEhTmUW0AAghHv.jpg"
-bio: ""
+- assets/images/post-ap/teuta-bakalli/GzEhTmUW0AAghHv-2.jpg
 ---

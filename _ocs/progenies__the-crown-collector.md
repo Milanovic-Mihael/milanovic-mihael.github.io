@@ -1,11 +1,11 @@
 ---
-title: "The Crown Collector"
-universe: "Progenies"
-species: ""
+title: The Crown Collector
+universe: Progenies
+species: ''
 tags: []
-featured: "assets/images/progenies/the-crown-collector/crown_collector.png"
+bio: ''
+featured: assets/images/progenies/the-crown-collector/crown_collector-2.png
 gallery:
-  - "assets/images/progenies/the-crown-collector/crown_collector.png"
-  - "assets/images/progenies/the-crown-collector/crown_collector_-_Copy.png"
-bio: ""
+- assets/images/progenies/the-crown-collector/crown_collector-2.png
+- assets/images/progenies/the-crown-collector/crown_collector_-_Copy-2.png
 ---

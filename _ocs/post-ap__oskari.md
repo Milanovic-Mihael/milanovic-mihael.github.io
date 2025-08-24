@@ -1,14 +1,14 @@
 ---
-title: "Oskari"
-universe: "Post-AP"
-species: ""
+title: Oskari
+universe: Post-AP
+species: ''
 tags: []
-featured: "assets/images/post-ap/oskari/CONCEPT_ART_SNOWFIELD.png"
+bio: ''
+featured: assets/images/post-ap/oskari/CONCEPT_ART_SNOWFIELD-2.png
 gallery:
-  - "assets/images/post-ap/oskari/CONCEPT_ART_SNOWFIELD.png"
-  - "assets/images/post-ap/oskari/Oskari.png"
-  - "assets/images/post-ap/oskari/Oskari_the_snow.png"
-  - "assets/images/post-ap/oskari/oskaribro.png"
-  - "assets/images/post-ap/oskari/oskarifinally.png"
-bio: ""
+- assets/images/post-ap/oskari/CONCEPT_ART_SNOWFIELD-2.png
+- assets/images/post-ap/oskari/Oskari-2.png
+- assets/images/post-ap/oskari/Oskari_the_snow-2.png
+- assets/images/post-ap/oskari/oskaribro-2.png
+- assets/images/post-ap/oskari/oskarifinally-2.png
 ---

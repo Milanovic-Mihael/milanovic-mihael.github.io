@@ -1,12 +1,12 @@
 ---
-title: "Sama"
-universe: "Progenies"
-species: ""
+title: Sama
+universe: Progenies
+species: ''
 tags: []
-featured: "assets/images/progenies/sama/Sama_explnaation.png"
+bio: ''
+featured: assets/images/progenies/sama/Sama_explnaation-2.png
 gallery:
-  - "assets/images/progenies/sama/Sama_explnaation.png"
-  - "assets/images/progenies/sama/sama_jacob.png"
-  - "assets/images/progenies/sama/warmup_doodle_wtf.png"
-bio: ""
+- assets/images/progenies/sama/Sama_explnaation-2.png
+- assets/images/progenies/sama/sama_jacob-2.png
+- assets/images/progenies/sama/warmup_doodle_wtf-2.png
 ---

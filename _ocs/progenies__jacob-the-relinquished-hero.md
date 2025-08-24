@@ -1,14 +1,14 @@
 ---
-title: "Jacob, the relinquished hero"
-universe: "Progenies"
-species: ""
+title: Jacob, the relinquished hero
+universe: Progenies
+species: ''
 tags: []
-featured: "assets/images/progenies/jacob-the-relinquished-hero/jacob.png"
+bio: ''
+featured: assets/images/progenies/jacob-the-relinquished-hero/jacob-2.png
 gallery:
-  - "assets/images/progenies/jacob-the-relinquished-hero/jacob.png"
-  - "assets/images/progenies/jacob-the-relinquished-hero/Jacob_comic.png"
-  - "assets/images/progenies/jacob-the-relinquished-hero/Jacob_former_hero.png"
-  - "assets/images/progenies/jacob-the-relinquished-hero/Jacob_no_monster.png"
-  - "assets/images/progenies/jacob-the-relinquished-hero/jacob_the_hero.png"
-bio: ""
+- assets/images/progenies/jacob-the-relinquished-hero/jacob-2.png
+- assets/images/progenies/jacob-the-relinquished-hero/Jacob_comic-2.png
+- assets/images/progenies/jacob-the-relinquished-hero/Jacob_former_hero-2.png
+- assets/images/progenies/jacob-the-relinquished-hero/Jacob_no_monster-2.png
+- assets/images/progenies/jacob-the-relinquished-hero/jacob_the_hero-2.png
 ---

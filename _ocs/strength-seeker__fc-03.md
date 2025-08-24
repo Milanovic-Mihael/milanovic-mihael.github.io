@@ -1,10 +1,10 @@
 ---
-title: "FC-03"
-universe: "Strength Seeker"
-species: ""
+title: FC-03
+universe: Strength Seeker
+species: ''
 tags: []
-featured: "assets/images/strength-seeker/fc-03/FC03.png"
+bio: ''
+featured: assets/images/strength-seeker/fc-03/FC03-2.png
 gallery:
-  - "assets/images/strength-seeker/fc-03/FC03.png"
-bio: ""
+- assets/images/strength-seeker/fc-03/FC03-2.png
 ---

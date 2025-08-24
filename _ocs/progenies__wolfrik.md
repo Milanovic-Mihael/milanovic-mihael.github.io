@@ -1,13 +1,13 @@
 ---
-title: "Wolfrik"
-universe: "Progenies"
-species: ""
+title: Wolfrik
+universe: Progenies
+species: ''
 tags: []
-featured: "assets/images/progenies/wolfrik/husband_moment.png"
+bio: ''
+featured: assets/images/progenies/wolfrik/husband_moment-2.png
 gallery:
-  - "assets/images/progenies/wolfrik/husband_moment.png"
-  - "assets/images/progenies/wolfrik/wolfrik22.png"
-  - "assets/images/progenies/wolfrik/wolfrik_ref.png"
-  - "assets/images/progenies/wolfrik/wolrfinspin.png"
-bio: ""
+- assets/images/progenies/wolfrik/husband_moment-2.png
+- assets/images/progenies/wolfrik/wolfrik22-2.png
+- assets/images/progenies/wolfrik/wolfrik_ref-2.png
+- assets/images/progenies/wolfrik/wolrfinspin-2.png
 ---

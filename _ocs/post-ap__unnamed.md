@@ -1,10 +1,10 @@
 ---
-title: "[unnamed]"
-universe: "Post-AP"
-species: ""
+title: '[unnamed]'
+universe: Post-AP
+species: ''
 tags: []
-featured: "assets/images/post-ap/unnamed/huge_spainard.png"
+bio: ''
+featured: assets/images/post-ap/unnamed/huge_spainard-2.png
 gallery:
-  - "assets/images/post-ap/unnamed/huge_spainard.png"
-bio: ""
+- assets/images/post-ap/unnamed/huge_spainard-2.png
 ---

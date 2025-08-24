@@ -1,10 +1,10 @@
 ---
-title: "Alicia"
-universe: "Progenies"
-species: ""
+title: Alicia
+universe: Progenies
+species: ''
 tags: []
-featured: "assets/images/progenies/alicia/smolkid.png"
+bio: ''
+featured: assets/images/progenies/alicia/smolkid-2.png
 gallery:
-  - "assets/images/progenies/alicia/smolkid.png"
-bio: ""
+- assets/images/progenies/alicia/smolkid-2.png
 ---

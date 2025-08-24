@@ -1,10 +1,10 @@
 ---
-title: "Spirit of the wasteland"
-universe: "Post-AP"
-species: ""
+title: Spirit of the wasteland
+universe: Post-AP
+species: ''
 tags: []
-featured: "assets/images/post-ap/spirit-of-the-wasteland/spirit.png"
+bio: ''
+featured: assets/images/post-ap/spirit-of-the-wasteland/spirit-2.png
 gallery:
-  - "assets/images/post-ap/spirit-of-the-wasteland/spirit.png"
-bio: ""
+- assets/images/post-ap/spirit-of-the-wasteland/spirit-2.png
 ---

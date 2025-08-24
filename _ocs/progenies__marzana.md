@@ -1,13 +1,13 @@
 ---
-title: "Marzana"
-universe: "Progenies"
-species: ""
+title: Marzana
+universe: Progenies
+species: ''
 tags: []
-featured: "assets/images/progenies/marzana/marzana2.png"
+bio: ''
+featured: assets/images/progenies/marzana/marzana2-2.png
 gallery:
-  - "assets/images/progenies/marzana/marzana2.png"
-  - "assets/images/progenies/marzana/marzana_foreva.png"
-  - "assets/images/progenies/marzana/Marzana_VS_theCannibal.png"
-  - "assets/images/progenies/marzana/neemsis_girl.png"
-bio: ""
+- assets/images/progenies/marzana/marzana2-2.png
+- assets/images/progenies/marzana/marzana_foreva-2.png
+- assets/images/progenies/marzana/Marzana_VS_theCannibal-2.png
+- assets/images/progenies/marzana/neemsis_girl-2.png
 ---

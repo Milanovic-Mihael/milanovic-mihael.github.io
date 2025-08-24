@@ -1,12 +1,12 @@
 ---
-title: "David"
-universe: "Progenies"
-species: ""
+title: David
+universe: Progenies
+species: ''
 tags: []
-featured: "assets/images/progenies/david/david.png"
+bio: ''
+featured: assets/images/progenies/david/david-2.png
 gallery:
-  - "assets/images/progenies/david/david.png"
-  - "assets/images/progenies/david/David_yeah.png"
-  - "assets/images/progenies/david/purplecreateure.png"
-bio: ""
+- assets/images/progenies/david/david-2.png
+- assets/images/progenies/david/David_yeah-2.png
+- assets/images/progenies/david/purplecreateure-2.png
 ---
