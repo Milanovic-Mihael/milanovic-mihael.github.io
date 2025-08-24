@@ -4,7 +4,8 @@ universe: Strength Seeker
 species: ''
 tags: []
 bio: ''
-featured: assets/images/strength-seeker/egl-2005-champions-retribution/THEMECHA-3.png
+featured: assets/images/strength-seeker/egl-2005-champions-retribution/THEMECHA-4.png
 gallery:
-- assets/images/strength-seeker/egl-2005-champions-retribution/THEMECHA-3.png
+- assets/images/strength-seeker/egl-2005-champions-retribution/THEMECHA-4.png
+order: 17
 ---

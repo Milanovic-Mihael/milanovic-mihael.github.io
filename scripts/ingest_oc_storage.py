@@ -19,6 +19,22 @@ def pick_featured(files):
         return sorted(pri)[0]
     return sorted(files)[0] if files else None
 
+def load_existing_yaml(md_path):
+    if not md_path.exists():
+        return {}
+    with open(md_path, "r", encoding="utf-8") as f:
+        content = f.read()
+        # Extract first YAML block between ---
+        match = re.search(r"^---\s*(.*?)\s*---", content, re.DOTALL | re.MULTILINE)
+        if match:
+            try:
+                data = yaml.safe_load(match.group(1))
+                if isinstance(data, dict):
+                    return data
+            except Exception:
+                pass
+    return {}
+
 def main():
     if len(sys.argv) < 2:
         print("Usage: python scripts/ingest_oc_storage.py '/path/to/OC STORAGE'")
@@ -57,7 +73,6 @@ def main():
             copied = []
             for img in imgs:
                 dest_path = dest_dir / img.name
-                # Avoid overwrite by appending a number
                 if dest_path.exists():
                     stem, ext = img.stem, img.suffix
                     i = 2
@@ -70,7 +85,6 @@ def main():
                 shutil.copy2(img, dest_path)
                 copied.append(dest_path)
 
-            # Pick featured image
             featured = pick_featured(copied)
             gallery_rel = [str(p.relative_to(site_root).as_posix()) for p in sorted(copied)]
             featured_rel = str(featured.relative_to(site_root).as_posix()) if featured else ""
@@ -79,24 +93,24 @@ def main():
             md_name = f"{u_slug}__{oc_slug}.md"
             md_path = ocs_root / md_name
 
-            # Default OC data
-            data = {
-                "title": oc_name,
-                "universe": universe_name,
-                "species": "",
-                "tags": [],
-                "bio": "",
-            }
+            # Load existing data
+            data = load_existing_yaml(md_path)
 
-            # Preserve existing fields if file exists
-            if md_path.exists():
-                with open(md_path, "r", encoding="utf-8") as f:
-                    try:
-                        old = yaml.safe_load(f)
-                        if isinstance(old, dict):
-                            data.update(old)
-                    except Exception:
-                        pass
+            # Fill default fields if missing
+            data.setdefault("title", oc_name)
+            data.setdefault("universe", universe_name)
+            data.setdefault("species", "")
+            data.setdefault("tags", [])
+            data.setdefault("bio", "")
+
+            # Automatically assign 'order' if missing
+            if "order" not in data:
+                existing_orders = [
+                    load_existing_yaml(p).get("order", 0)
+                    for p in ocs_root.glob("*.md")
+                    if p != md_path
+                ]
+                data["order"] = max(existing_orders, default=0) + 1
 
             # Always refresh featured + gallery
             data["featured"] = featured_rel
@@ -110,7 +124,7 @@ def main():
 
             print(f"[OK] Imported: {oc_name} ({universe_name}) with {len(copied)} images")
 
-    print("\nDone. Review files in _ocs/ to add species/tags/bio as needed.")
+    print("\nDone. Review files in _ocs/ to add species/tags/bio/order as needed.")
     print("Commit and push your changes to update the site.")
 
 if __name__ == "__main__":

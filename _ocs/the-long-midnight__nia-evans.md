@@ -4,9 +4,10 @@ universe: The Long Midnight
 species: ''
 tags: []
 bio: ''
-featured: assets/images/the-long-midnight/nia-evans/newocdrop.png
+featured: assets/images/the-long-midnight/nia-evans/newocdrop-2.png
 gallery:
-- assets/images/the-long-midnight/nia-evans/newocdrop.png
-- assets/images/the-long-midnight/nia-evans/NIA.png
-- assets/images/the-long-midnight/nia-evans/nia_pulpfiction.png
+- assets/images/the-long-midnight/nia-evans/newocdrop-2.png
+- assets/images/the-long-midnight/nia-evans/NIA-2.png
+- assets/images/the-long-midnight/nia-evans/nia_pulpfiction-2.png
+order: 23
 ---
