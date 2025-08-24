@@ -1,0 +1,66 @@
+---
+# layout front matter required by Jekyll
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <nav>
+        <a href="{{ '/' | relative_url }}">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content">
+    <article class="oc-page">
+      <h1>{{ page.title }}</h1>
+      <div class="oc-meta-line">
+        {% if page.species %}<span class="meta"><strong>Species:</strong> {{ page.species }}</span>{% endif %}
+        {% if page.universe %}<span class="meta"><strong>Universe:</strong> {{ page.universe }}</span>{% endif %}
+        {% if page.tags %}<span class="meta"><strong>Tags:</strong> {{ page.tags | join: ', ' }}</span>{% endif %}
+      </div>
+
+      {% if page.featured %}
+      <div class="featured">
+        <img src="{{ page.featured | relative_url }}" alt="{{ page.title | escape }} featured artwork">
+      </div>
+      {% endif %}
+
+      {% if page.bio %}
+      <section class="bio">
+        <h2>Bio</h2>
+        <p>{{ page.bio }}</p>
+      </section>
+      {% endif %}
+
+      {% if page.gallery %}
+      <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+          {% for art in page.gallery %}
+            <a href="{{ art | relative_url }}" target="_blank" class="gallery-item">
+              <img src="{{ art | relative_url }}" alt="{{ page.title | escape }} artwork">
+            </a>
+          {% endfor %}
+        </div>
+      </section>
+      {% endif %}
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="y"></span> {{ site.title }}</p>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

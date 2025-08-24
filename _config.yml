@@ -1,0 +1,21 @@
+title: My OC Gallery
+description: "A Jekyll site showcasing original characters with featured art and galleries."
+baseurl: "" # keep empty for project pages, or set to "/my-oc-website"
+url: ""
+
+# GitHub Pages-safe config
+markdown: kramdown
+theme: minima
+
+collections:
+  ocs:
+    output: true
+    permalink: /oc/:name/
+
+# Defaults so OC pages use the oc layout by default
+defaults:
+  - scope:
+      path: ""
+      type: "ocs"
+    values:
+      layout: "oc"
