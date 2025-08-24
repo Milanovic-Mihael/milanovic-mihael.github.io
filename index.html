@@ -5,7 +5,7 @@ title: "My OC Gallery"
 
 <div class="filters">
   <button class="filter-btn" data-filter="all">All</button>
-  {% assign universes = site.ocs | map: 'universe' | uniq | sort %}
+  {% assign universes = "Strength Seeker , Progenies , The Long Midnight , Misc" | split: "," %}
   {% for u in universes %}
   <button class="filter-btn" data-filter="{{ u | escape }}">{{ u }}</button>
   {% endfor %}
