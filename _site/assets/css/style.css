@@ -6,7 +6,7 @@ body {
     margin: 0;
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
     line-height: 1.6;
-    background-color: #121212;
+    background-color: #1c1c1d;
     color: #eee;
 }
 
@@ -16,20 +16,77 @@ body {
     padding: 1rem;
 }
 
-.site-header,
-.site-footer {
-    background: #1a1a1a;
+.site-header {
+    background: #0a0a0a;
     color: #eee;
+    padding: 1rem 0;
 }
 
-.site-header a,
-.site-footer a {
+
+.site-header a {
     color: #fff;
     text-decoration: none;
 }
 
-.site-header .brand {
-    font-weight: 700;
+
+.site-header .brand img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    flex-shrink: 0;
+    /* prevent logo from shrinking */
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    /* vertical alignment */
+    justify-content: space-between;
+    /* logo left, buttons right */
+    gap: 1rem;
+    /* spacing between items */
+}
+
+.header-buttons {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    flex-shrink: 0;
+    /* prevents buttons from shrinking */
+}
+
+/* Individual buttons */
+
+.header-btn {
+    display: flex;
+    /* allows icon + text side by side */
+    align-items: center;
+    /* vertically center icon and text */
+    gap: 0.5rem;
+    /* space between icon and text */
+    padding: 0.5rem 1rem;
+    background-color: #0a0a0a;
+    border: 2px solid #444;
+    border-radius: 1.2rem;
+    color: #eee;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    /* remove underline from links */
+    transition: background 0.2s, transform 0.2s;
+}
+
+.header-btn:hover {
+    background-color: #eee;
+    transform: translateY(-3px);
+    color: #0a0a0a;
+    box-shadow: 0 6px 20px rgba(75, 102, 150, 0.5);
+}
+
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .content {
@@ -65,6 +122,7 @@ h3 {
 
 .filter-btn:hover {
     background: #3a3a3a;
+    transform: translateY(-3px);
 }
 
 .oc-grid {
@@ -81,10 +139,12 @@ h3 {
     text-decoration: none;
     color: #eee;
     background: #1e1e1e;
+    box-shadow: 0 0px 0px rgba(75, 102, 150, 0.5);
 }
 
 .oc-card:hover {
-    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.05);
+    box-shadow: 0 6px 20px rgba(75, 102, 150, 0.5);
+    transform: translateY(-3px);
 }
 
 .oc-thumb {
@@ -114,11 +174,31 @@ h3 {
 
 .tag {
     display: inline-block;
-    background: #333;
     color: #ddd;
     border-radius: .5rem;
     padding: .1rem .5rem;
     font-size: .8rem;
+}
+
+/* Universe-specific colors */
+.oc-card[data-universe="Misc"] .tag {
+    background-color: #6c757d;
+    /* gray */
+}
+
+.oc-card[data-universe="Progenies"] .tag {
+    background-color: #695e3d;
+    /* blue */
+}
+
+.oc-card[data-universe="Strength Seeker"] .tag {
+    background-color: #28295e;
+    /* green */
+}
+
+.oc-card[data-universe="The Long Midnight"] .tag {
+    background-color: #612828;
+    /* purple */
 }
 
 .oc-page .featured img {
@@ -174,32 +254,40 @@ h3 {
     gap: 1.5rem;
     margin-bottom: 2rem;
     align-items: flex-start;
+    flex-wrap: wrap;
+    /* allows items to wrap on smaller screens */
 }
 
 .oc-header .featured {
-    width: 250px;
-    /* fixed or responsive width */
+    width: 100%;
+    /* default to full width on small screens */
+    max-width: 350px;
+    /* caps the width on larger screens */
     aspect-ratio: 1 / 1;
-    /* ensures height = width */
     overflow: hidden;
-    /* hides any overflow for cropping */
     border-radius: 1rem;
-    /* optional rounded corners */
     flex-shrink: 0;
-    /* prevents it from shrinking in flex layouts */
+}
+
+@media(min-width: 768px) {
+    .oc-header .featured {
+        width: 30%;
+        /* takes 30% of container width on medium+ screens */
+    }
 }
 
 .oc-header .featured img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* fills the square, cropping if necessary */
     display: block;
 }
 
 .oc-header .oc-info {
     flex: 1;
-    /* meta info takes the remaining space */
+    /* fills remaining space */
+    min-width: 250px;
+    /* prevents shrinking too small */
 }
 
 .oc-header .oc-info h1 {
