@@ -4,9 +4,9 @@ universe: Progenies
 species: ''
 tags: []
 bio: ''
-featured: assets/images/progenies/erran/Erran-4.png
+featured: assets/images/progenies/erran/Erran.png
 gallery:
-- assets/images/progenies/erran/Erran-4.png
-- assets/images/progenies/erran/stronget_armar-4.png
+- assets/images/progenies/erran/Erran.png
+- assets/images/progenies/erran/stronget_armar.png
 order: 42
 ---

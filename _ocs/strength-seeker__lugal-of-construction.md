@@ -4,8 +4,8 @@ universe: Strength Seeker
 species: ''
 tags: []
 bio: ''
-featured: assets/images/strength-seeker/lugal-of-construction/1810079930811818329_1-4.jpg
+featured: assets/images/strength-seeker/lugal-of-construction/1810079930811818329_1.jpg
 gallery:
-- assets/images/strength-seeker/lugal-of-construction/1810079930811818329_1-4.jpg
+- assets/images/strength-seeker/lugal-of-construction/1810079930811818329_1.jpg
 order: 10
 ---

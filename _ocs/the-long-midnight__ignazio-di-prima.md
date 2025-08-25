@@ -4,8 +4,8 @@ universe: The Long Midnight
 species: ''
 tags: []
 bio: ''
-featured: assets/images/the-long-midnight/ignazio-di-prima/roman_despot-2.png
+featured: assets/images/the-long-midnight/ignazio-di-prima/roman_despot.png
 gallery:
-- assets/images/the-long-midnight/ignazio-di-prima/roman_despot-2.png
+- assets/images/the-long-midnight/ignazio-di-prima/roman_despot.png
 order: 25
 ---

@@ -4,8 +4,8 @@ universe: Progenies
 species: ''
 tags: []
 bio: ''
-featured: assets/images/progenies/alicia/smolkid-4.png
+featured: assets/images/progenies/alicia/smolkid.png
 gallery:
-- assets/images/progenies/alicia/smolkid-4.png
+- assets/images/progenies/alicia/smolkid.png
 order: 43
 ---

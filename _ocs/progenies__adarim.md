@@ -4,8 +4,8 @@ universe: Progenies
 species: ''
 tags: []
 bio: ''
-featured: assets/images/progenies/adarim/armarguy-4.png
+featured: assets/images/progenies/adarim/armarguy.png
 gallery:
-- assets/images/progenies/adarim/armarguy-4.png
+- assets/images/progenies/adarim/armarguy.png
 order: 44
 ---

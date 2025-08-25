@@ -73,16 +73,7 @@ def main():
             copied = []
             for img in imgs:
                 dest_path = dest_dir / img.name
-                if dest_path.exists():
-                    stem, ext = img.stem, img.suffix
-                    i = 2
-                    while True:
-                        candidate = dest_dir / f"{stem}-{i}{ext}"
-                        if not candidate.exists():
-                            dest_path = candidate
-                            break
-                        i += 1
-                shutil.copy2(img, dest_path)
+                shutil.copy2(img, dest_path)  # overwrite if exists
                 copied.append(dest_path)
 
             featured = pick_featured(copied)

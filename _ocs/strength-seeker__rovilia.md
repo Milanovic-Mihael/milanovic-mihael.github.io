@@ -4,8 +4,8 @@ universe: Strength Seeker
 species: ''
 tags: []
 bio: ''
-featured: assets/images/strength-seeker/rovilia/avrena_daughter-4.png
+featured: assets/images/strength-seeker/rovilia/avrena_daughter.png
 gallery:
-- assets/images/strength-seeker/rovilia/avrena_daughter-4.png
+- assets/images/strength-seeker/rovilia/avrena_daughter.png
 order: 15
 ---

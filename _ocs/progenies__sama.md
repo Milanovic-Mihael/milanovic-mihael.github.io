@@ -4,10 +4,10 @@ universe: Progenies
 species: ''
 tags: []
 bio: ''
-featured: assets/images/progenies/sama/Sama_explnaation-4.png
+featured: assets/images/progenies/sama/Sama_explnaation.png
 gallery:
-- assets/images/progenies/sama/Sama_explnaation-4.png
-- assets/images/progenies/sama/sama_jacob-4.png
-- assets/images/progenies/sama/warmup_doodle_wtf-4.png
+- assets/images/progenies/sama/Sama_explnaation.png
+- assets/images/progenies/sama/sama_jacob.png
+- assets/images/progenies/sama/warmup_doodle_wtf.png
 order: 40
 ---

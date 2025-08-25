@@ -4,11 +4,11 @@ universe: Strength Seeker
 species: ''
 tags: []
 bio: ''
-featured: assets/images/strength-seeker/sunbearer-potentate/abdom_vs_the_sunf-4.png
+featured: assets/images/strength-seeker/sunbearer-potentate/abdom_vs_the_sunf.png
 gallery:
-- assets/images/strength-seeker/sunbearer-potentate/abdom_vs_the_sunf-4.png
-- assets/images/strength-seeker/sunbearer-potentate/abdomVSaMF-4.png
-- assets/images/strength-seeker/sunbearer-potentate/Sunbearer_potentate-4.png
-- assets/images/strength-seeker/sunbearer-potentate/Sunbearer_potenttaet-4.png
+- assets/images/strength-seeker/sunbearer-potentate/abdom_vs_the_sunf.png
+- assets/images/strength-seeker/sunbearer-potentate/abdomVSaMF.png
+- assets/images/strength-seeker/sunbearer-potentate/Sunbearer_potentate.png
+- assets/images/strength-seeker/sunbearer-potentate/Sunbearer_potenttaet.png
 order: 8
 ---

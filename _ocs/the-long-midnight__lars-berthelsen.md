@@ -4,9 +4,9 @@ universe: The Long Midnight
 species: ''
 tags: []
 bio: ''
-featured: assets/images/the-long-midnight/lars-berthelsen/Lars_guy-2.png
+featured: assets/images/the-long-midnight/lars-berthelsen/Lars_guy.png
 gallery:
-- assets/images/the-long-midnight/lars-berthelsen/Lars_guy-2.png
-- assets/images/the-long-midnight/lars-berthelsen/newOCDROPP-2.png
+- assets/images/the-long-midnight/lars-berthelsen/Lars_guy.png
+- assets/images/the-long-midnight/lars-berthelsen/newOCDROPP.png
 order: 24
 ---

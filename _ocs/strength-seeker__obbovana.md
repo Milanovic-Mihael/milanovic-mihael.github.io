@@ -4,9 +4,9 @@ universe: Strength Seeker
 species: ''
 tags: []
 bio: ''
-featured: assets/images/strength-seeker/obbovana/LOVE_Obbovana-4.png
+featured: assets/images/strength-seeker/obbovana/LOVE_Obbovana.png
 gallery:
-- assets/images/strength-seeker/obbovana/LOVE_Obbovana-4.png
-- assets/images/strength-seeker/obbovana/Obbovana-4.png
+- assets/images/strength-seeker/obbovana/LOVE_Obbovana.png
+- assets/images/strength-seeker/obbovana/Obbovana.png
 order: 18
 ---

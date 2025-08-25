@@ -4,21 +4,21 @@ universe: Strength Seeker
 species: ''
 tags: []
 bio: ''
-featured: assets/images/strength-seeker/radiant-champion/AtTheTop-4.png
+featured: assets/images/strength-seeker/radiant-champion/AtTheTop.png
 gallery:
-- assets/images/strength-seeker/radiant-champion/AtTheTop-4.png
-- assets/images/strength-seeker/radiant-champion/champ_vs_ksalir-4.png
-- assets/images/strength-seeker/radiant-champion/concept_hero-4.png
-- assets/images/strength-seeker/radiant-champion/MYGOAT-4.png
-- assets/images/strength-seeker/radiant-champion/mygoatman-4.png
-- assets/images/strength-seeker/radiant-champion/radiant_bath-4.png
-- assets/images/strength-seeker/radiant-champion/Radiant_champion-4.png
-- assets/images/strength-seeker/radiant-champion/radiant_chapion_slash-4.png
-- assets/images/strength-seeker/radiant-champion/radiant_chapmion_Fuzzy-4.png
-- assets/images/strength-seeker/radiant-champion/radiant_failure-4.png
-- assets/images/strength-seeker/radiant-champion/radiantchampionvscuteandfunny-4.png
-- assets/images/strength-seeker/radiant-champion/the_radiant_chill-4.png
-- assets/images/strength-seeker/radiant-champion/THERADIANTGOAT-4.png
-- assets/images/strength-seeker/radiant-champion/theradianthero-4.png
+- assets/images/strength-seeker/radiant-champion/AtTheTop.png
+- assets/images/strength-seeker/radiant-champion/champ_vs_ksalir.png
+- assets/images/strength-seeker/radiant-champion/concept_hero.png
+- assets/images/strength-seeker/radiant-champion/MYGOAT.png
+- assets/images/strength-seeker/radiant-champion/mygoatman.png
+- assets/images/strength-seeker/radiant-champion/radiant_bath.png
+- assets/images/strength-seeker/radiant-champion/Radiant_champion.png
+- assets/images/strength-seeker/radiant-champion/radiant_chapion_slash.png
+- assets/images/strength-seeker/radiant-champion/radiant_chapmion_Fuzzy.png
+- assets/images/strength-seeker/radiant-champion/radiant_failure.png
+- assets/images/strength-seeker/radiant-champion/radiantchampionvscuteandfunny.png
+- assets/images/strength-seeker/radiant-champion/the_radiant_chill.png
+- assets/images/strength-seeker/radiant-champion/THERADIANTGOAT.png
+- assets/images/strength-seeker/radiant-champion/theradianthero.png
 order: 2
 ---

@@ -4,8 +4,8 @@ universe: The Long Midnight
 species: ''
 tags: []
 bio: ''
-featured: assets/images/the-long-midnight/teuta-bakalli/GzEhTmUW0AAghHv-2.jpg
+featured: assets/images/the-long-midnight/teuta-bakalli/GzEhTmUW0AAghHv.jpg
 gallery:
-- assets/images/the-long-midnight/teuta-bakalli/GzEhTmUW0AAghHv-2.jpg
+- assets/images/the-long-midnight/teuta-bakalli/GzEhTmUW0AAghHv.jpg
 order: 48
 ---
