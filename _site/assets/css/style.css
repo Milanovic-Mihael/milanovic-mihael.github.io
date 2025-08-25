@@ -16,6 +16,13 @@ body {
     padding: 1rem;
 }
 
+@media(max-width: 768px) {
+    .container {
+        padding: 0.5rem;
+        /* reduce padding on small screens */
+    }
+}
+
 .site-header {
     background: #0a0a0a;
     color: #eee;
@@ -45,6 +52,27 @@ body {
     /* logo left, buttons right */
     gap: 1rem;
     /* spacing between items */
+}
+
+@media(max-width: 600px) {
+    .site-header .container {
+        flex-direction: column;
+        align-items: flex-start;
+        /* logo left, buttons below */
+        gap: 0.5rem;
+    }
+
+    .header-buttons {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .header-btn {
+        flex: 1 1 auto;
+        /* buttons expand equally */
+        text-align: center;
+    }
 }
 
 .header-buttons {
@@ -131,6 +159,12 @@ h3 {
     gap: 1rem;
 }
 
+@media(max-width: 500px) {
+    .oc-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
 .oc-card {
     display: block;
     border: 1px solid #333;
@@ -161,6 +195,26 @@ h3 {
     height: 100%;
     object-fit: cover;
 }
+
+.oc-thumb,
+.oc-header .featured {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    /* forces square container */
+    overflow: hidden;
+    border-radius: 1rem;
+    /* optional */
+}
+
+.oc-thumb img,
+.oc-header .featured img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* fills container, cropping if necessary */
+    display: block;
+}
+
 
 .oc-meta {
     padding: .75rem;
@@ -218,7 +272,7 @@ h3 {
 
 .meta {
     font-size: .9rem;
-    color: #444;
+    color: #7b7c7e;
 }
 
 .gallery-grid {
@@ -301,4 +355,57 @@ h3 {
     flex-wrap: wrap;
     gap: 1rem;
     margin-bottom: 1rem;
+}
+
+@media(max-width: 500px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .header-btn {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+@media(max-width: 600px) {
+    .site-header .container {
+        flex-direction: column;
+        /* stack logo + buttons */
+        align-items: center;
+        /* center everything horizontally */
+        gap: 0.5rem;
+    }
+
+    .header-buttons {
+        flex-direction: column;
+        /* stack buttons vertically */
+        width: 100%;
+        /* full width of container */
+        gap: 0.5rem;
+        align-items: center;
+        /* center buttons themselves */
+    }
+
+    .header-btn {
+        display: flex;
+        /* flex to align icon + text */
+        justify-content: center;
+        /* center icon + text horizontally */
+        align-items: center;
+        /* center icon + text vertically */
+        width: 100%;
+        /* full width */
+        text-align: center;
+        gap: 0.5rem;
+        /* space between icon and text */
+    }
 }
