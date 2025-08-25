@@ -1,9 +1,9 @@
 ---
 title: Yana
 universe: Misc
-species: ''
+species: 'Monkey hehe'
 tags: []
-bio: ''
+bio: 'Monke'
 featured: assets/images/misc/yana/eokqfmdwtu491.png
 gallery:
 - assets/images/misc/yana/YANA.png
