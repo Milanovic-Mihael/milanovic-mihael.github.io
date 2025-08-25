@@ -4,7 +4,7 @@ universe: Progenies
 species: ''
 tags: []
 bio: ''
-featured: assets/images/progenies/leanna/axemewoman2.png
+featured: assets/images/progenies/leanna/leanna_but_IThinkSo.png
 gallery:
 - assets/images/progenies/leanna/Leann_sitting_nshit.png
 - assets/images/progenies/leanna/leanna_but_IThinkSo.png

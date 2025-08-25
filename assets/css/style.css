@@ -85,7 +85,7 @@ h3 {
 }
 
 .oc-thumb {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 1 / 1;
     overflow: hidden;
     background: #fafafa;
     display: flex;

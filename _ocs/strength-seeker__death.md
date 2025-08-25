@@ -4,9 +4,9 @@ universe: Strength Seeker
 species: ''
 tags: []
 bio: ''
-featured: assets/images/strength-seeker/death/death_design.png
+featured: assets/images/strength-seeker/death/death_yah.png
 gallery:
-- assets/images/strength-seeker/death/death_design.png
 - assets/images/strength-seeker/death/death_yah.png
+- assets/images/strength-seeker/death/death_design.png
 order: 5
 ---
