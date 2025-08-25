@@ -183,23 +183,25 @@ h3 {
 /* Universe-specific colors */
 .oc-card[data-universe="Misc"] .tag {
     background-color: #6c757d;
-    /* gray */
+    color: #fafafa
 }
 
 .oc-card[data-universe="Progenies"] .tag {
-    background-color: #695e3d;
-    /* blue */
+    background-color: #796323;
+    color: #fafafa
 }
 
 .oc-card[data-universe="Strength Seeker"] .tag {
     background-color: #28295e;
-    /* green */
+    color: #fafafa
 }
 
 .oc-card[data-universe="The Long Midnight"] .tag {
     background-color: #612828;
-    /* purple */
+    color: #fafafa
 }
+
+
 
 .oc-page .featured img {
     width: 100%;
