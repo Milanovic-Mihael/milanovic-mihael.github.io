@@ -6,6 +6,8 @@ body {
     margin: 0;
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
     line-height: 1.6;
+    background-color: #121212;
+    color: #eee;
 }
 
 .container {
@@ -16,7 +18,7 @@ body {
 
 .site-header,
 .site-footer {
-    background: #111;
+    background: #1a1a1a;
     color: #eee;
 }
 
@@ -54,14 +56,15 @@ h3 {
 
 .filter-btn {
     padding: .5rem .75rem;
-    border: 1px solid #ccc;
-    background: #f7f7f7;
+    background: #2a2a2a;
+    border: 1px solid #444;
+    color: #eee;
     border-radius: .5rem;
     cursor: pointer;
 }
 
 .filter-btn:hover {
-    background: #eee;
+    background: #3a3a3a;
 }
 
 .oc-grid {
@@ -72,16 +75,16 @@ h3 {
 
 .oc-card {
     display: block;
-    border: 1px solid #e2e2e2;
+    border: 1px solid #333;
     border-radius: .75rem;
     overflow: hidden;
     text-decoration: none;
-    color: inherit;
-    background: #fff;
+    color: #eee;
+    background: #1e1e1e;
 }
 
 .oc-card:hover {
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.05);
 }
 
 .oc-thumb {
@@ -103,9 +106,16 @@ h3 {
     padding: .75rem;
 }
 
+.oc-thumb,
+.gallery-item img {
+    background: #222;
+    /* dark background behind images */
+}
+
 .tag {
     display: inline-block;
-    background: #f0f0f0;
+    background: #333;
+    color: #ddd;
     border-radius: .5rem;
     padding: .1rem .5rem;
     font-size: .8rem;
