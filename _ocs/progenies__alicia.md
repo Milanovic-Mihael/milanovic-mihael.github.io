@@ -1,7 +1,7 @@
 ---
 title: Alicia
 universe: Progenies
-species: ''
+species: 'Armar'
 tags: []
 bio: ''
 featured: assets/images/progenies/alicia/smolkid.png

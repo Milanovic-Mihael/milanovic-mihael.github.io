@@ -1,7 +1,7 @@
 ---
 title: Jacob, the relinquished hero
 universe: Progenies
-species: ''
+species: 'Monsterized Human'
 tags: []
 bio: ''
 featured: assets/images/progenies/jacob-the-relinquished-hero/jacob.png

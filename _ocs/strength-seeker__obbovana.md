@@ -1,7 +1,7 @@
 ---
 title: Obbovana
 universe: Strength Seeker
-species: ''
+species: 'Boletalian'
 tags: []
 bio: ''
 featured: assets/images/strength-seeker/obbovana/Obbovana.png

@@ -1,7 +1,7 @@
 ---
 title: Bastien
 universe: The Long Midnight
-species: ''
+species: 'Human (assumed cursed)'
 tags: []
 bio: ''
 featured: assets/images/the-long-midnight/bastien/fucked_up_guy_beloved.png

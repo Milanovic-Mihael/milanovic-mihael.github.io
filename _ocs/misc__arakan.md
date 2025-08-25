@@ -1,7 +1,7 @@
 ---
 title: Arakan
 universe: Misc
-species: ''
+species: 'Monkey hehe'
 tags: []
 bio: ''
 featured: assets/images/misc/arakan/icestronk.png

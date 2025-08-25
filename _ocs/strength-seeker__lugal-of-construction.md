@@ -1,7 +1,7 @@
 ---
 title: Lugal of Construction
 universe: Strength Seeker
-species: ''
+species: 'Zavi'
 tags: []
 bio: ''
 featured: assets/images/strength-seeker/lugal-of-construction/1810079930811818329_1.jpg

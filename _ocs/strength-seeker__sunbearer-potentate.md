@@ -1,7 +1,7 @@
 ---
 title: Sunbearer Potentate
 universe: Strength Seeker
-species: ''
+species: 'Sunbearer'
 tags: []
 bio: ''
 featured: assets/images/strength-seeker/sunbearer-potentate/Sunbearer_potenttaet.png

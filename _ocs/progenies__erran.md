@@ -1,7 +1,7 @@
 ---
 title: Erran
 universe: Progenies
-species: ''
+species: 'Armar'
 tags: []
 bio: ''
 featured: assets/images/progenies/erran/Erran.png

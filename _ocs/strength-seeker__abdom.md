@@ -1,7 +1,7 @@
 ---
 title: Abdom
 universe: Strength Seeker
-species: ''
+species: 'Vidium'
 tags: []
 bio: ''
 featured: assets/images/strength-seeker/abdom/ABDOMRRAGGGGGH.png

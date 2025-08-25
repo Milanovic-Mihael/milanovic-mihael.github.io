@@ -1,7 +1,7 @@
 ---
 title: Lugal of Consumption
 universe: Strength Seeker
-species: ''
+species: 'Zavi'
 tags: []
 bio: ''
 featured: assets/images/strength-seeker/lugal-of-consumption/Lugal_of_construction.png

@@ -1,7 +1,7 @@
 ---
 title: Adarim
 universe: Progenies
-species: ''
+species: 'Armar'
 tags: []
 bio: ''
 featured: assets/images/progenies/adarim/armarguy.png

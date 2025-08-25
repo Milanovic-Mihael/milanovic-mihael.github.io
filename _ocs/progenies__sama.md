@@ -1,7 +1,7 @@
 ---
 title: Sama
 universe: Progenies
-species: ''
+species: 'Monsterized Human'
 tags: []
 bio: ''
 featured: assets/images/progenies/sama/warmup_doodle_wtf.png

@@ -1,7 +1,7 @@
 ---
 title: Brielle
 universe: Progenies
-species: ''
+species: 'Human'
 tags: []
 bio: ''
 featured: assets/images/progenies/brielle/Brielle.png

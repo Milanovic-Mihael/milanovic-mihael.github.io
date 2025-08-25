@@ -1,7 +1,7 @@
 ---
 title: Teuta Bakalli
 universe: The Long Midnight
-species: ''
+species: 'Human'
 tags: []
 bio: ''
 featured: assets/images/the-long-midnight/teuta-bakalli/GzEhTmUW0AAghHv.jpg

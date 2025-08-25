@@ -1,7 +1,7 @@
 ---
 title: Marzana
 universe: Progenies
-species: ''
+species: 'Monsterized Patym'
 tags: []
 bio: ''
 featured: assets/images/progenies/marzana/marzana2.png

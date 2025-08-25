@@ -1,7 +1,7 @@
 ---
 title: Lugal of Progress
 universe: Strength Seeker
-species: ''
+species: 'Zavi'
 tags: []
 bio: ''
 featured: assets/images/strength-seeker/lugal-of-progress/Lugal_of_progress.png

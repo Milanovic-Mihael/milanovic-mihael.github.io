@@ -1,7 +1,7 @@
 ---
 title: Ksalir
 universe: Strength Seeker
-species: ''
+species: 'Angullian'
 tags: []
 bio: ''
 featured: assets/images/strength-seeker/ksalir/champ_vs_ksalir (1).png

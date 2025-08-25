@@ -1,7 +1,7 @@
 ---
 title: Death
 universe: Strength Seeker
-species: ''
+species: 'Deity'
 tags: []
 bio: ''
 featured: assets/images/strength-seeker/death/death_yah.png

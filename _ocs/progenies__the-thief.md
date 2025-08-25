@@ -1,7 +1,7 @@
 ---
 title: The Thief
 universe: Progenies
-species: ''
+species: 'Monsterized Human'
 tags: []
 bio: ''
 featured: assets/images/progenies/the-thief/idknewguy.png

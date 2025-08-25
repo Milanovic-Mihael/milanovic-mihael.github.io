@@ -1,7 +1,7 @@
 ---
 title: The Musician
 universe: Strength Seeker
-species: ''
+species: 'Unknown'
 tags: []
 bio: ''
 featured: assets/images/strength-seeker/the-musician/the_musician.png

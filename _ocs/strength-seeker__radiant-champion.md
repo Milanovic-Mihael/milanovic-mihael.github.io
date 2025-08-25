@@ -1,7 +1,7 @@
 ---
 title: Radiant Champion
 universe: Strength Seeker
-species: ''
+species: 'Calumian'
 tags: []
 bio: ''
 featured: assets/images/strength-seeker/radiant-champion/Radiant_champion.png

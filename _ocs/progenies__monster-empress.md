@@ -1,7 +1,7 @@
 ---
 title: Monster Empress
 universe: Progenies
-species: ''
+species: 'Monsterized Human'
 tags: []
 bio: ''
 featured: assets/images/progenies/monster-empress/Monster_empress_red.png

@@ -1,7 +1,7 @@
 ---
 title: Sugo
 universe: Strength Seeker
-species: ''
+species: 'Cobalian'
 tags: []
 bio: ''
 featured: assets/images/strength-seeker/sugo/Sugo.png

@@ -1,7 +1,7 @@
 ---
 title: The Cannibal
 universe: Progenies
-species: ''
+species: 'Monsterized Letum'
 tags: []
 bio: ''
 featured: assets/images/progenies/the-cannibal/the_cannibal.png

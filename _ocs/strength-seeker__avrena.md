@@ -1,7 +1,7 @@
 ---
 title: Avrena
 universe: Strength Seeker
-species: ''
+species: 'Angullian'
 tags: []
 bio: ''
 featured: assets/images/strength-seeker/avrena/Gpjy3keWMAAurN1.jpg

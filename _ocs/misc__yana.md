@@ -3,7 +3,7 @@ title: Yana
 universe: Misc
 species: 'Monkey hehe'
 tags: []
-bio: 'Monke'
+bio: 'Old ass OC I kinda miss.'
 featured: assets/images/misc/yana/eokqfmdwtu491.png
 gallery:
 - assets/images/misc/yana/YANA.png

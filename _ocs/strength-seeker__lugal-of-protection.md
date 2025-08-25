@@ -1,7 +1,7 @@
 ---
 title: Lugal of Protection
 universe: Strength Seeker
-species: ''
+species: 'Zavi'
 tags: []
 bio: ''
 featured: assets/images/strength-seeker/lugal-of-protection/1770857999080259817_1.jpg

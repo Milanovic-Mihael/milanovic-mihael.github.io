@@ -1,7 +1,7 @@
 ---
 title: Abigail
 universe: Progenies
-species: ''
+species: 'Patym'
 tags: []
 bio: ''
 featured: assets/images/progenies/abigail/abigail_2025.png

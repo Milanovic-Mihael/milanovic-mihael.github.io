@@ -1,7 +1,7 @@
 ---
 title: Nia Evans
 universe: The Long Midnight
-species: ''
+species: 'Human (cursed)'
 tags: []
 bio: ''
 featured: assets/images/the-long-midnight/nia-evans/NIA.png

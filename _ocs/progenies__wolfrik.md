@@ -1,7 +1,7 @@
 ---
 title: Wolfrik
 universe: Progenies
-species: ''
+species: 'Human'
 tags: []
 bio: ''
 featured: assets/images/progenies/wolfrik/wolfrik22.png

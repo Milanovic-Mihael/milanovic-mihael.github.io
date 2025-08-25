@@ -129,7 +129,7 @@ h3 {
 }
 
 .muted {
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 .filters {
@@ -265,9 +265,11 @@ h3 {
 
 .oc-meta-line {
     display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-bottom: .5rem;
+    flex-direction: column;
+    /* stack children vertically */
+    gap: 0.5rem;
+    /* spacing between lines */
+    margin-bottom: 1rem;
 }
 
 .meta {

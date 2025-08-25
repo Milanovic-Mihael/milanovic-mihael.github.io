@@ -1,7 +1,7 @@
 ---
 title: The Crown Collector
 universe: Progenies
-species: ''
+species: 'Monsterized Armar'
 tags: []
 bio: ''
 featured: assets/images/progenies/the-crown-collector/crown_collector_-_Copy.png

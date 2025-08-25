@@ -1,7 +1,7 @@
 ---
 title: Leanna
 universe: Progenies
-species: ''
+species: 'Human'
 tags: []
 bio: ''
 featured: assets/images/progenies/leanna/leanna_but_IThinkSo.png

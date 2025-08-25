@@ -1,7 +1,7 @@
 ---
 title: Rovilia
 universe: Strength Seeker
-species: ''
+species: 'Angullian'
 tags: []
 bio: ''
 featured: assets/images/strength-seeker/rovilia/avrena_daughter.png

@@ -1,7 +1,7 @@
 ---
 title: Omar Fusty
 universe: Misc
-species: ''
+species: 'Monkey hehe'
 tags: []
 bio: ''
 featured: assets/images/misc/omar-fusty/Pat_dad.png

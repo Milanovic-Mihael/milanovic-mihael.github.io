@@ -1,7 +1,7 @@
 ---
 title: Queen Of Calumians
 universe: Strength Seeker
-species: ''
+species: 'Calumian'
 tags: []
 bio: ''
 featured: assets/images/strength-seeker/queen-of-calumians/the_calumian_queen.png

@@ -1,7 +1,7 @@
 ---
 title: Genocider
 universe: Strength Seeker
-species: ''
+species: 'Unknown'
 tags: []
 bio: ''
 featured: assets/images/strength-seeker/genocider/the_genocider_guy.png

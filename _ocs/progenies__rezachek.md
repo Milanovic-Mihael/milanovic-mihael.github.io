@@ -1,7 +1,7 @@
 ---
 title: Rezachek
 universe: Progenies
-species: ''
+species: 'Monsterized Human'
 tags: []
 bio: ''
 featured: assets/images/progenies/rezachek/old_katana_fella.png

@@ -1,7 +1,7 @@
 ---
-title: '[unnamed]'
+title: [unnamed]
 universe: The Long Midnight
-species: ''
+species: 'Human (blessed)'
 tags: []
 bio: ''
 featured: assets/images/the-long-midnight/unnamed/huge_spainard.png

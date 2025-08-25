@@ -1,7 +1,7 @@
 ---
 title: Ignazio Di Prima
 universe: The Long Midnight
-species: ''
+species: 'Human (assumed cursed)'
 tags: []
 bio: ''
 featured: assets/images/the-long-midnight/ignazio-di-prima/roman_despot.png
