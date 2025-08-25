@@ -174,9 +174,12 @@ h3 {
     color: #eee;
     background: #1e1e1e;
     box-shadow: 0 0px 0px rgba(75, 102, 150, 0.5);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+    /* <<< add this */
 }
 
 .oc-card:hover {
+    background: #27262b;
     box-shadow: 0 6px 20px rgba(75, 102, 150, 0.5);
     transform: translateY(-3px);
 }
@@ -290,6 +293,14 @@ h3 {
     /* Forces 1:1 aspect ratio */
     overflow: hidden;
     border-radius: 0.5rem;
+}
+
+.gallery-item:hover {
+    box-shadow: 0 4px 15px rgba(75, 102, 150, 0.5);
+    transform: translateY(-3px);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    transform: scale(1.05);
+    /* optional: subtle zoom effect */
 }
 
 .gallery-item img {
