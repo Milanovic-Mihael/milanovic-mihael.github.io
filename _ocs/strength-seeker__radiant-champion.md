@@ -1,10 +1,10 @@
 ---
-title: 'Radiant Champion'
-universe: 'Strength Seeker'
-species: 'Calumian'
+title: Radiant Champion
+universe: Strength Seeker
+species: Calumian
 tags: []
 bio: ''
-featured: 'assets/images/strength-seeker/radiant-champion/Radiant_champion.png'
+featured: assets/images/strength-seeker/radiant-champion/Radiant_champion.png
 gallery:
 - assets/images/strength-seeker/radiant-champion/Radiant_champion.png
 - assets/images/strength-seeker/radiant-champion/AtTheTop.png

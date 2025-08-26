@@ -1,10 +1,10 @@
 ---
-title: 'Abdom'
-universe: 'Strength Seeker'
-species: 'Vidium'
+title: Abdom
+universe: Strength Seeker
+species: Vidium
 tags: []
 bio: ''
-featured: 'assets/images/strength-seeker/abdom/ABDOMRRAGGGGGH.png'
+featured: assets/images/strength-seeker/abdom/ABDOMRRAGGGGGH.png
 gallery:
 - assets/images/strength-seeker/abdom/ABDOMMM.png
 - assets/images/strength-seeker/abdom/ABDOM_BACK.png

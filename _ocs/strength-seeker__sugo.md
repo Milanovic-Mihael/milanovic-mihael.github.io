@@ -1,10 +1,10 @@
 ---
-title: 'Sugo'
-universe: 'Strength Seeker'
-species: 'Cobalian'
+title: Sugo
+universe: Strength Seeker
+species: Cobalian
 tags: []
 bio: ''
-featured: 'assets/images/strength-seeker/sugo/Sugo.png'
+featured: assets/images/strength-seeker/sugo/Sugo.png
 gallery:
 - assets/images/strength-seeker/sugo/abdom_and_sugo_eatingshit.png
 - assets/images/strength-seeker/sugo/Sugo.png

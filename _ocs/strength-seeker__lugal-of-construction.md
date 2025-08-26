@@ -1,10 +1,10 @@
 ---
-title: 'Lugal of Construction'
-universe: 'Strength Seeker'
-species: 'Zavi'
+title: Lugal of Construction
+universe: Strength Seeker
+species: Zavi
 tags: []
 bio: ''
-featured: 'assets/images/strength-seeker/lugal-of-construction/1810079930811818329_1.jpg'
+featured: assets/images/strength-seeker/lugal-of-construction/1810079930811818329_1.jpg
 gallery:
 - assets/images/strength-seeker/lugal-of-construction/1810079930811818329_1.jpg
 order: 10

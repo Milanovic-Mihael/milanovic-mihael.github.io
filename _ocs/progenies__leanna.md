@@ -1,10 +1,10 @@
 ---
-title: 'Leanna'
-universe: 'Progenies'
-species: 'Human'
+title: Leanna
+universe: Progenies
+species: Human
 tags: []
 bio: ''
-featured: 'assets/images/progenies/leanna/leanna_but_IThinkSo.png'
+featured: assets/images/progenies/leanna/leanna_but_IThinkSo.png
 gallery:
 - assets/images/progenies/leanna/Leann_sitting_nshit.png
 - assets/images/progenies/leanna/leanna_but_IThinkSo.png

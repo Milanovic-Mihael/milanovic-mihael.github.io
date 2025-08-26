@@ -1,10 +1,10 @@
 ---
-title: 'Sama'
-universe: 'Progenies'
-species: 'Monsterized Human'
+title: Sama
+universe: Progenies
+species: Monsterized Human
 tags: []
 bio: ''
-featured: 'assets/images/progenies/sama/warmup_doodle_wtf.png'
+featured: assets/images/progenies/sama/warmup_doodle_wtf.png
 gallery:
 - assets/images/progenies/sama/warmup_doodle_wtf.png
 - assets/images/progenies/sama/Sama_explnaation.png
