@@ -1,10 +1,10 @@
 ---
-title: Amaya Dewar
-universe: The Long Midnight
+title: 'Amaya Dewar'
+universe: 'The Long Midnight'
 species: 'Human (blessed)'
 tags: []
 bio: ''
-featured: assets/images/the-long-midnight/amaya-dewar/amayayaya.png
+featured: 'assets/images/the-long-midnight/amaya-dewar/amayayaya.png'
 gallery:
 - assets/images/the-long-midnight/amaya-dewar/amaya_wounded.png
 - assets/images/the-long-midnight/amaya-dewar/amayayaya.png

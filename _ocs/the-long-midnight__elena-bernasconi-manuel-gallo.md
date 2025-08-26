@@ -1,10 +1,10 @@
 ---
-title: Elena Bernasconi & Manuel Gallo
-universe: The Long Midnight
+title: 'Elena Bernasconi & Manuel Gallo'
+universe: 'The Long Midnight'
 species: 'Human'
 tags: []
 bio: ''
-featured: assets/images/the-long-midnight/elena-bernasconi-manuel-gallo/SheNeedsHimOnAMarriageLevel.png
+featured: 'assets/images/the-long-midnight/elena-bernasconi-manuel-gallo/SheNeedsHimOnAMarriageLevel.png'
 gallery:
 - assets/images/the-long-midnight/elena-bernasconi-manuel-gallo/SheNeedsHimOnAMarriageLevel.png
 - assets/images/the-long-midnight/elena-bernasconi-manuel-gallo/nameless_guy_mirror.png

@@ -1,11 +1,11 @@
 ---
-title: EGL-2005 - Champion's Retribution
-universe: Strength Seeker
-species: 'Mecha'
+title: 'EGL-2005 - Champion's Retribution'
+universe: 'Strength Seeker'
+species: ''
 tags: []
 bio: ''
-featured: assets/images/strength-seeker/egl-2005-champions-retribution/THEMECHA.png
+featured: 'assets/images/strength-seeker/egl-2005-champions-retribution/THEMECHA.png'
 gallery:
 - assets/images/strength-seeker/egl-2005-champions-retribution/THEMECHA.png
-order: 17
+order: 49
 ---

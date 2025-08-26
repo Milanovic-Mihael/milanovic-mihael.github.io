@@ -1,10 +1,10 @@
 ---
-title: Oskari
-universe: The Long Midnight
+title: 'Oskari'
+universe: 'The Long Midnight'
 species: 'Human (blessed)'
 tags: []
 bio: ''
-featured: assets/images/the-long-midnight/oskari/Oskari_the_snow.png
+featured: 'assets/images/the-long-midnight/oskari/Oskari_the_snow.png'
 gallery:
 - assets/images/the-long-midnight/oskari/Oskari_the_snow.png
 - assets/images/the-long-midnight/oskari/oskaribro.png

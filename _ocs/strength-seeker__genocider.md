@@ -1,10 +1,10 @@
 ---
-title: Genocider
-universe: Strength Seeker
+title: 'Genocider'
+universe: 'Strength Seeker'
 species: 'Unknown'
 tags: []
 bio: ''
-featured: assets/images/strength-seeker/genocider/the_genocider_guy.png
+featured: 'assets/images/strength-seeker/genocider/the_genocider_guy.png'
 gallery:
 - assets/images/strength-seeker/genocider/the_genocider_guy.png
 - assets/images/strength-seeker/genocider/the_genocider_love.png

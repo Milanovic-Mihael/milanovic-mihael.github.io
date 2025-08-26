@@ -1,10 +1,10 @@
 ---
-title: Ksalir
-universe: Strength Seeker
+title: 'Ksalir'
+universe: 'Strength Seeker'
 species: 'Angullian'
 tags: []
 bio: ''
-featured: assets/images/strength-seeker/ksalir/champ_vs_ksalir (1).png
+featured: 'assets/images/strength-seeker/ksalir/champ_vs_ksalir (1).png'
 gallery:
 - assets/images/strength-seeker/ksalir/ksalir_back.png
 - assets/images/strength-seeker/ksalir/champ_vs_ksalir.png

@@ -1,10 +1,10 @@
 ---
-title: Avrena
-universe: Strength Seeker
+title: 'Avrena'
+universe: 'Strength Seeker'
 species: 'Angullian'
 tags: []
 bio: ''
-featured: assets/images/strength-seeker/avrena/Gpjy3keWMAAurN1.jpg
+featured: 'assets/images/strength-seeker/avrena/Gpjy3keWMAAurN1.jpg'
 gallery:
 - assets/images/strength-seeker/avrena/Gpjy3keWMAAurN1.jpg
 - assets/images/strength-seeker/avrena/Avrena2.png
