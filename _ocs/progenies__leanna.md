@@ -23,8 +23,8 @@ gallery:
 - assets/images/progenies/leanna/Leanna_back.png
 - assets/images/progenies/leanna/Leanna_dress.png
 - assets/images/progenies/leanna/leanna_hot.png
-- assets/images/progenies/leanna/Leanna_blood.png
 - assets/images/progenies/leanna/leanna_number_4.png
+- assets/images/progenies/leanna/Leanna_blood.png
 - assets/images/progenies/leanna/leanna.png
 - assets/images/progenies/leanna/leanna_postarc.png
 - assets/images/progenies/leanna/leannanumber4.png
