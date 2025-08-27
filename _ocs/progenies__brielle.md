@@ -13,5 +13,5 @@ gallery:
 - assets/images/progenies/brielle/Brielle.png
 - assets/images/progenies/brielle/brielleeyeay.png
 - assets/images/progenies/brielle/briellelelele.png
-order: 34
+order: 35.0
 ---

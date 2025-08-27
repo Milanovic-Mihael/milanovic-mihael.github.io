@@ -42,5 +42,5 @@ gallery:
 - assets/images/strength-seeker/abdom/SSvsEleSerpant.png
 - assets/images/strength-seeker/abdom/strenght_seeker.png
 - assets/images/strength-seeker/abdom/youlooklonely.png
-order: 1
+order: 1.0
 ---

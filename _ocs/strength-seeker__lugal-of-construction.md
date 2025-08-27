@@ -7,5 +7,5 @@ bio: ''
 featured: assets/images/strength-seeker/lugal-of-construction/1810079930811818329_1.jpg
 gallery:
 - assets/images/strength-seeker/lugal-of-construction/1810079930811818329_1.jpg
-order: 10
+order: 10.0
 ---

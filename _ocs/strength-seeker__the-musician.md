@@ -8,5 +8,5 @@ featured: assets/images/strength-seeker/the-musician/the_musician.png
 gallery:
 - assets/images/strength-seeker/the-musician/the_musician.png
 - assets/images/strength-seeker/the-musician/the_musician (1).png
-order: 7
+order: 7.0
 ---

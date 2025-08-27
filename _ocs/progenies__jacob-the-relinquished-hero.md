@@ -11,5 +11,5 @@ gallery:
 - assets/images/progenies/jacob-the-relinquished-hero/Jacob_former_hero.png
 - assets/images/progenies/jacob-the-relinquished-hero/Jacob_comic.png
 - assets/images/progenies/jacob-the-relinquished-hero/Jacob_no_monster.png
-order: 31
+order: 32.0
 ---

@@ -8,5 +8,5 @@ featured: assets/images/the-long-midnight/lars-berthelsen/Lars_guy.png
 gallery:
 - assets/images/the-long-midnight/lars-berthelsen/Lars_guy.png
 - assets/images/the-long-midnight/lars-berthelsen/newOCDROPP.png
-order: 24
+order: 26.0
 ---

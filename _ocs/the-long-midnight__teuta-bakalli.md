@@ -7,5 +7,5 @@ bio: ''
 featured: assets/images/the-long-midnight/teuta-bakalli/GzEhTmUW0AAghHv.jpg
 gallery:
 - assets/images/the-long-midnight/teuta-bakalli/GzEhTmUW0AAghHv.jpg
-order: 25.5
+order: 24.0
 ---

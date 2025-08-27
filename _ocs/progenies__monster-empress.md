@@ -16,5 +16,5 @@ gallery:
 - assets/images/progenies/monster-empress/monster_empress (2).png
 - assets/images/progenies/monster-empress/monster_empress2.png
 - assets/images/progenies/monster-empress/monster_empress_ref.png
-order: 30
+order: 31.0
 ---

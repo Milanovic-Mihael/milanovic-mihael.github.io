@@ -11,5 +11,5 @@ gallery:
 - assets/images/the-long-midnight/oskari/oskarifinally.png
 - assets/images/the-long-midnight/oskari/Oskari.png
 - assets/images/the-long-midnight/oskari/CONCEPT_ART_SNOWFIELD.png
-order: 19
+order: 19.0
 ---

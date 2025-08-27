@@ -37,5 +37,5 @@ gallery:
 - assets/images/progenies/leanna/axemewoman2.png
 - assets/images/progenies/leanna/leanna_3.png
 - assets/images/progenies/leanna/leanna_5.png
-order: 29
+order: 30.0
 ---

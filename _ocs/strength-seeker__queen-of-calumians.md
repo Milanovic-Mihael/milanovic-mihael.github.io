@@ -9,5 +9,5 @@ gallery:
 - assets/images/strength-seeker/queen-of-calumians/the_calumian_queen.png
 - assets/images/strength-seeker/queen-of-calumians/youlooklonely.png
 - assets/images/strength-seeker/queen-of-calumians/genocider.png
-order: 6
+order: 6.0
 ---

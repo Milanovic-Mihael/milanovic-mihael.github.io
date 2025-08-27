@@ -10,5 +10,5 @@ gallery:
 - assets/images/strength-seeker/avrena/Avrena2.png
 - assets/images/strength-seeker/avrena/grandma_grandson_bonding.png
 - assets/images/strength-seeker/avrena/avrena_but_like_yknow.png
-order: 16
+order: 16.0
 ---

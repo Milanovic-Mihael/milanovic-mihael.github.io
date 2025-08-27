@@ -14,5 +14,5 @@ gallery:
 - assets/images/misc/yana/Screenshot_20220301-152033_Boost.jpg
 - assets/images/misc/yana/yana_2.png
 - assets/images/misc/yana/lsc75kushnw71.png
-order: 46
+order: 47.0
 ---

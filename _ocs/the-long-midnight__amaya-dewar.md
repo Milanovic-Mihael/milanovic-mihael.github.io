@@ -12,5 +12,5 @@ gallery:
 - assets/images/the-long-midnight/amaya-dewar/batmoment.png
 - assets/images/the-long-midnight/amaya-dewar/amayadewaryea.png
 - assets/images/the-long-midnight/amaya-dewar/amaya_stronk.png
-order: 22
+order: 22.0
 ---

@@ -20,5 +20,5 @@ gallery:
 - assets/images/strength-seeker/radiant-champion/theradianthero.png
 - assets/images/strength-seeker/radiant-champion/THERADIANTGOAT.png
 - assets/images/strength-seeker/radiant-champion/concept_hero.png
-order: 2
+order: 2.0
 ---

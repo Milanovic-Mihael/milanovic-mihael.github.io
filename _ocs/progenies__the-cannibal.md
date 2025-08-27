@@ -10,5 +10,5 @@ gallery:
 - assets/images/progenies/the-cannibal/Marzana_VS_theCannibal.png
 - assets/images/progenies/the-cannibal/cannibal_ref.png
 - assets/images/progenies/the-cannibal/idkman.png
-order: 38
+order: 39.0
 ---

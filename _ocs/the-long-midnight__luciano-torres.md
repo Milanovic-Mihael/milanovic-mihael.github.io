@@ -7,5 +7,5 @@ bio: ''
 featured: assets/images/the-long-midnight/luciano-torres/huge_spainard.png
 gallery:
 - assets/images/the-long-midnight/luciano-torres/huge_spainard.png
-order: 28
+order: 29.0
 ---

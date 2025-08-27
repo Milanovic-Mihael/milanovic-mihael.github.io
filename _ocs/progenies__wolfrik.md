@@ -10,5 +10,5 @@ gallery:
 - assets/images/progenies/wolfrik/wolrfinspin.png
 - assets/images/progenies/wolfrik/wolfrik_ref.png
 - assets/images/progenies/wolfrik/husband_moment.png
-order: 35
+order: 36.0
 ---

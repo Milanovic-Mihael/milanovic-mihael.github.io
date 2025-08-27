@@ -9,5 +9,5 @@ gallery:
 - assets/images/progenies/sama/warmup_doodle_wtf.png
 - assets/images/progenies/sama/Sama_explnaation.png
 - assets/images/progenies/sama/sama_jacob.png
-order: 40
+order: 41.0
 ---

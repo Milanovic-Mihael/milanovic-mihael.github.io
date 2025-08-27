@@ -10,5 +10,5 @@ gallery:
 - assets/images/progenies/marzana/marzana2.png
 - assets/images/progenies/marzana/neemsis_girl.png
 - assets/images/progenies/marzana/marzana_foreva.png
-order: 37
+order: 38.0
 ---
