@@ -2,7 +2,7 @@
 title: Oskari
 universe: The Long Midnight
 species: Human (blessed)
-tags: []
+tags: [protag]
 bio: ''
 featured: assets/images/the-long-midnight/oskari/Oskari_the_snow.png
 gallery:

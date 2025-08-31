@@ -26,7 +26,7 @@ body {
 .site-header {
     background: #0a0a0a;
     color: #eee;
-    padding: 0.5 rem 0;
+    padding: 0.5rem 0;
 }
 
 
@@ -109,6 +109,24 @@ body {
     transform: translateY(-3px);
     color: #0a0a0a;
     box-shadow: 0 6px 20px rgba(75, 102, 150, 0.5);
+}
+
+.header-btn.kofi-btn {
+    background-color: #29abe0;
+    border-color: #29abe0;
+    color: #fff;
+}
+
+.header-btn.kofi-btn:hover {
+    background-color: #136dd4;
+    border-color: #136dd4;
+    color: #fff;
+}
+
+.kofi-logo {
+    height: 20px;
+    width: auto;
+    display: inline-block;
 }
 
 .btn-icon {
@@ -480,4 +498,29 @@ h3 {
 
 .lightbox .next {
     right: 0;
+}
+
+.oc-card.protagonist {
+    position: relative;
+
+}
+
+.oc-card.protagonist .oc-thumb {
+    position: relative;
+    overflow: visible;
+}
+
+.oc-card.protagonist .oc-thumb::before {
+    content: "★";
+    position: absolute;
+    top: 100%;
+    left: 87%;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    text-shadow:
+        0 0 10px rgb(119, 139, 255),
+        0 0 30px rgb(171, 214, 255);
+    pointer-events: none;
+    /* doesn't block clicks */
+    z-index: 10;
 }

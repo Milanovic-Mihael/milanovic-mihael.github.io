@@ -13,25 +13,36 @@ layout: default
 <div class="oc-grid">
   {% assign sorted_ocs = site.ocs | sort: "order" %}
   {% for oc in sorted_ocs %}
-  <a class="oc-card" href="{{ oc.url | relative_url }}" data-universe="{{ oc.universe | escape }}">
+
+  {% assign protag_class = "" %}
+  {% if oc.tags contains "protag" %}
+  {% assign protag_class = "protagonist" %}
+  {% endif %}
+
+  <a class="oc-card {{ protag_class }}" href="{{ oc.url | relative_url }}" data-universe="{{ oc.universe | escape }}">
+
     <div class="oc-thumb">
       {% if oc.featured %}
       <img src="{{ oc.featured | relative_url }}" alt="{{ oc.title | escape }}">
       {% endif %}
     </div>
+
     <div class="oc-meta">
       <h2>{{ oc.title }}</h2>
       {% if oc.species %}<p class="muted">{{ oc.species }}</p>{% endif %}
       {% if oc.universe %}<span class="tag">{{ oc.universe }}</span>{% endif %}
     </div>
+
   </a>
   {% endfor %}
 </div>
+
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     var buttons = document.querySelectorAll('.filter-btn');
     var cards = document.querySelectorAll('.oc-card');
+
     buttons.forEach(function (btn) {
       btn.addEventListener('click', function () {
         var f = this.getAttribute('data-filter');
