@@ -1,125 +1,148 @@
+/* CSS Custom Properties for better maintainability */
+:root {
+    --color-bg-primary: #1c1c1d;
+    --color-bg-secondary: #0a0a0a;
+    --color-bg-card: #1e1e1e;
+    --color-bg-card-hover: #27262b;
+    --color-text-primary: #eee;
+    --color-text-secondary: #7b7c7e;
+    --color-text-muted: #ddd;
+    --color-border: #333;
+    --color-border-light: #444;
+    --color-accent: #29abe0;
+    --color-accent-hover: #136dd4;
+    --color-glow: rgba(75, 102, 150, 0.5);
+
+    --font-family-base: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
+
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 0.75rem;
+    --spacing-lg: 1rem;
+    --spacing-xl: 1.5rem;
+    --spacing-2xl: 2rem;
+
+    --border-radius-sm: 0.5rem;
+    --border-radius-md: 0.75rem;
+    --border-radius-lg: 1rem;
+    --border-radius-xl: 1.2rem;
+    --border-radius-full: 50%;
+
+    --transition-fast: 0.15s ease;
+    --transition-normal: 0.2s ease;
+
+    --shadow-card: 0 6px 20px var(--color-glow);
+    --shadow-lightbox: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
+    font-family: var(--font-family-base);
     line-height: 1.6;
-    background-color: #1c1c1d;
-    color: #eee;
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
 }
 
 .container {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: var(--spacing-lg);
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
     .container {
-        padding: 0.5rem;
-        /* reduce padding on small screens */
+        padding: var(--spacing-sm);
     }
 }
 
 .site-header {
-    background: #0a0a0a;
-    color: #eee;
-    padding: 0.5rem 0;
+    background: var(--color-bg-secondary);
+    color: var(--color-text-primary);
+    padding: var(--spacing-sm) 0;
 }
-
 
 .site-header a {
     color: #fff;
     text-decoration: none;
 }
 
-
 .site-header .brand img {
-    border-radius: 50%;
+    border-radius: var(--border-radius-full);
     height: 50px;
     width: 50px;
     flex-shrink: 0;
-    /* prevent logo from shrinking */
 }
 
 .site-header .container {
     display: flex;
     align-items: center;
-    /* vertical alignment */
     justify-content: space-between;
-    /* logo left, buttons right */
-    gap: 1rem;
-    /* spacing between items */
+    gap: var(--spacing-lg);
 }
 
-@media(max-width: 600px) {
+@media (max-width: 600px) {
     .site-header .container {
         flex-direction: column;
         align-items: flex-start;
-        /* logo left, buttons below */
-        gap: 0.5rem;
+        gap: var(--spacing-sm);
     }
 
     .header-buttons {
         width: 100%;
         flex-wrap: wrap;
-        gap: 0.5rem;
+        gap: var(--spacing-sm);
     }
 
     .header-btn {
         flex: 1 1 auto;
-        /* buttons expand equally */
         text-align: center;
     }
 }
 
 .header-buttons {
     display: flex;
-    gap: 0.75rem;
+    gap: var(--spacing-md);
     align-items: center;
     flex-shrink: 0;
-    /* prevents buttons from shrinking */
 }
-
-/* Individual buttons */
 
 .header-btn {
     display: flex;
-    /* allows icon + text side by side */
     align-items: center;
-    /* vertically center icon and text */
-    gap: 0.5rem;
-    /* space between icon and text */
-    padding: 0.5rem 1rem;
-    background-color: #0a0a0a;
-    border: 2px solid #444;
-    border-radius: 1.2rem;
-    color: #eee;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background-color: var(--color-bg-secondary);
+    border: 2px solid var(--color-border-light);
+    border-radius: var(--border-radius-xl);
+    color: var(--color-text-primary);
     font-size: 1rem;
     cursor: pointer;
     text-decoration: none;
-    /* remove underline from links */
-    transition: background 0.2s, transform 0.2s;
+    transition: background var(--transition-normal), transform var(--transition-normal);
+    will-change: transform, background-color;
+    /* Optimize for animations */
 }
 
 .header-btn:hover {
-    background-color: #eee;
+    background-color: var(--color-text-primary);
     transform: translateY(-3px);
-    color: #0a0a0a;
-    box-shadow: 0 6px 20px rgba(75, 102, 150, 0.5);
+    color: var(--color-bg-secondary);
+    box-shadow: var(--shadow-card);
 }
 
 .header-btn.kofi-btn {
-    background-color: #29abe0;
-    border-color: #29abe0;
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
     color: #fff;
 }
 
 .header-btn.kofi-btn:hover {
-    background-color: #136dd4;
-    border-color: #136dd4;
+    background-color: var(--color-accent-hover);
+    border-color: var(--color-accent-hover);
     color: #fff;
 }
 
@@ -136,8 +159,8 @@ body {
 }
 
 .content {
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+    padding-top: var(--spacing-lg);
+    padding-bottom: var(--spacing-2xl);
 }
 
 h1,
@@ -151,19 +174,21 @@ h3 {
 }
 
 .filters {
-    margin: 1rem 0;
+    margin: var(--spacing-lg) 0;
     display: flex;
-    gap: .5rem;
+    gap: var(--spacing-sm);
     flex-wrap: wrap;
 }
 
 .filter-btn {
-    padding: .5rem .75rem;
+    padding: var(--spacing-sm) var(--spacing-md);
     background: #2a2a2a;
-    border: 1px solid #444;
-    color: #eee;
-    border-radius: .5rem;
+    border: 1px solid var(--color-border-light);
+    color: var(--color-text-primary);
+    border-radius: var(--border-radius-sm);
     cursor: pointer;
+    transition: background var(--transition-normal), transform var(--transition-normal);
+    will-change: transform, background-color;
 }
 
 .filter-btn:hover {
@@ -174,10 +199,10 @@ h3 {
 .oc-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 1rem;
+    gap: var(--spacing-lg);
 }
 
-@media(max-width: 500px) {
+@media (max-width: 500px) {
     .oc-grid {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
@@ -185,20 +210,20 @@ h3 {
 
 .oc-card {
     display: block;
-    border: 1px solid #333;
-    border-radius: .75rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-md);
     overflow: hidden;
     text-decoration: none;
-    color: #eee;
-    background: #1e1e1e;
-    box-shadow: 0 0px 0px rgba(75, 102, 150, 0.5);
-    transition: box-shadow 0.15s ease, transform 0.15s ease;
-    /* <<< add this */
+    color: var(--color-text-primary);
+    background: var(--color-bg-card);
+    box-shadow: 0 0 0 var(--color-glow);
+    transition: box-shadow var(--transition-fast), transform var(--transition-fast);
+    will-change: transform, box-shadow, background-color;
 }
 
 .oc-card:hover {
-    background: #27262b;
-    box-shadow: 0 6px 20px rgba(75, 102, 150, 0.5);
+    background: var(--color-bg-card-hover);
+    box-shadow: var(--shadow-card);
     transform: translateY(-3px);
 }
 
@@ -221,10 +246,8 @@ h3 {
 .oc-header .featured {
     width: 100%;
     aspect-ratio: 1 / 1;
-    /* forces square container */
     overflow: hidden;
-    border-radius: 1rem;
-    /* optional */
+    border-radius: var(--border-radius-lg);
 }
 
 .oc-thumb img,
@@ -232,125 +255,113 @@ h3 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* fills container, cropping if necessary */
     display: block;
 }
 
-
 .oc-meta {
-    padding: .75rem;
+    padding: var(--spacing-md);
 }
 
 .oc-thumb,
 .gallery-item img {
     background: #222;
-    /* dark background behind images */
 }
 
 .tag {
     display: inline-block;
-    color: #ddd;
-    border-radius: .5rem;
-    padding: .1rem .5rem;
-    font-size: .8rem;
+    color: var(--color-text-muted);
+    border-radius: var(--border-radius-sm);
+    padding: 0.1rem var(--spacing-sm);
+    font-size: 0.8rem;
 }
 
-/* Universe-specific colors */
+/* Universe-specific colors - consider moving to CSS custom properties */
 .oc-card[data-universe="Misc"] .tag {
     background-color: #6c757d;
-    color: #fafafa
+    color: #fafafa;
 }
 
 .oc-card[data-universe="Progenies"] .tag {
     background-color: #796323;
-    color: #fafafa
+    color: #fafafa;
 }
 
 .oc-card[data-universe="Strength Seeker"] .tag {
     background-color: #28295e;
-    color: #fafafa
+    color: #fafafa;
 }
 
 .oc-card[data-universe="The Long Midnight"] .tag {
     background-color: #612828;
-    color: #fafafa
+    color: #fafafa;
 }
 
 .oc-page .featured img {
     width: 100%;
     height: auto;
-    border-radius: 1rem;
+    border-radius: var(--border-radius-lg);
 }
 
 .oc-meta-line {
     display: flex;
     flex-direction: column;
-    /* stack children vertically */
-    gap: 0.5rem;
-    /* spacing between lines */
-    margin-bottom: 1rem;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
 }
 
 .meta {
-    font-size: .9rem;
-    color: #7b7c7e;
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
 }
 
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 0.5rem;
+    gap: var(--spacing-sm);
 }
 
 .gallery-item {
     position: relative;
     width: 100%;
     aspect-ratio: 1 / 1;
-    /* Forces 1:1 aspect ratio */
     overflow: hidden;
-    border-radius: 0.5rem;
+    border-radius: var(--border-radius-sm);
+    transition: box-shadow var(--transition-normal), transform var(--transition-normal);
+    will-change: transform, box-shadow;
 }
 
 .gallery-item:hover {
-    box-shadow: 0 4px 15px rgba(75, 102, 150, 0.5);
-    transform: translateY(-3px);
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
-    transform: scale(1.05);
-    /* optional: subtle zoom effect */
+    box-shadow: 0 4px 15px var(--color-glow);
+    transform: translateY(-3px) scale(1.05);
 }
 
 .gallery-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* ensures the image fills the square without distortion */
     display: block;
 }
 
-
 .container .brand img {
-    border-radius: 50%;
+    border-radius: var(--border-radius-full);
     height: 50px;
     width: 50px;
 }
 
 .oc-header {
     display: flex;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
     align-items: flex-start;
     flex-wrap: wrap;
-    /* allows items to wrap on smaller screens */
 }
 
 .oc-header .featured {
     width: 100%;
-    /* default to full width on small screens */
     max-width: 350px;
-    /* caps the width on larger screens */
     aspect-ratio: 1 / 1;
     overflow: hidden;
-    border-radius: 1rem;
+    border-radius: var(--border-radius-lg);
     flex-shrink: 0;
 }
 
@@ -361,7 +372,7 @@ h3 {
     display: block;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
     .oc-header .featured {
         width: 30%;
     }
@@ -369,9 +380,7 @@ h3 {
 
 .oc-header .oc-info {
     flex: 1;
-    /* fills remaining space */
     min-width: 200px;
-    /* prevents shrinking too small */
 }
 
 .oc-header .oc-info h1 {
@@ -381,11 +390,11 @@ h3 {
 .oc-header .oc-meta-line {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
 }
 
-@media(max-width: 700px) {
+@media (max-width: 700px) {
     h1 {
         font-size: 1.5rem;
     }
@@ -405,34 +414,24 @@ h3 {
 
     .site-header .container {
         flex-direction: column;
-        /* stack logo + buttons */
         align-items: center;
-        /* center everything horizontally */
-        gap: 0.5rem;
+        gap: var(--spacing-sm);
     }
 
     .header-buttons {
         flex-direction: column;
-        /* stack buttons vertically */
         width: 100%;
-        /* full width of container */
-        gap: 0.5rem;
+        gap: var(--spacing-sm);
         align-items: center;
-        /* center buttons themselves */
     }
 
     .header-btn {
         display: flex;
-        /* flex to align icon + text */
         justify-content: center;
-        /* center icon + text horizontally */
         align-items: center;
-        /* center icon + text vertically */
         width: 100%;
-        /* full width */
         text-align: center;
-        gap: 0.5rem;
-        /* space between icon and text */
+        gap: var(--spacing-sm);
     }
 
     .gallery-grid {
@@ -461,15 +460,13 @@ h3 {
     align-items: center;
 }
 
-/* Image inside lightbox */
 .lightbox-content {
     max-width: 90%;
     max-height: 90%;
     border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: var(--shadow-lightbox);
 }
 
-/* Close button */
 .lightbox .close {
     position: absolute;
     top: 20px;
@@ -477,9 +474,13 @@ h3 {
     font-size: 40px;
     color: white;
     cursor: pointer;
+    transition: opacity var(--transition-fast);
 }
 
-/* Next & Prev buttons */
+.lightbox .close:hover {
+    opacity: 0.7;
+}
+
 .lightbox .prev,
 .lightbox .next {
     cursor: pointer;
@@ -490,6 +491,12 @@ h3 {
     color: white;
     font-size: 40px;
     user-select: none;
+    transition: opacity var(--transition-fast);
+}
+
+.lightbox .prev:hover,
+.lightbox .next:hover {
+    opacity: 0.7;
 }
 
 .lightbox .prev {
@@ -502,7 +509,6 @@ h3 {
 
 .oc-card.protagonist {
     position: relative;
-
 }
 
 .oc-card.protagonist .oc-thumb {
@@ -510,17 +516,40 @@ h3 {
     overflow: visible;
 }
 
-.oc-card.protagonist .oc-thumb::before {
+.oc-card.protagonist::after {
     content: "★";
     position: absolute;
-    top: 100%;
-    left: 87%;
+    top: 0.4rem;
+    right: 1rem;
     font-size: 1.5rem;
     color: rgb(255, 255, 255);
     text-shadow:
         0 0 10px rgb(119, 139, 255),
         0 0 30px rgb(171, 214, 255);
     pointer-events: none;
-    /* doesn't block clicks */
     z-index: 10;
+    animation: starGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes starGlow {
+    from {
+        text-shadow:
+            0 0 5px rgb(119, 139, 255),
+            0 0 20px rgb(171, 214, 255);
+    }
+
+    to {
+        text-shadow:
+            0 0 10px rgba(119, 139, 255, 0.671),
+            0 0 15px rgba(171, 214, 255, 0.774),
+            0 0 20px rgba(171, 214, 255, 0.452);
+    }
+}
+
+/* Performance optimizations */
+.oc-card,
+.gallery-item,
+.header-btn,
+.filter-btn {
+    contain: layout style paint;
 }
