@@ -2,7 +2,8 @@
 title: Abdom
 universe: Strength Seeker
 species: Vidium
-tags: [protag]
+tags:
+- protag
 bio: ''
 featured: assets/images/strength-seeker/abdom/ABDOMRRAGGGGGH.png
 gallery:
