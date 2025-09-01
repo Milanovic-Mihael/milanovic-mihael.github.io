@@ -13,6 +13,10 @@
     --color-accent-hover: #136dd4;
     --color-glow: rgba(75, 102, 150, 0.5);
 
+    --color-strs: #28295e;
+    --color-prog: #796323;
+    --color-tlm: #612828;
+
     --font-family-base: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
 
     --spacing-xs: 0.25rem;
@@ -196,6 +200,47 @@ h3 {
     transform: translateY(-3px);
 }
 
+/* All */
+.filter-btn[data-filter="all"].active {
+    background: #3498db;
+    /* blue */
+    border-color: #3498db;
+    color: #fff;
+}
+
+/* Strength Seeker */
+.filter-btn[data-filter="Strength Seeker"].active {
+    background: var(--color-strs);
+    /* red */
+    border-color: var(--color-strs);
+    color: #fff;
+}
+
+/* Progenies */
+.filter-btn[data-filter="Progenies"].active {
+    background: var(--color-prog);
+    /* green */
+    border-color: var(--color-prog);
+    color: #fff;
+}
+
+/* The Long Midnight */
+.filter-btn[data-filter="The Long Midnight"].active {
+    background: var(--color-tlm);
+    /* purple */
+    border-color: var(--color-tlm);
+    color: #fff;
+}
+
+/* Misc */
+.filter-btn[data-filter="Misc"].active {
+    background: #6c757d;
+    /* orange */
+    border-color: #6c757d;
+    color: #fff;
+}
+
+
 .oc-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -282,17 +327,17 @@ h3 {
 }
 
 .oc-card[data-universe="Progenies"] .tag {
-    background-color: #796323;
+    background-color: var(--color-prog);
     color: #fafafa;
 }
 
 .oc-card[data-universe="Strength Seeker"] .tag {
-    background-color: #28295e;
+    background-color: var(--color-strs);
     color: #fafafa;
 }
 
 .oc-card[data-universe="The Long Midnight"] .tag {
-    background-color: #612828;
+    background-color: var(--color-tlm);
     color: #fafafa;
 }
 

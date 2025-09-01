@@ -43,9 +43,20 @@ layout: default
     var buttons = document.querySelectorAll('.filter-btn');
     var cards = document.querySelectorAll('.oc-card');
 
+    // Make "All" active on load
+    var activeBtn = document.querySelector('.filter-btn[data-filter="all"]');
+    activeBtn.classList.add('active');
+
+    // Filter + toggle active state
     buttons.forEach(function (btn) {
       btn.addEventListener('click', function () {
         var f = this.getAttribute('data-filter');
+
+        // Highlight clicked button
+        buttons.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+
+        // Show/hide cards
         cards.forEach(function (card) {
           if (f === 'all' || card.getAttribute('data-universe') === f) {
             card.style.display = '';
