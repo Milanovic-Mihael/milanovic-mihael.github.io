@@ -22,34 +22,7 @@
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container">
-      <!-- Logo / brand -->
-      <a class="brand" href="{{ '/' | relative_url }}">
-        <img src="{{ '/assets/images/pfp.jpg' | relative_url }}" alt="Brand">
-      </a>
-
-      <!-- Header buttons -->
-      <nav class="header-buttons">
-        <a href="https://discord.com/invite/E457hxCxpZ" class="header-btn">
-          <i class="fa-brands fa-discord"></i>
-          Discord Server
-        </a>
-        <a href="https://x.com/MilanovicMihael" class="header-btn">
-          <i class="fa-brands fa-twitter"></i>
-          Twitter
-        </a>
-        <a href="https://bsky.app/profile/milanovicmihael.bsky.social" class="header-btn">
-          <i class="fa-brands fa-bluesky"></i>
-          BlueSky
-        </a>
-        <a href="https://ko-fi.com/milanovicmihael" class="header-btn kofi-btn">
-          <img src="{{ '/assets/images/kofi/kofi_symbol.svg' | relative_url }}" alt="Ko-fi logo" class="kofi-logo">
-          Support me on Ko-fi!
-        </a>
-      </nav>
-    </div>
-  </header>
+  {% include header.html %}
 
   <main class="container content">
     {{ content }}
