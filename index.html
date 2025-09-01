@@ -28,10 +28,13 @@ layout: default
     </div>
 
     <div class="oc-meta">
-      <h2>{{ oc.title }}</h2>
+      <div class="title-wrapper">
+        <h2>{{ oc.title }}</h2>
+      </div>
       {% if oc.species %}<p class="muted">{{ oc.species }}</p>{% endif %}
       {% if oc.universe %}<span class="tag">{{ oc.universe }}</span>{% endif %}
     </div>
+
 
   </a>
   {% endfor %}

@@ -128,7 +128,6 @@ body {
     text-decoration: none;
     transition: background var(--transition-normal), transform var(--transition-normal);
     will-change: transform, background-color;
-    /* Optimize for animations */
 }
 
 .header-btn:hover {
@@ -203,7 +202,6 @@ h3 {
 /* All */
 .filter-btn[data-filter="all"].active {
     background: #3498db;
-    /* blue */
     border-color: #3498db;
     color: #fff;
 }
@@ -211,7 +209,6 @@ h3 {
 /* Strength Seeker */
 .filter-btn[data-filter="Strength Seeker"].active {
     background: var(--color-strs);
-    /* red */
     border-color: var(--color-strs);
     color: #fff;
 }
@@ -219,7 +216,6 @@ h3 {
 /* Progenies */
 .filter-btn[data-filter="Progenies"].active {
     background: var(--color-prog);
-    /* green */
     border-color: var(--color-prog);
     color: #fff;
 }
@@ -227,7 +223,6 @@ h3 {
 /* The Long Midnight */
 .filter-btn[data-filter="The Long Midnight"].active {
     background: var(--color-tlm);
-    /* purple */
     border-color: var(--color-tlm);
     color: #fff;
 }
@@ -235,11 +230,9 @@ h3 {
 /* Misc */
 .filter-btn[data-filter="Misc"].active {
     background: #6c757d;
-    /* orange */
     border-color: #6c757d;
     color: #fff;
 }
-
 
 .oc-grid {
     display: grid;
@@ -254,7 +247,8 @@ h3 {
 }
 
 .oc-card {
-    display: block;
+    display: flex;
+    flex-direction: column;
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius-md);
     overflow: hidden;
@@ -264,6 +258,7 @@ h3 {
     box-shadow: 0 0 0 var(--color-glow);
     transition: box-shadow var(--transition-fast), transform var(--transition-fast);
     will-change: transform, box-shadow, background-color;
+    height: 100%;
 }
 
 .oc-card:hover {
@@ -279,6 +274,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .oc-thumb img {
@@ -287,29 +283,43 @@ h3 {
     object-fit: cover;
 }
 
-.oc-thumb,
-.oc-header .featured {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    overflow: hidden;
-    border-radius: var(--border-radius-lg);
-}
-
-.oc-thumb img,
-.oc-header .featured img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
 .oc-meta {
-    padding: var(--spacing-md);
+    padding: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 0;
+    gap: var(--spacing-sm);
 }
 
-.oc-thumb,
-.gallery-item img {
-    background: #222;
+.title-wrapper {
+    display: flex;
+    align-items: center;
+    height: 2.4em;
+    /* Fixed height instead of min-height */
+}
+
+.title-wrapper h2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.2em;
+    margin: 0;
+    width: 100%;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+.oc-meta .muted {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.oc-meta .tag {
+    margin-top: auto;
+    align-self: flex-start;
 }
 
 .tag {
@@ -320,7 +330,7 @@ h3 {
     font-size: 0.8rem;
 }
 
-/* Universe-specific colors - consider moving to CSS custom properties */
+/* Universe-specific colors */
 .oc-card[data-universe="Misc"] .tag {
     background-color: #6c757d;
     color: #fafafa;
@@ -385,6 +395,7 @@ h3 {
     height: 100%;
     object-fit: cover;
     display: block;
+    background: #222;
 }
 
 .container .brand img {
@@ -429,7 +440,16 @@ h3 {
 }
 
 .oc-header .oc-info h1 {
-    margin-top: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.2em;
+    max-height: 2.4em;
+    word-break: break-word;
+    display: flex;
+    align-items: center;
 }
 
 .oc-header .oc-meta-line {
