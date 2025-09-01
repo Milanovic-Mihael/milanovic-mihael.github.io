@@ -619,14 +619,3 @@ h3 {
 .filter-btn {
     contain: layout style paint;
 }
-
-img {
-    opacity: 0;
-    transition: opacity 0.5s;
-    display: block;
-    background-color: var(--color-primary) !important;
-}
-
-img.loaded {
-    opacity: 1;
-}

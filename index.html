@@ -23,7 +23,7 @@ layout: default
 
     <div class="oc-thumb">
       {% if oc.featured %}
-      <img src="{{ oc.featured | relative_url }}" alt="{{ oc.title | escape }}">
+      <img src="{{ oc.featured | relative_url }}" alt="{{ oc.title | escape }}" loading="lazy">
       {% endif %}
     </div>
 
