@@ -4,7 +4,7 @@ layout: default
 
 <div class="filters">
   <button class="filter-btn" data-filter="all">All</button>
-  {% assign universes = "Strength Seeker,Progenies,The Long Midnight,Misc" | split: "," %}
+  {% assign universes = "Strength Seeker,Progenies,The Long Midnight" | split: "," %}
   {% for u in universes %}
   <button class="filter-btn" data-filter="{{ u | escape }}">{{ u }}</button>
   {% endfor %}
