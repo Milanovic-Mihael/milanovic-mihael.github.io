@@ -11,6 +11,7 @@ gallery:
 - assets/images/strength-seeker/abdom/ABDOM_BACK.png
 - assets/images/strength-seeker/abdom/ABDOM_BACK_WIHTOUT_SHOT.png
 - assets/images/strength-seeker/abdom/abdom_butyeah.png
+- assets/images/strength-seeker/abdom/abdom_SUPER.png
 - assets/images/strength-seeker/abdom/abdom_BBBEEACCHh.png
 - assets/images/strength-seeker/abdom/abdom_clothing.png
 - assets/images/strength-seeker/abdom/ABDOMRRAGGH (1).png
