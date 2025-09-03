@@ -150,18 +150,6 @@ body {
     color: #fff;
 }
 
-.kofi-logo {
-    height: 20px;
-    width: auto;
-    display: inline-block;
-}
-
-.btn-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .content {
     padding-top: var(--spacing-lg);
     padding-bottom: var(--spacing-2xl);
