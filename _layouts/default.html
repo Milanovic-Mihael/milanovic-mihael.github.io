@@ -3,23 +3,81 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site.title }}</title>
+
+  <!-- Title + SEO -->
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description"
+    content="Portfolio and digital art by Mihael Milanovic. Explore original characters, projects, and artwork.">
+  <meta name="keywords" content="Mihael Milanovic, milanovicmihael, digital art, portfolio, OC gallery">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mihael Milanovic - Digital Art Portfolio">
+  <meta property="og:description" content="Explore original characters and digital art by Mihael Milanovic.">
+  <meta property="og:image" content="{{ '/assets/images/preview.png' | relative_url }}">
+  <meta property="og:url" content="https://milanovic-mihael.github.io/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mihael Milanovic - Digital Art Portfolio">
+  <meta name="twitter:description" content="Explore original characters and digital art by Mihael Milanovic.">
+  <meta name="twitter:image" content="{{ '/assets/images/preview.png' | relative_url }}">
+
+  <!-- Favicons -->
+  <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/assets/images/favicon-512.png">
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha384-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Google tag (gtag.js) -->
+
+  <!-- Google Analytics / tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9XKT2NT3H2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-9XKT2NT3H2');
   </script>
 
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "name": "Mihael Milanovic",
+        "url": "https://milanovic-mihael.github.io/",
+        "image": "https://milanovic-mihael.github.io/assets/images/pfp.jpg",
+        "sameAs": [
+          "https://x.com/MilanovicMihael",
+          "https://bsky.app/profile/milanovicmihael.bsky.social",
+          "https://discord.com/invite/E457hxCxpZ",
+          "https://ko-fi.com/milanovicmihael"
+        ],
+        "jobTitle": "Digital Artist",
+        "description": "Portfolio and original characters of Mihael Milanovic, showcasing digital art projects and OC galleries."
+      },
+      {
+        "@type": "WebSite",
+        "name": "Mihael Milanovic Portfolio",
+        "url": "https://milanovic-mihael.github.io/",
+        "image": "https://milanovic-mihael.github.io/assets/images/preview.png",
+        "author": {
+          "@type": "Person",
+          "name": "Mihael Milanovic"
+        },
+        "description": "Digital art portfolio and original character gallery by Mihael Milanovic."
+      }
+    ]
+  }
+  </script>
+
 </head>
+
 
 <body>
   {% include header.html %}
