@@ -57,7 +57,7 @@
         <div class="gallery-grid">
           {% for art in page.gallery %}
           <a href="{{ art | relative_url }}" target="_blank" class="gallery-item">
-            <img src="{{ art | relative_url }}" alt="{{ page.title | escape }} artwork">
+            <img src="{{ art | relative_url }}" alt="{{ page.title | escape }} artwork" loading="lazy">
           </a>
           {% endfor %}
         </div>
