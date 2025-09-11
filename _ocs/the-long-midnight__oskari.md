@@ -7,6 +7,7 @@ tags:
 bio: ''
 featured: assets/images/the-long-midnight/oskari/Oskari_the_snow.png
 gallery:
+- assets/images/the-long-midnight/oskari/oskari_cool.png
 - assets/images/the-long-midnight/oskari/Oskari_the_snow.png
 - assets/images/the-long-midnight/oskari/oskaribro.png
 - assets/images/the-long-midnight/oskari/oskarifinally.png
