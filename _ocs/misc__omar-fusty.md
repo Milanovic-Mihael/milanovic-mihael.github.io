@@ -4,11 +4,12 @@ universe: Misc
 species: Monkey hehe
 tags: []
 bio: ''
-featured: assets/images/character_images/misc/omar-fusty/Pat_dad.png
+featured: assets/images/character_images/misc/omar-fusty/Pat_dad.webp
 gallery:
-- assets/images/character_images/misc/omar-fusty/Pat_dad.png
-- assets/images/character_images/misc/omar-fusty/pat_fusty_father.png
+- assets/images/character_images/misc/omar-fusty/Pat_dad.webp
+- assets/images/character_images/misc/omar-fusty/pat_fusty_father.webp
 order: 49.0
 ---
+
 
 

@@ -4,19 +4,20 @@ universe: Progenies
 species: Monsterized Human
 tags: []
 bio: ''
-featured: assets/images/character_images/progenies/monster-empress/Monster_empress_red.png
+featured: assets/images/character_images/progenies/monster-empress/Monster_empress_red.webp
 gallery:
-- assets/images/character_images/progenies/monster-empress/Monster_empress_red.png
-- assets/images/character_images/progenies/monster-empress/empress33.png
-- assets/images/character_images/progenies/monster-empress/Monster_empress (1).png
-- assets/images/character_images/progenies/monster-empress/monster_empress.png
-- assets/images/character_images/progenies/monster-empress/Monster_Empress_lazy.png
-- assets/images/character_images/progenies/monster-empress/Empress.png
-- assets/images/character_images/progenies/monster-empress/Monster_Empress_holding.png
-- assets/images/character_images/progenies/monster-empress/monster_empress (2).png
-- assets/images/character_images/progenies/monster-empress/monster_empress2.png
-- assets/images/character_images/progenies/monster-empress/monster_empress_ref.png
+- assets/images/character_images/progenies/monster-empress/Monster_empress_red.webp
+- assets/images/character_images/progenies/monster-empress/empress33.webp
+- assets/images/character_images/progenies/monster-empress/Monster_empress (1).webp
+- assets/images/character_images/progenies/monster-empress/monster_empress.webp
+- assets/images/character_images/progenies/monster-empress/Monster_Empress_lazy.webp
+- assets/images/character_images/progenies/monster-empress/Empress.webp
+- assets/images/character_images/progenies/monster-empress/Monster_Empress_holding.webp
+- assets/images/character_images/progenies/monster-empress/monster_empress (2).webp
+- assets/images/character_images/progenies/monster-empress/monster_empress2.webp
+- assets/images/character_images/progenies/monster-empress/monster_empress_ref.webp
 order: 31.0
 ---
+
 
 

@@ -4,11 +4,12 @@ universe: Progenies
 species: Monsterized Human
 tags: []
 bio: ''
-featured: assets/images/character_images/progenies/rezachek/old_katana_fella.png
+featured: assets/images/character_images/progenies/rezachek/old_katana_fella.webp
 gallery:
-- assets/images/character_images/progenies/rezachek/old_katana_fella.png
-- assets/images/character_images/progenies/rezachek/rezachekjustpassing.png
+- assets/images/character_images/progenies/rezachek/old_katana_fella.webp
+- assets/images/character_images/progenies/rezachek/rezachekjustpassing.webp
 order: 37.0
 ---
+
 
 

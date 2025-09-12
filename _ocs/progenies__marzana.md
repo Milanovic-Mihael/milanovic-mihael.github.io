@@ -4,13 +4,14 @@ universe: Progenies
 species: Monsterized Patym
 tags: []
 bio: ''
-featured: assets/images/character_images/progenies/marzana/marzana2.png
+featured: assets/images/character_images/progenies/marzana/marzana2.webp
 gallery:
-- assets/images/character_images/progenies/marzana/Marzana_VS_theCannibal.png
-- assets/images/character_images/progenies/marzana/marzana2.png
-- assets/images/character_images/progenies/marzana/neemsis_girl.png
-- assets/images/character_images/progenies/marzana/marzana_foreva.png
+- assets/images/character_images/progenies/marzana/Marzana_VS_theCannibal.webp
+- assets/images/character_images/progenies/marzana/marzana2.webp
+- assets/images/character_images/progenies/marzana/neemsis_girl.webp
+- assets/images/character_images/progenies/marzana/marzana_foreva.webp
 order: 38.0
 ---
+
 
 

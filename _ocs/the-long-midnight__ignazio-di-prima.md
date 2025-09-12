@@ -4,10 +4,11 @@ universe: The Long Midnight
 species: Human (assumed cursed)
 tags: []
 bio: ''
-featured: assets/images/character_images/the-long-midnight/ignazio-di-prima/roman_despot.png
+featured: assets/images/character_images/the-long-midnight/ignazio-di-prima/roman_despot.webp
 gallery:
-- assets/images/character_images/the-long-midnight/ignazio-di-prima/roman_despot.png
+- assets/images/character_images/the-long-midnight/ignazio-di-prima/roman_despot.webp
 order: 23.0
 ---
+
 
 

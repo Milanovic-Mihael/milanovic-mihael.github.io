@@ -4,11 +4,12 @@ universe: The Long Midnight
 species: Human (cursed)
 tags: []
 bio: ''
-featured: assets/images/character_images/the-long-midnight/lars-berthelsen/Lars_guy.png
+featured: assets/images/character_images/the-long-midnight/lars-berthelsen/Lars_guy.webp
 gallery:
-- assets/images/character_images/the-long-midnight/lars-berthelsen/Lars_guy.png
-- assets/images/character_images/the-long-midnight/lars-berthelsen/newOCDROPP.png
+- assets/images/character_images/the-long-midnight/lars-berthelsen/Lars_guy.webp
+- assets/images/character_images/the-long-midnight/lars-berthelsen/newOCDROPP.webp
 order: 26.0
 ---
+
 
 
