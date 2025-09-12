@@ -6,11 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const prevBtn = document.querySelector(".lightbox .prev");
     const nextBtn = document.querySelector(".lightbox .next");
 
-    // Check if required elements exist
     if (!lightbox || !lightboxImg) {
         console.warn("Lightbox elements not found");
         return;
     }
+
+    const isMobile = () => window.matchMedia("(max-width: 768px)").matches;
 
     let currentIndex = 0;
 
@@ -18,9 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         currentIndex = index;
         lightbox.style.display = "flex";
         lightboxImg.src = images[index].src;
-        // Add alt text for accessibility
         lightboxImg.alt = images[index].alt || "Gallery image";
-        // Reset zoom when showing new image
         zoomReset();
     }
 
@@ -31,7 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Close lightbox
     if (closeBtn) {
         closeBtn.addEventListener("click", () => {
             lightbox.style.display = "none";
@@ -39,24 +37,22 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Navigation buttons
-    if (prevBtn) {
-        prevBtn.addEventListener("click", () => {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            lightboxImg.src = images[currentIndex].src;
-            lightboxImg.alt = images[currentIndex].alt || "Gallery image";
-            zoomReset();
-        });
+    // ---- unify navigation paths
+    function goPrev() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        lightboxImg.src = images[currentIndex].src;
+        lightboxImg.alt = images[currentIndex].alt || "Gallery image";
+        zoomReset();
+    }
+    function goNext() {
+        currentIndex = (currentIndex + 1) % images.length;
+        lightboxImg.src = images[currentIndex].src;
+        lightboxImg.alt = images[currentIndex].alt || "Gallery image";
+        zoomReset();
     }
 
-    if (nextBtn) {
-        nextBtn.addEventListener("click", () => {
-            currentIndex = (currentIndex + 1) % images.length;
-            lightboxImg.src = images[currentIndex].src;
-            lightboxImg.alt = images[currentIndex].alt || "Gallery image";
-            zoomReset();
-        });
-    }
+    if (prevBtn) prevBtn.addEventListener("click", goPrev);
+    if (nextBtn) nextBtn.addEventListener("click", goNext);
 
     // Close on background click
     lightbox.addEventListener("click", (e) => {
@@ -74,23 +70,23 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Add keyboard navigation
+    // Keyboard nav
     document.addEventListener("keydown", (e) => {
         if (lightbox.style.display === "flex") {
             switch (e.key) {
                 case "ArrowLeft":
                     e.preventDefault();
-                    if (prevBtn) prevBtn.click();
+                    goPrev();
                     break;
                 case "ArrowRight":
                     e.preventDefault();
-                    if (nextBtn) nextBtn.click();
+                    goNext();
                     break;
             }
         }
     });
 
-    // --- Click-to-zoom + Hover-to-pan functionality ---
+    // --- Click-to-zoom + Hover-to-pan ---
     const img = lightboxImg;
     const box = lightbox;
 
@@ -100,15 +96,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function apply() {
         clamp();
-        // Apply transform with proper translation
         img.style.transform = `translate(${tx}px, ${ty}px) scale(${scale})`;
     }
 
     function clamp() {
         const vw = box.clientWidth;
         const vh = box.clientHeight;
-
-        // Wait for image to load to get accurate dimensions
         if (img.naturalWidth === 0) return;
 
         const baseW = img.offsetWidth;
@@ -123,7 +116,6 @@ document.addEventListener("DOMContentLoaded", () => {
         tx = Math.min(maxX, Math.max(-maxX, tx));
         ty = Math.min(maxY, Math.max(-maxY, ty));
 
-        // Center if image is smaller than viewport
         if (scaledW <= vw) tx = 0;
         if (scaledH <= vh) ty = 0;
     }
@@ -148,7 +140,6 @@ document.addEventListener("DOMContentLoaded", () => {
         box.classList.add('lightbox--zoomed');
         img.style.cursor = 'zoom-out';
 
-        // Center the clicked point
         const br = box.getBoundingClientRect();
         const cx = e.clientX - br.left;
         const cy = e.clientY - br.top;
@@ -157,13 +148,11 @@ document.addEventListener("DOMContentLoaded", () => {
         apply();
     }
 
-    // Reset zoom on image change
     const imageObserver = new MutationObserver(() => {
         zoomReset();
     });
     imageObserver.observe(img, { attributes: true, attributeFilter: ['src'] });
 
-    // Click to toggle zoom
     img.addEventListener('click', (e) => {
         e.preventDefault();
         e.stopPropagation();
@@ -174,26 +163,90 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Hover-to-pan when zoomed
     box.addEventListener('mousemove', (e) => {
         if (!zoomed) return;
-
         const br = box.getBoundingClientRect();
         const cx = e.clientX - br.left;
         const cy = e.clientY - br.top;
-
-        // Calculate position to keep mouse cursor at center of view
         tx = (box.clientWidth / 2) - cx;
         ty = (box.clientHeight / 2) - cy;
         apply();
     });
 
-    // Handle window resize
     window.addEventListener('resize', () => {
-        if (zoomed) {
-            apply();
-        }
+        if (zoomed) apply();
     });
+
+    // --- Mobile-only swipe nav (does not run when zoomed) ---
+    (function addSwipe() {
+        const supportsPointer = "PointerEvent" in window;
+
+        let active = false;
+        let startX = 0, startY = 0;
+        let lastX = 0, lastY = 0;
+
+        const SWIPE_THRESHOLD = 50;   // min horizontal movement
+        const V_TOLERANCE = 40;       // max vertical drift
+
+        function pointerXY(e) {
+            if (e.touches && e.touches[0]) return { x: e.touches[0].clientX, y: e.touches[0].clientY };
+            if (e.changedTouches && e.changedTouches[0]) return { x: e.changedTouches[0].clientX, y: e.changedTouches[0].clientY };
+            return { x: e.clientX, y: e.clientY };
+        }
+
+        function onDown(e) {
+            if (!isMobile() || zoomed) return;
+            active = true;
+            const p = pointerXY(e);
+            startX = lastX = p.x;
+            startY = lastY = p.y;
+        }
+
+        function onMove(e) {
+            if (!active || !isMobile() || zoomed) return;
+            const p = pointerXY(e);
+            const dx = p.x - startX;
+            const dy = p.y - startY;
+
+            // when horizontal intent, prevent page scroll
+            if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 10) {
+                e.preventDefault?.();
+            }
+
+            lastX = p.x;
+            lastY = p.y;
+        }
+
+        function onUp(e) {
+            if (!active || !isMobile() || zoomed) return;
+            active = false;
+            const dx = lastX - startX;
+            const dy = lastY - startY;
+
+            if (Math.abs(dy) > V_TOLERANCE || Math.abs(dx) < SWIPE_THRESHOLD) return;
+
+            if (dx < 0) {
+                // left → next
+                goNext();
+            } else {
+                // right → prev
+                goPrev();
+            }
+        }
+
+        if (supportsPointer) {
+            // use the image as the swipe surface
+            img.addEventListener("pointerdown", onDown, { passive: true });
+            img.addEventListener("pointermove", onMove, { passive: false });
+            img.addEventListener("pointerup", onUp, { passive: true });
+            img.addEventListener("pointercancel", onUp, { passive: true });
+        } else {
+            img.addEventListener("touchstart", onDown, { passive: true });
+            img.addEventListener("touchmove", onMove, { passive: false });
+            img.addEventListener("touchend", onUp, { passive: true });
+            img.addEventListener("touchcancel", onUp, { passive: true });
+        }
+    })();
 
     // Initial setup
     zoomReset();

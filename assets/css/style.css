@@ -61,6 +61,16 @@ body {
     .container {
         padding: var(--spacing-sm);
     }
+
+    #lightbox #lightbox-img {
+        touch-action: pan-y;
+        /* allow vertical page scroll, we capture horizontal swipes */
+    }
+
+    .lightbox .prev,
+    .lightbox .next {
+        display: none !important;
+    }
 }
 
 .site-header {
