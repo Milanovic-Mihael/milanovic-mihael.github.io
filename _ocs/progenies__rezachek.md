@@ -10,6 +10,3 @@ gallery:
 - assets/images/character_images/progenies/rezachek/rezachekjustpassing.webp
 order: 37.0
 ---
-
-
-

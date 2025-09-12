@@ -10,6 +10,3 @@ gallery:
 - assets/images/character_images/misc/omar-fusty/pat_fusty_father.webp
 order: 49.0
 ---
-
-
-

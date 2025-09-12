@@ -40,6 +40,3 @@ gallery:
 - assets/images/character_images/progenies/leanna/leanna_5.webp
 order: 30.0
 ---
-
-
-

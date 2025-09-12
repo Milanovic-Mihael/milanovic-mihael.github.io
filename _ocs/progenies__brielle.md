@@ -15,6 +15,3 @@ gallery:
 - assets/images/character_images/progenies/brielle/briellelelele.webp
 order: 35.0
 ---
-
-
-

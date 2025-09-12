@@ -11,6 +11,3 @@ gallery:
 - assets/images/character_images/progenies/abigail/idk_goblin.webp
 order: 34.0
 ---
-
-
-

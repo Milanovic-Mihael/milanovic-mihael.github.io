@@ -15,6 +15,3 @@ gallery:
 - assets/images/character_images/the-long-midnight/amaya-dewar/amaya_stronk.webp
 order: 22.0
 ---
-
-
-

@@ -9,6 +9,3 @@ gallery:
 - assets/images/character_images/strength-seeker/fc-03/FC03.webp
 order: 9.0
 ---
-
-
-

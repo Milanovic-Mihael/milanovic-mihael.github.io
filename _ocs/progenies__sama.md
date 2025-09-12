@@ -11,6 +11,3 @@ gallery:
 - assets/images/character_images/progenies/sama/sama_jacob.webp
 order: 41.0
 ---
-
-
-

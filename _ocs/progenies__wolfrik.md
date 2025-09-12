@@ -12,6 +12,3 @@ gallery:
 - assets/images/character_images/progenies/wolfrik/husband_moment.webp
 order: 36.0
 ---
-
-
-

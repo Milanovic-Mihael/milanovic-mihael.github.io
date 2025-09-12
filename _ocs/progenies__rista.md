@@ -11,6 +11,3 @@ gallery:
 - assets/images/character_images/progenies/rista/rista_reference.webp
 order: 46.0
 ---
-
-
-

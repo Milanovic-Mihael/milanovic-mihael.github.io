@@ -9,6 +9,3 @@ gallery:
 - assets/images/character_images/the-long-midnight/teuta-bakalli/GzEhTmUW0AAghHv.webp
 order: 24.0
 ---
-
-
-

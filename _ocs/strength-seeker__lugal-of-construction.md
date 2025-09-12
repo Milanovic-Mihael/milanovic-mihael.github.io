@@ -9,6 +9,3 @@ gallery:
 - assets/images/character_images/strength-seeker/lugal-of-construction/1810079930811818329_1.webp
 order: 10.0
 ---
-
-
-

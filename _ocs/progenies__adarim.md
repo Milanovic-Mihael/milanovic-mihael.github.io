@@ -9,6 +9,3 @@ gallery:
 - assets/images/character_images/progenies/adarim/armarguy.webp
 order: 45.0
 ---
-
-
-

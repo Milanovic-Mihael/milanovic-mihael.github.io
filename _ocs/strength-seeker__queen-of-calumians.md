@@ -11,6 +11,3 @@ gallery:
 - assets/images/character_images/strength-seeker/queen-of-calumians/genocider.webp
 order: 6.0
 ---
-
-
-

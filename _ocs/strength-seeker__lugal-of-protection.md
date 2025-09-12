@@ -10,6 +10,3 @@ gallery:
 - assets/images/character_images/strength-seeker/lugal-of-protection/1748812910816624858_3.webp
 order: 11.0
 ---
-
-
-

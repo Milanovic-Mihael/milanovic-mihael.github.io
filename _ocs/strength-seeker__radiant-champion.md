@@ -22,6 +22,3 @@ gallery:
 - assets/images/character_images/strength-seeker/radiant-champion/concept_hero.webp
 order: 2.0
 ---
-
-
-

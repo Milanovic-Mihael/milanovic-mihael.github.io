@@ -10,6 +10,3 @@ gallery:
 - assets/images/character_images/strength-seeker/obbovana/LOVE_Obbovana.webp
 order: 17.0
 ---
-
-
-

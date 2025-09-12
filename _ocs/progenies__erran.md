@@ -10,6 +10,3 @@ gallery:
 - assets/images/character_images/progenies/erran/stronget_armar.webp
 order: 43.0
 ---
-
-
-

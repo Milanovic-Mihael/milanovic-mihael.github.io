@@ -12,6 +12,3 @@ gallery:
 - assets/images/character_images/progenies/marzana/marzana_foreva.webp
 order: 38.0
 ---
-
-
-

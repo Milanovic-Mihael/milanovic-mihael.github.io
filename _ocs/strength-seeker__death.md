@@ -10,6 +10,3 @@ gallery:
 - assets/images/character_images/strength-seeker/death/death_design.webp
 order: 5.0
 ---
-
-
-

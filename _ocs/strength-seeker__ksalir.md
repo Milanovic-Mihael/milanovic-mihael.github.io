@@ -12,6 +12,3 @@ gallery:
 - assets/images/character_images/strength-seeker/ksalir/dodge_this.webp
 order: 14.0
 ---
-
-
-

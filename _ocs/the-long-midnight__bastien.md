@@ -10,6 +10,3 @@ gallery:
 - assets/images/character_images/the-long-midnight/bastien/aim_here.webp
 order: 28.0
 ---
-
-
-

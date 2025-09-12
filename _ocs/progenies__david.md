@@ -13,6 +13,3 @@ gallery:
 - assets/images/character_images/progenies/david/purplecreateure.webp
 order: 33.0
 ---
-
-
-

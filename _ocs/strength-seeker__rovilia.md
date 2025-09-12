@@ -9,6 +9,3 @@ gallery:
 - assets/images/character_images/strength-seeker/rovilia/avrena_daughter.webp
 order: 15.0
 ---
-
-
-

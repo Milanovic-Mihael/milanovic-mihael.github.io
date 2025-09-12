@@ -10,6 +10,3 @@ gallery:
 - assets/images/character_images/the-long-midnight/lars-berthelsen/newOCDROPP.webp
 order: 26.0
 ---
-
-
-

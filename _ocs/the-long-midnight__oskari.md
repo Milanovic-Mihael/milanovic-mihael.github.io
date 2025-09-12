@@ -15,6 +15,3 @@ gallery:
 - assets/images/character_images/the-long-midnight/oskari/CONCEPT_ART_SNOWFIELD.webp
 order: 19.0
 ---
-
-
-

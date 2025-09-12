@@ -10,6 +10,3 @@ gallery:
 - assets/images/character_images/progenies/the-crown-collector/crown_collector_-_Copy.webp
 order: 40.0
 ---
-
-
-

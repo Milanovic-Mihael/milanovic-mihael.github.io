@@ -46,6 +46,3 @@ gallery:
 - assets/images/character_images/strength-seeker/abdom/youlooklonely.webp
 order: 1.0
 ---
-
-
-

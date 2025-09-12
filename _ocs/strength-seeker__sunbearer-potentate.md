@@ -12,6 +12,3 @@ gallery:
 - assets/images/character_images/strength-seeker/sunbearer-potentate/abdomVSaMF.webp
 order: 8.0
 ---
-
-
-

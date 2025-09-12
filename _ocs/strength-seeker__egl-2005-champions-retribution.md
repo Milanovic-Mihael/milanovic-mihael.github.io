@@ -9,6 +9,3 @@ gallery:
 - assets/images/character_images/strength-seeker/egl-2005-champions-retribution/THEMECHA.webp
 featured: assets/images/character_images/strength-seeker/egl-2005-champions-retribution/THEMECHA.webp
 ---
-
-
-

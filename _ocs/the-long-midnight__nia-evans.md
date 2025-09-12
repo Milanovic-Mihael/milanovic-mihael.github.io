@@ -11,6 +11,3 @@ gallery:
 - assets/images/character_images/the-long-midnight/nia-evans/nia_pulpfiction.webp
 order: 25.0
 ---
-
-
-

@@ -12,6 +12,3 @@ gallery:
 - assets/images/character_images/strength-seeker/avrena/avrena_but_like_yknow.webp
 order: 16.0
 ---
-
-
-

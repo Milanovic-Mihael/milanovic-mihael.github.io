@@ -18,6 +18,3 @@ gallery:
 - assets/images/character_images/progenies/monster-empress/monster_empress_ref.webp
 order: 31.0
 ---
-
-
-

@@ -11,6 +11,3 @@ gallery:
 - assets/images/character_images/the-long-midnight/maximilian-pfeiffer/maximillian.webp
 order: 27.0
 ---
-
-
-

@@ -13,6 +13,3 @@ gallery:
 - assets/images/character_images/progenies/jacob-the-relinquished-hero/Jacob_no_monster.webp
 order: 32.0
 ---
-
-
-

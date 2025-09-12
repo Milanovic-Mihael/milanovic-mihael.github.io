@@ -16,6 +16,3 @@ gallery:
 - assets/images/character_images/misc/yana/lsc75kushnw71.webp
 order: 47.0
 ---
-
-
-

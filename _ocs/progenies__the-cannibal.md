@@ -12,6 +12,3 @@ gallery:
 - assets/images/character_images/progenies/the-cannibal/idkman.webp
 order: 39.0
 ---
-
-
-
