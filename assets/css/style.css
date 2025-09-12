@@ -518,6 +518,8 @@ h3 {
     background: rgba(0, 0, 0, 0.9);
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    /* clip zoomed image */
 }
 
 .lightbox-content {
@@ -525,6 +527,19 @@ h3 {
     max-height: 90%;
     border-radius: 8px;
     box-shadow: var(--shadow-lightbox);
+
+    /* zoom/pan helpers */
+    transition: transform 200ms ease;
+    will-change: transform;
+    cursor: zoom-in;
+    position: relative;
+    /* ensure clicks land on the image */
+    z-index: 2;
+}
+
+/* show zoom-out cursor when zoomed */
+.lightbox.lightbox--zoomed .lightbox-content {
+    cursor: zoom-out;
 }
 
 .lightbox .close {
@@ -566,6 +581,8 @@ h3 {
 .lightbox .next {
     right: 0;
 }
+
+
 
 .oc-card.protagonist {
     position: relative;
