@@ -298,6 +298,7 @@ h3 {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 1.2em;
@@ -436,16 +437,22 @@ h3 {
 
 .oc-header .oc-info h1 {
     display: -webkit-box;
+    /* required for clamping */
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    /* clamp to 2 lines */
     overflow: hidden;
     text-overflow: ellipsis;
+
     line-height: 1.2em;
     max-height: 2.4em;
+    /* line-height × 2 */
     word-break: break-word;
-    display: flex;
-    align-items: center;
+
+    /* add the unprefixed property for future compatibility */
+    line-clamp: 2;
 }
+
 
 .oc-header .oc-meta-line {
     display: flex;
