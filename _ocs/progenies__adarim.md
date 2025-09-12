@@ -4,8 +4,10 @@ universe: Progenies
 species: Armar
 tags: []
 bio: ''
-featured: assets/images/progenies/adarim/armarguy.png
+featured: assets/images/character_images/progenies/adarim/armarguy.png
 gallery:
-- assets/images/progenies/adarim/armarguy.png
+- assets/images/character_images/progenies/adarim/armarguy.png
 order: 45.0
 ---
+
+

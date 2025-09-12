@@ -4,8 +4,10 @@ universe: Progenies
 species: Armar
 tags: []
 bio: ''
-featured: assets/images/progenies/alicia/smolkid.png
+featured: assets/images/character_images/progenies/alicia/smolkid.png
 gallery:
-- assets/images/progenies/alicia/smolkid.png
+- assets/images/character_images/progenies/alicia/smolkid.png
 order: 44.0
 ---
+
+

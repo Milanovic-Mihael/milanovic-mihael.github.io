@@ -4,9 +4,11 @@ universe: Progenies
 species: Armar
 tags: []
 bio: ''
-featured: assets/images/progenies/erran/Erran.png
+featured: assets/images/character_images/progenies/erran/Erran.png
 gallery:
-- assets/images/progenies/erran/Erran.png
-- assets/images/progenies/erran/stronget_armar.png
+- assets/images/character_images/progenies/erran/Erran.png
+- assets/images/character_images/progenies/erran/stronget_armar.png
 order: 43.0
 ---
+
+

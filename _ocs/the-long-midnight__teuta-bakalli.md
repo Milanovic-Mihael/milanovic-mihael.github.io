@@ -4,8 +4,10 @@ universe: The Long Midnight
 species: Human
 tags: []
 bio: ''
-featured: assets/images/the-long-midnight/teuta-bakalli/GzEhTmUW0AAghHv.jpg
+featured: assets/images/character_images/the-long-midnight/teuta-bakalli/GzEhTmUW0AAghHv.jpg
 gallery:
-- assets/images/the-long-midnight/teuta-bakalli/GzEhTmUW0AAghHv.jpg
+- assets/images/character_images/the-long-midnight/teuta-bakalli/GzEhTmUW0AAghHv.jpg
 order: 24.0
 ---
+
+

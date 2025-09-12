@@ -4,9 +4,11 @@ universe: Strength Seeker
 species: Boletalian
 tags: []
 bio: ''
-featured: assets/images/strength-seeker/obbovana/Obbovana.png
+featured: assets/images/character_images/strength-seeker/obbovana/Obbovana.png
 gallery:
-- assets/images/strength-seeker/obbovana/Obbovana.png
-- assets/images/strength-seeker/obbovana/LOVE_Obbovana.png
+- assets/images/character_images/strength-seeker/obbovana/Obbovana.png
+- assets/images/character_images/strength-seeker/obbovana/LOVE_Obbovana.png
 order: 17.0
 ---
+
+

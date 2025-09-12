@@ -4,9 +4,11 @@ universe: The Long Midnight
 species: Human (assumed cursed)
 tags: []
 bio: ''
-featured: assets/images/the-long-midnight/bastien/fucked_up_guy_beloved.png
+featured: assets/images/character_images/the-long-midnight/bastien/fucked_up_guy_beloved.png
 gallery:
-- assets/images/the-long-midnight/bastien/fucked_up_guy_beloved.png
-- assets/images/the-long-midnight/bastien/aim_here.png
+- assets/images/character_images/the-long-midnight/bastien/fucked_up_guy_beloved.png
+- assets/images/character_images/the-long-midnight/bastien/aim_here.png
 order: 28.0
 ---
+
+
