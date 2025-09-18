@@ -6,6 +6,7 @@ tags: []
 bio: ''
 featured: assets/images/character_images/the-long-midnight/amaya-dewar/amaya_door.webp
 gallery:
+- assets/images/character_images/the-long-midnight/amaya-dewar/amaya_sleeping.webp
 - assets/images/character_images/the-long-midnight/amaya-dewar/amaya_door.webp
 - assets/images/character_images/the-long-midnight/amaya-dewar/amaya_wounded.webp
 - assets/images/character_images/the-long-midnight/amaya-dewar/amayayaya.webp
