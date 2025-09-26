@@ -1,7 +1,7 @@
 /* CSS Custom Properties for better maintainability */
 :root {
     --color-bg-primary: #121213;
-    --color-bg-secondary: #26262c;
+    --color-bg-secondary: #27272c;
     --color-bg-card: #1e1e1e;
     --color-bg-card-hover: #27262b;
     --color-text-primary: #eee;
