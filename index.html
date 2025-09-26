@@ -20,7 +20,6 @@ layout: default
   {% endif %}
 
   <a class="oc-card {{ protag_class }}" href="{{ oc.url | relative_url }}" data-universe="{{ oc.universe | escape }}">
-
     <div class="oc-thumb">
       {% if oc.featured %}
       <img data-src="{{ oc.featured | relative_url }}" alt="{{ oc.title | escape }}">
@@ -34,8 +33,6 @@ layout: default
       {% if oc.species %}<p class="muted">{{ oc.species }}</p>{% endif %}
       {% if oc.universe %}<span class="tag">{{ oc.universe }}</span>{% endif %}
     </div>
-
-
   </a>
   {% endfor %}
 </div>
