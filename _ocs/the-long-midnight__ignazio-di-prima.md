@@ -7,5 +7,5 @@ bio: ''
 featured: assets/images/character_images/the-long-midnight/ignazio-di-prima/roman_despot.webp
 gallery:
 - assets/images/character_images/the-long-midnight/ignazio-di-prima/roman_despot.webp
-order: 23.0
+order: 40.0
 ---

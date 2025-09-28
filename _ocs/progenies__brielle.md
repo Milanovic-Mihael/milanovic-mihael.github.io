@@ -13,5 +13,5 @@ gallery:
 - assets/images/character_images/progenies/brielle/Brielle.webp
 - assets/images/character_images/progenies/brielle/brielleeyeay.webp
 - assets/images/character_images/progenies/brielle/briellelelele.webp
-order: 35.0
+order: 24.0
 ---

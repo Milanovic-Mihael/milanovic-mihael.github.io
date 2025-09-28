@@ -8,5 +8,5 @@ featured: assets/images/character_images/the-long-midnight/teuta-bakalli/teuta_b
 gallery:
 - assets/images/character_images/the-long-midnight/teuta-bakalli/teuta_bakalli_sitting.webp
 - assets/images/character_images/the-long-midnight/teuta-bakalli/GzEhTmUW0AAghHv.webp
-order: 24.0
+order: 41.0
 ---

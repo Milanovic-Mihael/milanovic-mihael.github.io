@@ -16,5 +16,5 @@ gallery:
 - assets/images/character_images/progenies/monster-empress/monster_empress (2).webp
 - assets/images/character_images/progenies/monster-empress/monster_empress2.webp
 - assets/images/character_images/progenies/monster-empress/monster_empress_ref.webp
-order: 31.0
+order: 20.0
 ---

@@ -38,5 +38,5 @@ gallery:
 - assets/images/character_images/progenies/leanna/axemewoman2.webp
 - assets/images/character_images/progenies/leanna/leanna_3.webp
 - assets/images/character_images/progenies/leanna/leanna_5.webp
-order: 30.0
+order: 19.0
 ---
