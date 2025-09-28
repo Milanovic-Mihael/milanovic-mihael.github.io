@@ -4,7 +4,7 @@ universe: Progenies
 species: Human
 tags: []
 bio: ''
-featured: assets/images/character_images/progenies/brielle/Brielle.webp
+featured: assets/images/character_images/progenies/brielle/Brielle_2.webp
 gallery:
 - assets/images/character_images/progenies/brielle/Brielle_2.webp
 - assets/images/character_images/progenies/brielle/brielle_by_chloraide.webp
