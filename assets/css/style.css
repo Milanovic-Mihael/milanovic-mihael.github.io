@@ -57,22 +57,6 @@ body {
     padding: var(--spacing-lg);
 }
 
-@media (max-width: 768px) {
-    .container {
-        padding: var(--spacing-sm);
-    }
-
-    #lightbox #lightbox-img {
-        touch-action: pan-y;
-        /* allow vertical page scroll, we capture horizontal swipes */
-    }
-
-    .lightbox .prev,
-    .lightbox .next {
-        display: none !important;
-    }
-}
-
 .site-header {
     background: var(--color-bg-primary);
     color: var(--color-text-primary);
@@ -487,7 +471,27 @@ h3 {
     margin-bottom: var(--spacing-lg);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
+
+    .filter-btn {
+        padding: 0.5rem 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    .container {
+        padding: var(--spacing-sm);
+    }
+
+    #lightbox #lightbox-img {
+        touch-action: pan-y;
+        /* allow vertical page scroll, we capture horizontal swipes */
+    }
+
+    .lightbox .prev,
+    .lightbox .next {
+        display: none !important;
+    }
+
     h1 {
         font-size: 1.5rem;
     }
@@ -536,6 +540,32 @@ h3 {
         height: auto;
         object-fit: cover;
         display: block;
+    }
+
+    /* Smaller text in cards */
+    .oc-card .title-wrapper h2 {
+        font-size: 0.9rem;
+        line-height: 1.1em;
+    }
+
+    .oc-card .oc-meta .muted {
+        font-size: 0.8rem;
+    }
+
+    .oc-card .tag {
+        font-size: 0.7rem;
+        padding: 0.05rem var(--spacing-xs);
+    }
+
+    /* Reduce text box size and push down */
+    .oc-card .oc-meta {
+        padding: var(--spacing-sm) var(--spacing-md);
+        gap: var(--spacing-xs);
+    }
+
+    .oc-card .title-wrapper {
+        height: 2em;
+        /* Reduced from 2.4em */
     }
 }
 
