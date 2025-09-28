@@ -700,12 +700,14 @@ h3 {
     z-index: 2;
     background-size: 100% 100%;
     image-rendering: crisp-edges;
-    transition: transform 200ms ease;
+    transition: transform 200ms ease, filter 200ms ease;
     display: block;
+    filter: brightness(0.25);
 }
 
 .oc-card-wrapper:hover .frame {
     transform: translateY(-3px) scale(1.05);
+    filter: brightness(1.0);
 }
 
 .oc-card-wrapper[data-universe="Strength Seeker"] .frame {
