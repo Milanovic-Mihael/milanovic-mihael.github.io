@@ -719,3 +719,28 @@ h3 {
 .oc-card-wrapper[data-universe="The Long Midnight"] .frame {
     background-image: url("/assets/images/frames/frame_midnight.png");
 }
+
+
+/* Define shadow colors for each universe */
+
+.oc-card-wrapper[data-universe="Strength Seeker"] {
+    --shadow-card: 0 6px 20px rgba(61, 146, 180, 0.5);
+}
+
+.oc-card-wrapper[data-universe="Progenies"] {
+    --shadow-card: 0 6px 20px rgba(179, 145, 43, 0.5);
+}
+
+.oc-card-wrapper[data-universe="The Long Midnight"] {
+    --shadow-card: 0 6px 20px rgba(155, 38, 38, 0.5);
+}
+
+.oc-card-wrapper[data-universe="Misc"] {
+    --shadow-card: 0 6px 20px rgba(122, 125, 128, 0.5);
+}
+
+/* Apply it on hover */
+.oc-card-wrapper:hover .oc-card {
+    box-shadow: var(--shadow-card);
+    transform: translateY(-3px);
+}
