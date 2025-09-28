@@ -254,21 +254,26 @@ h3 {
 
 .oc-card {
     position: relative;
-    /* so children can overlay */
     border: 0px solid var(--color-border);
     border-radius: var(--border-radius-md);
-    overflow: hidden;
+    overflow: visible;
     text-decoration: none;
     color: var(--color-text-primary);
     box-shadow: 0 0 0 var(--color-glow);
     transition: box-shadow var(--transition-fast), transform var(--transition-fast);
     will-change: transform, box-shadow, background-color;
-
-    /* keep consistent size like before: image (square) + meta below */
     aspect-ratio: 1 / 1.3;
-    /* tweak until it matches your old layout */
     background: var(--color-bg-card);
-    /* fallback in case image missing */
+    isolation: isolate;
+}
+
+.oc-card .frame {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    pointer-events: none;
+    z-index: 9999;
 }
 
 .oc-card:hover {
@@ -283,7 +288,6 @@ h3 {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    /* Add this to ensure image doesn't overflow */
 }
 
 .oc-thumb img {
@@ -658,4 +662,60 @@ h3 {
 .header-btn,
 .filter-btn {
     contain: layout style paint;
+}
+
+.oc-card-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1.3;
+    /* same as .oc-card */
+}
+
+.oc-card-wrapper .oc-card {
+    position: absolute;
+    /* fill the wrapper */
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.oc-card-wrapper .frame {
+    position: absolute;
+    inset: -8px;
+    width: calc(100% + 16px);
+    height: calc(100% + 16px);
+    background-size: cover;
+    background-position: center;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.oc-card-wrapper .frame {
+    position: absolute;
+    width: calc(100% + 16px);
+    height: calc(100% + 16px);
+    pointer-events: none;
+    background-repeat: no-repeat;
+    z-index: 2;
+    background-size: 100% 100%;
+    image-rendering: crisp-edges;
+    transition: transform 200ms ease;
+    display: block;
+}
+
+.oc-card-wrapper:hover .frame {
+    transform: translateY(-3px) scale(1.05);
+}
+
+.oc-card-wrapper[data-universe="Strength Seeker"] .frame {
+    background-image: url("/assets/images/frames/frame_strs.png");
+}
+
+.oc-card-wrapper[data-universe="Progenies"] .frame {
+    background-image: url("/assets/images/frames/frame_prog.png");
+}
+
+.oc-card-wrapper[data-universe="The Long Midnight"] .frame {
+    background-image: url("/assets/images/frames/frame_midnight.png");
 }

@@ -19,21 +19,26 @@ layout: default
   {% assign protag_class = "protagonist" %}
   {% endif %}
 
-  <a class="oc-card {{ protag_class }}" href="{{ oc.url | relative_url }}" data-universe="{{ oc.universe | escape }}">
-    <div class="oc-thumb">
-      {% if oc.featured %}
-      <img data-src="{{ oc.featured | relative_url }}" alt="{{ oc.title | escape }}">
-      {% endif %}
-    </div>
-
-    <div class="oc-meta">
-      <div class="title-wrapper">
-        <h2>{{ oc.title }}</h2>
+  <div class="oc-card-wrapper" data-universe="{{ oc.universe | escape }}">
+    <a class="oc-card {{ protag_class }}" href="{{ oc.url | relative_url }}" data-universe="{{ oc.universe | escape }}">
+      <div class="oc-thumb">
+        {% if oc.featured %}
+        <img data-src="{{ oc.featured | relative_url }}" alt="{{ oc.title | escape }}">
+        {% endif %}
       </div>
-      {% if oc.species %}<p class="muted">{{ oc.species }}</p>{% endif %}
-      {% if oc.universe %}<span class="tag">{{ oc.universe }}</span>{% endif %}
-    </div>
-  </a>
+
+      <div class="oc-meta">
+        <div class="title-wrapper">
+          <h2>{{ oc.title }}</h2>
+        </div>
+        {% if oc.species %}<p class="muted">{{ oc.species }}</p>{% endif %}
+        {% if oc.universe %}<span class="tag">{{ oc.universe }}</span>{% endif %}
+      </div>
+    </a>
+
+    <img class="frame" alt="">
+  </div>
+
   {% endfor %}
 </div>
 
@@ -41,7 +46,7 @@ layout: default
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     var buttons = document.querySelectorAll('.filter-btn');
-    var cards = document.querySelectorAll('.oc-card');
+    var wrappers = document.querySelectorAll('.oc-card-wrapper');
 
     // Make "All" active on load
     var activeBtn = document.querySelector('.filter-btn[data-filter="all"]');
@@ -51,20 +56,35 @@ layout: default
     buttons.forEach(function (btn) {
       btn.addEventListener('click', function () {
         var f = this.getAttribute('data-filter');
-
-        // Highlight clicked button
         buttons.forEach(b => b.classList.remove('active'));
         this.classList.add('active');
 
-        // Show/hide cards
-        cards.forEach(function (card) {
+        wrappers.forEach(function (wrapper) {
+          var card = wrapper.querySelector('.oc-card');
           if (f === 'all' || card.getAttribute('data-universe') === f) {
-            card.style.display = '';
+            wrapper.style.display = '';
           } else {
-            card.style.display = 'none';
+            wrapper.style.display = 'none';
           }
         });
       });
     });
+
+    // Assign frame images
+    wrappers.forEach(wrapper => {
+      const universe = wrapper.dataset.universe;
+      const frame = wrapper.querySelector('.frame');
+      const frames = {
+        "Strength Seeker": "/assets/images/frames/frame_strs.png",
+        "Progenies": "/assets/images/frames/frame_prog.png",
+        "The Long Midnight": "/assets/images/frames/frame_midnight.png",
+        "Misc": "/assets/images/frames/frame_misc.png"
+      };
+      frame.src = frames[universe] || "";
+    });
   });
+
+
+
+
 </script>
