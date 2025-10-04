@@ -1,4 +1,3 @@
-/* CSS Custom Properties for better maintainability */
 :root {
     --color-bg-primary: #121213;
     --color-bg-secondary: #27272c;
@@ -60,7 +59,30 @@ body {
 .site-header {
     background: var(--color-bg-primary);
     color: var(--color-text-primary);
-    padding: var(--spacing-sm) 0;
+    padding-top: var(--spacing-sm);
+}
+
+.line-container {
+    padding: 0 var(--spacing-lg);
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header-divider {
+    opacity: 0.2;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: var(--spacing-md);
+}
+
+.site-header .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
 }
 
 .site-header a {
@@ -80,7 +102,6 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: var(--spacing-lg);
-    border-bottom: 1px solid var(--color-border);
     padding-bottom: var(--spacing-2xl);
     margin-bottom: var(--spacing-sm);
 }
@@ -89,6 +110,12 @@ body {
     .site-header .container {
         flex-direction: column;
         align-items: flex-start;
+        gap: var(--spacing-sm);
+    }
+
+    .site-header .header-container {
+        flex-direction: column;
+        align-items: center;
         gap: var(--spacing-sm);
     }
 
@@ -123,7 +150,6 @@ body {
     cursor: pointer;
     text-decoration: none;
     transition: background var(--transition-normal), transform var(--transition-normal);
-    will-change: transform, background-color;
 }
 
 .header-btn:hover {
@@ -176,12 +202,11 @@ h3 {
 .filter-btn {
     padding: var(--spacing-sm) var(--spacing-md);
     background: #27282cb9;
-    border: 0px solid var(--color-border-light);
+    border: none;
     color: var(--color-text-primary);
     border-radius: var(--border-radius-sm);
     cursor: pointer;
     transition: background var(--transition-normal), transform var(--transition-normal);
-    will-change: transform, background-color;
 }
 
 .filter-btn:hover {
@@ -189,38 +214,29 @@ h3 {
     transform: translateY(-3px);
 }
 
-/* All */
+/* Filter button active states */
 .filter-btn[data-filter="all"].active {
     background: #3498db;
-    border-color: #3498db;
     color: #fff;
 }
 
-/* Strength Seeker */
 .filter-btn[data-filter="Strength Seeker"].active {
     background: var(--color-strs);
-    border-color: var(--color-strs);
     color: #fff;
 }
 
-/* Progenies */
 .filter-btn[data-filter="Progenies"].active {
     background: var(--color-prog);
-    border-color: var(--color-prog);
     color: #fff;
 }
 
-/* The Long Midnight */
 .filter-btn[data-filter="The Long Midnight"].active {
     background: var(--color-tlm);
-    border-color: var(--color-tlm);
     color: #fff;
 }
 
-/* Misc */
 .filter-btn[data-filter="Misc"].active {
     background: #6c757d;
-    border-color: #6c757d;
     color: #fff;
 }
 
@@ -236,31 +252,86 @@ h3 {
     }
 }
 
+/* OC Card Wrapper */
+.oc-card-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1.3;
+}
+
+.oc-card-wrapper .oc-card {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Frame overlay */
+.oc-card-wrapper .frame {
+    position: absolute;
+    inset: -8px;
+    width: calc(100% + 16px);
+    height: calc(100% + 16px);
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    image-rendering: crisp-edges;
+    z-index: 2;
+    transition: transform var(--transition-normal), filter var(--transition-normal);
+    filter: brightness(0.25);
+}
+
+.oc-card-wrapper:hover .frame {
+    transform: translateY(-3px) scale(1.05);
+    filter: brightness(1.0);
+}
+
+.oc-card-wrapper[data-universe="Strength Seeker"] .frame {
+    background-image: url("/assets/images/frames/frame_strs.png");
+}
+
+.oc-card-wrapper[data-universe="Progenies"] .frame {
+    background-image: url("/assets/images/frames/frame_prog.png");
+}
+
+.oc-card-wrapper[data-universe="The Long Midnight"] .frame {
+    background-image: url("/assets/images/frames/frame_midnight.png");
+}
+
+/* Universe-specific shadow colors */
+.oc-card-wrapper[data-universe="Strength Seeker"] {
+    --shadow-card: 0 6px 20px rgba(61, 146, 180, 0.5);
+}
+
+.oc-card-wrapper[data-universe="Progenies"] {
+    --shadow-card: 0 6px 20px rgba(179, 145, 43, 0.5);
+}
+
+.oc-card-wrapper[data-universe="The Long Midnight"] {
+    --shadow-card: 0 6px 20px rgba(155, 38, 38, 0.5);
+}
+
+.oc-card-wrapper[data-universe="Misc"] {
+    --shadow-card: 0 6px 20px rgba(122, 125, 128, 0.5);
+}
+
+/* OC Card */
 .oc-card {
     position: relative;
-    border: 0px solid var(--color-border);
+    border: none;
     border-radius: var(--border-radius-md);
     overflow: visible;
     text-decoration: none;
     color: var(--color-text-primary);
     box-shadow: 0 0 0 var(--color-glow);
     transition: box-shadow var(--transition-fast), transform var(--transition-fast);
-    will-change: transform, box-shadow, background-color;
     aspect-ratio: 1 / 1.3;
     background: var(--color-bg-card);
     isolation: isolate;
 }
 
-.oc-card .frame {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
-    pointer-events: none;
-    z-index: 9999;
-}
-
-.oc-card:hover {
+.oc-card-wrapper:hover .oc-card {
     box-shadow: var(--shadow-card);
     transform: translateY(-3px);
 }
@@ -272,6 +343,7 @@ h3 {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    border-radius: var(--border-radius-md);
 }
 
 .oc-thumb img {
@@ -280,7 +352,6 @@ h3 {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    /* Remove the min/max width/height properties that can cause issues */
 }
 
 .oc-meta {
@@ -289,7 +360,6 @@ h3 {
     left: 0;
     right: 0;
     background: rgba(14, 14, 14, 0.7);
-    /* translucent backdrop */
     padding: var(--spacing-lg);
     z-index: 1;
     display: flex;
@@ -301,7 +371,6 @@ h3 {
     display: flex;
     align-items: center;
     height: 2.4em;
-    /* Fixed height instead of min-height */
 }
 
 .title-wrapper h2 {
@@ -336,7 +405,7 @@ h3 {
     font-size: 0.8rem;
 }
 
-/* Universe-specific colors */
+/* Universe-specific tag colors */
 .oc-card[data-universe="Misc"] .tag {
     background-color: #6c757d;
     color: #fafafa;
@@ -357,6 +426,38 @@ h3 {
     color: #fafafa;
 }
 
+/* Protagonist star indicator */
+.oc-card.protagonist::after {
+    content: "★";
+    position: absolute;
+    top: 0.4rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    text-shadow:
+        0 0 10px rgb(119, 139, 255),
+        0 0 30px rgb(171, 214, 255);
+    pointer-events: none;
+    z-index: 10;
+    animation: starGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes starGlow {
+    from {
+        text-shadow:
+            0 0 5px rgb(119, 139, 255),
+            0 0 20px rgb(171, 214, 255);
+    }
+
+    to {
+        text-shadow:
+            0 0 10px rgba(119, 139, 255, 0.671),
+            0 0 15px rgba(171, 214, 255, 0.774),
+            0 0 20px rgba(171, 214, 255, 0.452);
+    }
+}
+
+/* OC Page Styles */
 .oc-page .featured img {
     width: 100%;
     height: auto;
@@ -375,35 +476,6 @@ h3 {
     color: var(--color-text-secondary);
 }
 
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: var(--spacing-sm);
-}
-
-.gallery-item {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    overflow: hidden;
-    border-radius: var(--border-radius-sm);
-    transition: box-shadow var(--transition-normal), transform var(--transition-normal);
-    will-change: transform, box-shadow;
-}
-
-.gallery-item:hover {
-    box-shadow: 0 4px 15px var(--color-glow);
-    transform: translateY(-3px) scale(1.05);
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    background: #222;
-}
-
 .container .brand img {
     border-radius: var(--border-radius-full);
     height: 50px;
@@ -420,8 +492,8 @@ h3 {
 
 .oc-header .featured {
     width: 100%;
-    max-width: 350px;
-    aspect-ratio: 1 / 1;
+    max-width: 250px;
+    aspect-ratio: 1 / 1.3;
     overflow: hidden;
     border-radius: var(--border-radius-lg);
     flex-shrink: 0;
@@ -447,22 +519,15 @@ h3 {
 
 .oc-header .oc-info h1 {
     display: -webkit-box;
-    /* required for clamping */
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
-    /* clamp to 2 lines */
+    line-clamp: 2;
     overflow: hidden;
     text-overflow: ellipsis;
-
     line-height: 1.2em;
     max-height: 2.4em;
-    /* line-height × 2 */
     word-break: break-word;
-
-    /* add the unprefixed property for future compatibility */
-    line-clamp: 2;
 }
-
 
 .oc-header .oc-meta-line {
     display: flex;
@@ -471,105 +536,36 @@ h3 {
     margin-bottom: var(--spacing-lg);
 }
 
-@media (max-width: 768px) {
-
-    .filter-btn {
-        padding: 0.5rem 0.5rem;
-        font-size: 0.75rem;
-    }
-
-    .container {
-        padding: var(--spacing-sm);
-    }
-
-    #lightbox #lightbox-img {
-        touch-action: pan-y;
-        /* allow vertical page scroll, we capture horizontal swipes */
-    }
-
-    .lightbox .prev,
-    .lightbox .next {
-        display: none !important;
-    }
-
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    h2 {
-        font-size: 1.25rem;
-    }
-
-    h3 {
-        font-size: 1rem;
-    }
-
-    .header-btn {
-        font-size: 0.85rem;
-        padding: 0.4rem 0.8rem;
-    }
-
-    .site-header .container {
-        flex-direction: column;
-        align-items: center;
-        gap: var(--spacing-sm);
-    }
-
-    .header-buttons {
-        flex-direction: column;
-        width: 100%;
-        gap: var(--spacing-sm);
-        align-items: center;
-    }
-
-    .header-btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        text-align: center;
-        gap: var(--spacing-sm);
-    }
-
-    .gallery-grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    }
-
-    .oc-header .featured {
-        width: 30%;
-        height: auto;
-        object-fit: cover;
-        display: block;
-    }
-
-    /* Smaller text in cards */
-    .oc-card .title-wrapper h2 {
-        font-size: 0.9rem;
-        line-height: 1.1em;
-    }
-
-    .oc-card .oc-meta .muted {
-        font-size: 0.8rem;
-    }
-
-    .oc-card .tag {
-        font-size: 0.7rem;
-        padding: 0.05rem var(--spacing-xs);
-    }
-
-    /* Reduce text box size and push down */
-    .oc-card .oc-meta {
-        padding: var(--spacing-sm) var(--spacing-md);
-        gap: var(--spacing-xs);
-    }
-
-    .oc-card .title-wrapper {
-        height: 2em;
-        /* Reduced from 2.4em */
-    }
+/* Gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: var(--spacing-sm);
 }
 
-/* Lightbox overlay */
+.gallery-item {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: var(--border-radius-sm);
+    transition: box-shadow var(--transition-normal), transform var(--transition-normal);
+}
+
+.gallery-item:hover {
+    box-shadow: 0 4px 15px var(--color-glow);
+    transform: translateY(-3px) scale(1.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    background: #222;
+}
+
+/* Lightbox */
 .lightbox {
     display: none;
     position: fixed;
@@ -582,7 +578,6 @@ h3 {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    /* clip zoomed image */
 }
 
 .lightbox-content {
@@ -590,17 +585,12 @@ h3 {
     max-height: 90%;
     border-radius: 8px;
     box-shadow: var(--shadow-lightbox);
-
-    /* zoom/pan helpers */
     transition: transform 200ms ease;
-    will-change: transform;
     cursor: zoom-in;
     position: relative;
-    /* ensure clicks land on the image */
     z-index: 2;
 }
 
-/* show zoom-out cursor when zoomed */
 .lightbox.lightbox--zoomed .lightbox-content {
     cursor: zoom-out;
 }
@@ -645,134 +635,112 @@ h3 {
     right: 0;
 }
 
-
-
-.oc-card.protagonist {
-    position: relative;
-}
-
-.oc-card.protagonist .oc-thumb {
-    position: relative;
-    overflow: visible;
-}
-
-.oc-card.protagonist::after {
-    content: "★";
-    position: absolute;
-    top: 0.4rem;
-    right: 1rem;
-    font-size: 1.5rem;
-    color: rgb(255, 255, 255);
-    text-shadow:
-        0 0 10px rgb(119, 139, 255),
-        0 0 30px rgb(171, 214, 255);
-    pointer-events: none;
-    z-index: 10;
-    animation: starGlow 2s ease-in-out infinite alternate;
-}
-
-@keyframes starGlow {
-    from {
-        text-shadow:
-            0 0 5px rgb(119, 139, 255),
-            0 0 20px rgb(171, 214, 255);
-    }
-
-    to {
-        text-shadow:
-            0 0 10px rgba(119, 139, 255, 0.671),
-            0 0 15px rgba(171, 214, 255, 0.774),
-            0 0 20px rgba(171, 214, 255, 0.452);
-    }
-}
-
-/* Performance optimizations */
-.oc-card,
-.gallery-item,
-.header-btn,
-.filter-btn {
-    contain: layout style paint;
-}
-
-.oc-card-wrapper {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 1 / 1.3;
-    /* same as .oc-card */
-}
-
-.oc-card-wrapper .oc-card {
-    position: absolute;
-    /* fill the wrapper */
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
-.oc-card-wrapper .frame {
-    position: absolute;
-    inset: -8px;
-    width: calc(100% + 16px);
-    height: calc(100% + 16px);
-    background-size: cover;
-    background-position: center;
-    pointer-events: none;
-    z-index: 2;
-}
-
-.oc-card-wrapper .frame {
-    position: absolute;
-    width: calc(100% + 16px);
-    height: calc(100% + 16px);
-    pointer-events: none;
-    background-repeat: no-repeat;
-    z-index: 2;
-    background-size: 100% 100%;
-    image-rendering: crisp-edges;
-    transition: transform 200ms ease, filter 200ms ease;
+.footer-divider {
     display: block;
-    filter: brightness(0.25);
+    width: 100%;
+    height: auto;
+    opacity: 0.2;
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
+    transform: scaleY(-1);
 }
 
-.oc-card-wrapper:hover .frame {
-    transform: translateY(-3px) scale(1.05);
-    filter: brightness(1.0);
+@media (max-width: 768px) {
+    .filter-btn {
+        padding: 0.5rem 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    .container {
+        padding: var(--spacing-sm);
+    }
+
+    #lightbox #lightbox-img {
+        touch-action: pan-y;
+    }
+
+    .lightbox .prev,
+    .lightbox .next {
+        display: none !important;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .header-btn {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .site-header .container {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-sm);
+    }
+
+    .site-header .header-container {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-sm);
+    }
+
+    .header-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: var(--spacing-sm);
+        align-items: center;
+    }
+
+    .header-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        gap: var(--spacing-sm);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .oc-header .featured {
+        width: 30%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    }
+
+    .oc-card .title-wrapper h2 {
+        font-size: 0.9rem;
+        line-height: 1.1em;
+    }
+
+    .oc-card .oc-meta .muted {
+        font-size: 0.8rem;
+    }
+
+    .oc-card .tag {
+        font-size: 0.7rem;
+        padding: 0.05rem var(--spacing-xs);
+    }
+
+    .oc-card .oc-meta {
+        padding: var(--spacing-sm) var(--spacing-md);
+        gap: var(--spacing-xs);
+    }
+
+    .oc-card .title-wrapper {
+        height: 2em;
+    }
 }
 
-.oc-card-wrapper[data-universe="Strength Seeker"] .frame {
-    background-image: url("/assets/images/frames/frame_strs.png");
-}
-
-.oc-card-wrapper[data-universe="Progenies"] .frame {
-    background-image: url("/assets/images/frames/frame_prog.png");
-}
-
-.oc-card-wrapper[data-universe="The Long Midnight"] .frame {
-    background-image: url("/assets/images/frames/frame_midnight.png");
-}
-
-
-/* Define shadow colors for each universe */
-
-.oc-card-wrapper[data-universe="Strength Seeker"] {
-    --shadow-card: 0 6px 20px rgba(61, 146, 180, 0.5);
-}
-
-.oc-card-wrapper[data-universe="Progenies"] {
-    --shadow-card: 0 6px 20px rgba(179, 145, 43, 0.5);
-}
-
-.oc-card-wrapper[data-universe="The Long Midnight"] {
-    --shadow-card: 0 6px 20px rgba(155, 38, 38, 0.5);
-}
-
-.oc-card-wrapper[data-universe="Misc"] {
-    --shadow-card: 0 6px 20px rgba(122, 125, 128, 0.5);
-}
-
-/* Apply it on hover */
-.oc-card-wrapper:hover .oc-card {
-    box-shadow: var(--shadow-card);
-    transform: translateY(-3px);
-}
