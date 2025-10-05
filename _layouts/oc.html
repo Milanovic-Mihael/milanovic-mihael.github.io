@@ -20,6 +20,36 @@
     gtag('js', new Date());
 
     gtag('config', 'G-9XKT2NT3H2');
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const gifs = document.querySelectorAll(".gallery-item img");
+
+      gifs.forEach(img => {
+        if (!img.src.toLowerCase().endsWith(".gif")) return;
+
+        const gifSrc = img.src;
+        const staticImg = new Image();
+        staticImg.src = gifSrc;
+        staticImg.onload = () => {
+          const canvas = document.createElement("canvas");
+          canvas.width = staticImg.width;
+          canvas.height = staticImg.height;
+          const ctx = canvas.getContext("2d");
+          ctx.drawImage(staticImg, 0, 0);
+          img.dataset.static = canvas.toDataURL("image/png");
+          img.src = img.dataset.static;
+          img.dataset.gif = gifSrc;
+        };
+
+        img.addEventListener("mouseenter", () => {
+          if (img.dataset.gif) img.src = img.dataset.gif;
+        });
+
+        img.addEventListener("mouseleave", () => {
+          if (img.dataset.static) img.src = img.dataset.static;
+        });
+      });
+    });
   </script>
 
 </head>
