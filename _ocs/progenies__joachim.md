@@ -1,7 +1,7 @@
 ---
 title: Joachim
 universe: Progenies
-species: ''
+species: Human
 tags: []
 bio: ''
 order: 22.0

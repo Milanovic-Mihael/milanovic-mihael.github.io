@@ -1,7 +1,7 @@
 ---
 title: EGL-2005 - Champion's Retribution
 universe: Strength Seeker
-species: ''
+species: Unknown
 tags: []
 bio: ''
 order: 18.0
