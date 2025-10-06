@@ -9,5 +9,5 @@ gallery:
 - assets/images/character_images/progenies/rista/riskothaHEY.webp
 - assets/images/character_images/progenies/rista/4armwoman.webp
 - assets/images/character_images/progenies/rista/rista_reference.webp
-order: 35.0
+order: 36.0
 ---

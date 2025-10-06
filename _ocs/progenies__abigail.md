@@ -9,5 +9,5 @@ gallery:
 - assets/images/character_images/progenies/abigail/abigail_2025.webp
 - assets/images/character_images/progenies/abigail/david_and_abigail_chilling.webp
 - assets/images/character_images/progenies/abigail/idk_goblin.webp
-order: 23.0
+order: 24.0
 ---

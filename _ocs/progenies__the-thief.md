@@ -7,5 +7,5 @@ bio: ''
 featured: assets/images/character_images/progenies/the-thief/idknewguy.webp
 gallery:
 - assets/images/character_images/progenies/the-thief/idknewguy.webp
-order: 31.0
+order: 32.0
 ---

@@ -7,5 +7,5 @@ bio: ''
 featured: assets/images/character_images/progenies/alicia/smolkid.webp
 gallery:
 - assets/images/character_images/progenies/alicia/smolkid.webp
-order: 33.0
+order: 34.0
 ---

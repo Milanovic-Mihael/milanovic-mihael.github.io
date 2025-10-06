@@ -8,5 +8,5 @@ featured: assets/images/character_images/progenies/rezachek/old_katana_fella.web
 gallery:
 - assets/images/character_images/progenies/rezachek/old_katana_fella.webp
 - assets/images/character_images/progenies/rezachek/rezachekjustpassing.webp
-order: 26.0
+order: 27.0
 ---

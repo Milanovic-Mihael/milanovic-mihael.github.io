@@ -7,5 +7,5 @@ bio: ''
 featured: assets/images/character_images/the-long-midnight/spirit-of-the-wasteland/spirit.webp
 gallery:
 - assets/images/character_images/the-long-midnight/spirit-of-the-wasteland/spirit.webp
-order: 38.0
+order: 39.0
 ---
