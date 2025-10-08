@@ -305,31 +305,102 @@ h3 {
     transform: translateY(-3px);
 }
 
-/* Filter button active states */
-.filter-btn[data-filter="all"].active {
-    background: #3498db;
-    color: #fff;
+.filter-btn.active {
+    position: relative;
+    overflow: visible;
+}
+
+/* Corner pseudo-elements for all buttons */
+.filter-btn::before,
+.filter-btn::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-image: url("/assets/images/UI/select_filter.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Positioning */
+.filter-btn::before {
+    top: 33%;
+    right: 0%;
+    transform: rotate(180deg);
+}
+
+.filter-btn::after {
+    bottom: 33%;
+    left: 0%;
+    transform: rotate(0deg);
+}
+
+/* Show corners on hover */
+.filter-btn:hover::before,
+.filter-btn:hover::after {
+    opacity: 1;
+}
+
+/* Show corners on active button ONLY if no button is hovered */
+.filters:not(:hover) .filter-btn.active::before,
+.filters:not(:hover) .filter-btn.active::after {
+    opacity: 1;
 }
 
 .filter-btn[data-filter="Strength Seeker"].active {
-    background: var(--color-strs);
+    background: radial-gradient(circle, rgba(18, 18, 19, 0) 0%, var(--color-strs) 100%);
     color: #fff;
 }
 
 .filter-btn[data-filter="Progenies"].active {
-    background: var(--color-prog);
+    background: radial-gradient(circle, rgba(18, 18, 19, 0) 0%, var(--color-prog) 100%);
     color: #fff;
 }
 
 .filter-btn[data-filter="The Long Midnight"].active {
-    background: var(--color-tlm);
+    background: radial-gradient(circle, rgba(18, 18, 19, 0) 0%, var(--color-tlm) 100%);
     color: #fff;
 }
 
 .filter-btn[data-filter="Misc"].active {
+    background: radial-gradient(circle, rgba(18, 18, 19, 0) 0%, #6c757d 100%);
+    color: #fff;
+}
+
+.filter-btn[data-filter="all"].active {
+    background: radial-gradient(circle, rgba(18, 18, 19, 0) 0%, #3498db 100%);
+    color: #fff;
+}
+
+.filter-btn[data-filter="all"]:hover {
+    background: #3498db;
+    color: #fff;
+}
+
+.filter-btn[data-filter="Strength Seeker"]:hover {
+    background: var(--color-strs);
+    color: #fff;
+}
+
+.filter-btn[data-filter="Progenies"]:hover {
+    background: var(--color-prog);
+    color: #fff;
+}
+
+.filter-btn[data-filter="The Long Midnight"]:hover {
+    background: var(--color-tlm);
+    color: #fff;
+}
+
+.filter-btn[data-filter="Misc"]:hover {
     background: #6c757d;
     color: #fff;
 }
+
+
 
 .oc-grid {
     display: grid;
