@@ -97,6 +97,102 @@ body {
     flex-shrink: 0;
 }
 
+.brand {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.brand::after {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background-image: url("/assets/images/UI/icon_hover.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+
+    top: 67%;
+    left: 20%;
+    transform-origin: 10% 10%;
+    transform: translate(12px, -12px) rotate(270deg);
+    opacity: 0;
+
+    transition: opacity 0.5s ease, transform 0.5s ease, filter 0.5s ease;
+    filter: drop-shadow(0 0 4px var(--color-accent)) drop-shadow(0 0 8px var(--color-accent));
+}
+
+.brand::before {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background-image: url("/assets/images/UI/icon_hover.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+
+    top: 20%;
+    left: 67%;
+    transform-origin: 10% 10%;
+    transform: translate(-12px, 12px) rotate(90deg);
+    opacity: 0;
+
+    transition: opacity 0.5s ease, transform 0.5s ease, filter 0.5s ease;
+    filter: drop-shadow(0 0 4px var(--color-accent)) drop-shadow(0 0 8px var(--color-accent));
+}
+
+
+.brand:hover::after,
+.brand:hover::before {
+    opacity: 1;
+}
+
+.brand::after {
+    transform: translate(12px, -12px) rotate(270deg);
+}
+
+.brand:hover::after {
+    transform: translate(12px, -12px) rotate(360deg);
+    /* 270 → 360 = 90° short path */
+}
+
+/* Top-left orbit */
+.brand::before {
+    transform: translate(-12px, 12px) rotate(90deg);
+}
+
+.brand:hover::before {
+    transform: translate(-12px, 12px) rotate(180deg);
+}
+
+
+
+/* Keyframes for orbit */
+@keyframes orbit {
+    0% {
+        transform: translate(20px, -20px) rotate(270deg);
+    }
+
+    100% {
+        transform: translate(20px, -20px) rotate(360deg);
+    }
+}
+
+@keyframes orbitMirror {
+    0% {
+        transform: translate(-20px, -20px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-20px, -20px) rotate(-360deg);
+    }
+}
+
+
+
 .site-header .container {
     display: flex;
     align-items: center;
