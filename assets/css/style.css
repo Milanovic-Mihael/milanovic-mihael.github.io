@@ -321,6 +321,18 @@ h3 {
     opacity: 1;
 }
 
+.filter-btn:hover::before,
+.filter-btn:hover::after {
+    opacity: 1;
+}
+
+.filters:hover .filter-btn.active:not(:hover)::before,
+.filters:hover .filter-btn.active:not(:hover)::after {
+    opacity: 0;
+}
+
+
+
 
 .filter-btn[data-filter="Strength Seeker"].active {
     background: radial-gradient(circle, rgba(18, 18, 19, 0) 0%, var(--color-strs) 100%);
