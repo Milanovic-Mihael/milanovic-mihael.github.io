@@ -67,9 +67,11 @@ layout: default
       wrappers.forEach(wrapper => {
         const card = wrapper.querySelector('.oc-card');
         const title = card.querySelector('h2').textContent.toLowerCase();
+        const speciesElem = card.querySelector('.muted'); // your species <p> element
+        const species = speciesElem ? speciesElem.textContent.toLowerCase() : '';
         const universe = card.getAttribute('data-universe');
 
-        const matchesSearch = title.includes(query);
+        const matchesSearch = title.includes(query) || species.includes(query);
         const matchesFilter = activeFilter === 'all' || universe === activeFilter;
 
         wrapper.style.display = (matchesSearch && matchesFilter) ? '' : 'none';
