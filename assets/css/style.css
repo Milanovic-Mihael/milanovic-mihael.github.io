@@ -326,10 +326,11 @@ h3 {
     opacity: 1;
 }
 
-.filters:hover .filter-btn.active:not(:hover)::before,
-.filters:hover .filter-btn.active:not(:hover)::after {
+.filters:has(.filter-btn:hover) .filter-btn.active:not(:hover)::before,
+.filters:has(.filter-btn:hover) .filter-btn.active:not(:hover)::after {
     opacity: 0;
 }
+
 
 
 
