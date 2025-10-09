@@ -133,18 +133,10 @@ body {
 
 .header-buttons {
     display: flex;
-    gap: var(--spacing-md);
-    align-items: center;
-    flex-shrink: 0;
-}
-
-.header-buttons {
-    display: flex;
     gap: var(--spacing-xl);
     align-items: center;
     flex-shrink: 0;
 }
-
 
 .header-btn {
     transform: translateY(0);
@@ -247,21 +239,6 @@ body {
     filter: drop-shadow(0 0 8px var(--color-accent)) drop-shadow(0 0 4px rgba(41, 171, 224, 0.5));
 }
 
-
-.header-btn:hover::before {
-    opacity: 1;
-    transform: translateY(-50%) translateX(3em) scaleX(1);
-}
-
-.header-btn:hover::after {
-    opacity: 1;
-    transform: translateY(-50%) translateX(-3em) scaleX(-1);
-}
-
-
-
-
-
 .kofi-logo {
     height: 20px;
     width: auto;
@@ -298,6 +275,8 @@ h3 {
     border-radius: var(--border-radius-sm);
     cursor: pointer;
     transition: background var(--transition-normal), transform var(--transition-normal);
+    position: relative;
+    overflow: hidden;
 }
 
 .filter-btn:hover {
@@ -306,7 +285,6 @@ h3 {
 }
 
 .filter-btn.active {
-    position: relative;
     overflow: visible;
 }
 
@@ -327,28 +305,22 @@ h3 {
 
 /* Positioning */
 .filter-btn::before {
-    top: 33%;
+    top: 40%;
     right: 0%;
     transform: rotate(180deg);
 }
 
 .filter-btn::after {
-    bottom: 33%;
+    bottom: 40%;
     left: 0%;
     transform: rotate(0deg);
 }
 
-/* Show corners on hover */
-.filter-btn:hover::before,
-.filter-btn:hover::after {
+.filter-btn.active::before,
+.filter-btn.active::after {
     opacity: 1;
 }
 
-/* Show corners on active button ONLY if no button is hovered */
-.filters:not(:hover) .filter-btn.active::before,
-.filters:not(:hover) .filter-btn.active::after {
-    opacity: 1;
-}
 
 .filter-btn[data-filter="Strength Seeker"].active {
     background: radial-gradient(circle, rgba(18, 18, 19, 0) 0%, var(--color-strs) 100%);
@@ -912,4 +884,19 @@ h3 {
     height: 100%;
     object-fit: cover;
     transition: opacity 0.2s ease;
+}
+
+#oc-search {
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius-sm);
+    border: none;
+    background: #27282cb9;
+    color: var(--color-text-primary);
+    font-size: 1rem;
+    flex: 1;
+    min-width: 150px;
+}
+
+.no-ocs {
+    color: var(--color-text-secondary);
 }

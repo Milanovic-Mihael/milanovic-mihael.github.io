@@ -8,7 +8,9 @@ layout: default
   {% for u in universes %}
   <button class="filter-btn" data-filter="{{ u | escape }}">{{ u }}</button>
   {% endfor %}
+  <input type="text" id="oc-search" placeholder="Search characters..." />
 </div>
+
 
 <div class="oc-grid">
   {% assign sorted_ocs = site.ocs | sort: "order" %}
@@ -40,35 +42,54 @@ layout: default
   </div>
 
   {% endfor %}
+
+  <p class="no-ocs" style="display:none;">No one here... check your search...</p>
 </div>
 
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    var buttons = document.querySelectorAll('.filter-btn');
-    var wrappers = document.querySelectorAll('.oc-card-wrapper');
+    const buttons = document.querySelectorAll('.filter-btn');
+    const wrappers = document.querySelectorAll('.oc-card-wrapper');
+    const searchInput = document.getElementById('oc-search');
+    const noMessage = document.querySelector('.no-ocs');
 
     // Make "All" active on load
-    var activeBtn = document.querySelector('.filter-btn[data-filter="all"]');
+    const activeBtn = document.querySelector('.filter-btn[data-filter="all"]');
     activeBtn.classList.add('active');
 
-    // Filter + toggle active state
-    buttons.forEach(function (btn) {
+    function filterOCs() {
+      const query = searchInput.value.toLowerCase();
+      const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
+
+      let anyVisible = false;
+
+      wrappers.forEach(wrapper => {
+        const card = wrapper.querySelector('.oc-card');
+        const title = card.querySelector('h2').textContent.toLowerCase();
+        const universe = card.getAttribute('data-universe');
+
+        const matchesSearch = title.includes(query);
+        const matchesFilter = activeFilter === 'all' || universe === activeFilter;
+
+        wrapper.style.display = (matchesSearch && matchesFilter) ? '' : 'none';
+        if (matchesSearch && matchesFilter) anyVisible = true;
+      });
+
+      noMessage.style.display = anyVisible ? 'none' : '';
+    }
+
+    // Filter buttons
+    buttons.forEach(btn => {
       btn.addEventListener('click', function () {
-        var f = this.getAttribute('data-filter');
         buttons.forEach(b => b.classList.remove('active'));
         this.classList.add('active');
-
-        wrappers.forEach(function (wrapper) {
-          var card = wrapper.querySelector('.oc-card');
-          if (f === 'all' || card.getAttribute('data-universe') === f) {
-            wrapper.style.display = '';
-          } else {
-            wrapper.style.display = 'none';
-          }
-        });
+        filterOCs();
       });
     });
+
+    // Search input
+    searchInput.addEventListener('input', filterOCs);
 
     // Assign frame images
     wrappers.forEach(wrapper => {
@@ -83,8 +104,5 @@ layout: default
       frame.src = frames[universe] || "";
     });
   });
-
-
-
 
 </script>
