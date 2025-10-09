@@ -491,9 +491,9 @@ h3 {
 
 .oc-grid {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: var(--spacing-md);
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
 }
 
 @media (max-width: 500px) {
