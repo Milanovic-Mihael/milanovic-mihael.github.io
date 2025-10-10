@@ -681,7 +681,7 @@ h3 {
 
 /* Protagonist star indicator */
 .oc-card.protagonist::after {
-    content: "★";
+    content: "🜄";
     position: absolute;
     top: 0.4rem;
     right: 1rem;
