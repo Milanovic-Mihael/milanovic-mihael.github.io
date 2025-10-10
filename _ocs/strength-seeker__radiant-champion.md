@@ -3,7 +3,9 @@ title: Radiant Champion
 universe: Strength Seeker
 species: Calumian
 tags: []
-bio: ''
+bio: A calumian born on Zavi'cttan and one of the few that survived the disaster.
+  The Radiant Champion is a vigilante scouring the universe in hopes he'll clean out
+  all roots of evil.
 featured: assets/images/character_images/strength-seeker/radiant-champion/Radiant_champion.webp
 gallery:
 - assets/images/character_images/strength-seeker/radiant-champion/Radiant_champion.webp
