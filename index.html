@@ -23,6 +23,9 @@ layout: default
 
   <div class="oc-card-wrapper" data-universe="{{ oc.universe | escape }}">
     <a class="oc-card {{ protag_class }}" href="{{ oc.url | relative_url }}" data-universe="{{ oc.universe | escape }}">
+      {% if oc.tags contains "protag" %}
+      <span class="protagonist-icon">🜄</span>
+      {% endif %}
       <div class="oc-thumb">
         {% if oc.featured %}
         <img data-src="{{ oc.featured | relative_url }}" alt="{{ oc.title | escape }}">
@@ -105,6 +108,40 @@ layout: default
       };
       frame.src = frames[universe] || "";
     });
-  });
 
+    // Create tooltip element
+    const tooltip = document.createElement('div');
+    tooltip.className = 'protagonist-tooltip';
+    tooltip.textContent = 'This character is the protagonist';
+    document.body.appendChild(tooltip);
+
+    // Handle all protagonist icons
+    const icons = document.querySelectorAll('.protagonist-icon');
+
+    icons.forEach(icon => {
+      icon.addEventListener('mouseenter', function (e) {
+        const rect = icon.getBoundingClientRect();
+
+        // Position tooltip above the icon
+        tooltip.style.left = rect.left + (rect.width / 2) + 'px';
+        tooltip.style.top = rect.top - 8 + 'px';
+        tooltip.style.transform = 'translate(-50%, -100%)';
+
+        // Show tooltip
+        tooltip.classList.add('show');
+      });
+
+      icon.addEventListener('mouseleave', function () {
+        tooltip.classList.remove('show');
+      });
+    });
+
+    // Update tooltip position on scroll
+    let scrollTimeout;
+    window.addEventListener('scroll', function () {
+      if (tooltip.classList.contains('show')) {
+        tooltip.classList.remove('show');
+      }
+    });
+  });
 </script>
