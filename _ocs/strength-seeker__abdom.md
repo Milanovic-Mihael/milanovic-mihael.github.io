@@ -4,7 +4,8 @@ universe: Strength Seeker
 species: Vidium
 tags:
 - protag
-bio: ''
+bio: A vidium born on Fortis. After a stellum gate connecting his homeworld activated
+  briefly, he found himself stranded at the far end of the Macrocosm.
 featured: assets/images/character_images/strength-seeker/abdom/ABDOMRRAGGGGGH.webp
 gallery:
 - assets/images/character_images/strength-seeker/abdom/ABDOMMM.webp
