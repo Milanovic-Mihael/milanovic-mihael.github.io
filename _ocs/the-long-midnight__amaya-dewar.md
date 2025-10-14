@@ -4,7 +4,7 @@ universe: The Long Midnight
 species: Human (blessed)
 tags: []
 bio: ''
-featured: assets/images/character_images/the-long-midnight/amaya-dewar/amaya_door.webp
+featured: assets/images/character_images/the-long-midnight/amaya-dewar/amaya_sleeping.webp
 gallery:
 - assets/images/character_images/the-long-midnight/amaya-dewar/amaya_sleeping.webp
 - assets/images/character_images/the-long-midnight/amaya-dewar/amaya_door.webp
