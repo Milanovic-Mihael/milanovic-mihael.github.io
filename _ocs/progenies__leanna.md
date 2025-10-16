@@ -7,9 +7,9 @@ tags:
 bio: ''
 featured: assets/images/character_images/progenies/leanna/leanna_but_IThinkSo.webp
 gallery:
+- assets/images/character_images/progenies/leanna/Leanna_swqing.webp
 - assets/images/character_images/progenies/leanna/Leann_sitting_nshit.webp
 - assets/images/character_images/progenies/leanna/leanna_but_IThinkSo.webp
-- assets/images/character_images/progenies/leanna/Leanbna.webp
 - assets/images/character_images/progenies/leanna/leann_pretty.webp
 - assets/images/character_images/progenies/leanna/Leanna_act2.webp
 - assets/images/character_images/progenies/leanna/Leanna_REAL.webp
@@ -24,6 +24,7 @@ gallery:
 - assets/images/character_images/progenies/leanna/Leanna_back.webp
 - assets/images/character_images/progenies/leanna/Leanna_dress.webp
 - assets/images/character_images/progenies/leanna/leanna_hot.webp
+- assets/images/character_images/progenies/leanna/Leanbna.webp
 - assets/images/character_images/progenies/leanna/leanna_number_4.webp
 - assets/images/character_images/progenies/leanna/Leanna_blood.webp
 - assets/images/character_images/progenies/leanna/leanna.webp
