@@ -3,7 +3,7 @@ title: Genocider
 universe: Strength Seeker
 species: Unknown
 tags: []
-bio: ''
+bio: Release all threads of suffering.
 featured: assets/images/character_images/strength-seeker/genocider/the_genocider_guy.webp
 gallery:
 - assets/images/character_images/strength-seeker/genocider/the_genocider_guy.webp

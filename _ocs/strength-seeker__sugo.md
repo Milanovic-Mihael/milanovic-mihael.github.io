@@ -3,7 +3,7 @@ title: Sugo
 universe: Strength Seeker
 species: Cobalian
 tags: []
-bio: ''
+bio: A cobalian child with a life-threatening disease. Very happy regardless.
 featured: assets/images/character_images/strength-seeker/sugo/Sugo.webp
 gallery:
 - assets/images/character_images/strength-seeker/sugo/abdom_and_sugo_eatingshit.webp
