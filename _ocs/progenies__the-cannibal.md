@@ -3,7 +3,7 @@ title: The Cannibal
 universe: Progenies
 species: Monsterized Letum
 tags: []
-bio: ''
+bio: The Cannibal is a Letum who became monsterized for easier access to human meat.
 featured: assets/images/character_images/progenies/the-cannibal/the_cannibal.webp
 gallery:
 - assets/images/character_images/progenies/the-cannibal/the_cannibal.webp

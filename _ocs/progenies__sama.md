@@ -3,7 +3,7 @@ title: Sama
 universe: Progenies
 species: Monsterized Human
 tags: []
-bio: ''
+bio: A child sat under a tree, reading her book.
 featured: assets/images/character_images/progenies/sama/warmup_doodle_wtf.webp
 gallery:
 - assets/images/character_images/progenies/sama/warmup_doodle_wtf.webp

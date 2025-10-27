@@ -3,7 +3,7 @@ title: Omar Fusty
 universe: Misc
 species: Monkey hehe
 tags: []
-bio: ''
+bio: Old ass OC.
 featured: assets/images/character_images/misc/omar-fusty/Pat_dad.webp
 gallery:
 - assets/images/character_images/misc/omar-fusty/Pat_dad.webp

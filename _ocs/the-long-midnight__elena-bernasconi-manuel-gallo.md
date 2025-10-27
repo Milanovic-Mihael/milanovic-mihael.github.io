@@ -3,7 +3,12 @@ title: Elena Bernasconi & Manuel Gallo
 universe: The Long Midnight
 species: Human
 tags: []
-bio: ''
+bio: 'Elena is a translator responsible for translating and decrypting the books housed
+  in the National Central Library of Florence. She was born in Switzerland.
+
+
+  Manuel is a Son of Pluto, a common soldier forged in accordance with their philosophy
+  of Divine Abandonment.'
 featured: assets/images/character_images/the-long-midnight/elena-bernasconi-manuel-gallo/SheNeedsHimOnAMarriageLevel.webp
 gallery:
 - assets/images/character_images/the-long-midnight/elena-bernasconi-manuel-gallo/IHadADream

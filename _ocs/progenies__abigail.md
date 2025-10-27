@@ -3,7 +3,8 @@ title: Abigail
 universe: Progenies
 species: Patym
 tags: []
-bio: ''
+bio: Abigail is a median wayfarer, focused on researching the manaworks and funding
+  her creations.
 featured: assets/images/character_images/progenies/abigail/abigail_2025.webp
 gallery:
 - assets/images/character_images/progenies/abigail/abigail_2025.webp

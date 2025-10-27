@@ -3,7 +3,8 @@ title: Wolfrik
 universe: Progenies
 species: Human
 tags: []
-bio: ''
+bio: Wolfrik is a former median wayfarer. He is the husband of Rista and the father
+  of David.
 featured: assets/images/character_images/progenies/wolfrik/wolfrik22.webp
 gallery:
 - assets/images/character_images/progenies/wolfrik/wolfrik22.webp

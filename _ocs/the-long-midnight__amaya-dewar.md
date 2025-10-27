@@ -3,7 +3,7 @@ title: Amaya Dewar
 universe: The Long Midnight
 species: Human (blessed)
 tags: []
-bio: ''
+bio: Amaya is a Blessed human born in former Scotland, categorized as Svyatigor class.
 featured: assets/images/character_images/the-long-midnight/amaya-dewar/amaya_sleeping.webp
 gallery:
 - assets/images/character_images/the-long-midnight/amaya-dewar/amaya_sleeping.webp

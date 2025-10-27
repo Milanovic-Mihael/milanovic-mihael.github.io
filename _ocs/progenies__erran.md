@@ -3,7 +3,7 @@ title: Erran
 universe: Progenies
 species: Armar
 tags: []
-bio: ''
+bio: Erran is a direct descendant of the original hero group.
 featured: assets/images/character_images/progenies/erran/Erran.webp
 gallery:
 - assets/images/character_images/progenies/erran/Erran.webp

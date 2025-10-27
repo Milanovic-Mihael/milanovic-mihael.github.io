@@ -4,7 +4,8 @@ universe: The Long Midnight
 species: Human (blessed)
 tags:
 - protag
-bio: ''
+bio: Oskari is a blessed human born in the area of former Finland. He is categorized
+  as Svyatagor class.
 featured: assets/images/character_images/the-long-midnight/oskari/Oskari_the_snow.webp
 gallery:
 - assets/images/character_images/the-long-midnight/oskari/oskari_cool.webp

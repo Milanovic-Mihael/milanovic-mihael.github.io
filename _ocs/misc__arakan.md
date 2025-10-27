@@ -3,7 +3,7 @@ title: Arakan
 universe: Misc
 species: Monkey hehe
 tags: []
-bio: ''
+bio: Old ass OC.
 featured: assets/images/character_images/misc/arakan/icestronk.webp
 gallery:
 - assets/images/character_images/misc/arakan/icestronk.webp

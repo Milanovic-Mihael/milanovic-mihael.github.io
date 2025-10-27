@@ -3,7 +3,8 @@ title: David
 universe: Progenies
 species: Armar
 tags: []
-bio: ''
+bio: David is a totter wayfarer who began exploring the Expanse for quick financial
+  gain. He is the only son of Wolfrik and Rista.
 featured: assets/images/character_images/progenies/david/david_but_face.webp
 gallery:
 - assets/images/character_images/progenies/david/david_but_face.webp

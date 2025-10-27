@@ -3,7 +3,8 @@ title: Brielle
 universe: Progenies
 species: Human
 tags: []
-bio: ''
+bio: Brielle is a grand wayfarer from the House of Kanta, a long line of guardsmen
+  keeping their territory secure from monster attacks.
 featured: assets/images/character_images/progenies/brielle/Brielle_2.webp
 gallery:
 - assets/images/character_images/progenies/brielle/Brielle_2.webp

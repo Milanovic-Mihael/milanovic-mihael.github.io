@@ -3,9 +3,9 @@ title: Alicia
 universe: Progenies
 species: Armar
 tags: []
-bio: ''
+bio: Alicia is the younger sister of Adarim.
 featured: assets/images/character_images/progenies/alicia/smolkid.webp
 gallery:
 - assets/images/character_images/progenies/alicia/smolkid.webp
-order: 34.0
+order: 35.0
 ---
