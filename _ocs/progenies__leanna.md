@@ -4,7 +4,8 @@ universe: Progenies
 species: Human
 tags:
 - protag
-bio: ''
+bio: Leanna is a median voyager in the Desolate Expanse. Her thrill-seeking nature
+  has made her curious about venturing even farther into the zones.
 featured: assets/images/character_images/progenies/leanna/leanna_but_IThinkSo.webp
 gallery:
 - assets/images/character_images/progenies/leanna/Leanna_swqing.webp
