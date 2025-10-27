@@ -3,8 +3,9 @@ title: Avrena
 universe: Strength Seeker
 species: Angullian
 tags: []
-bio: The first monarch of the Der-Euglar dynasty. After years of climbing the military
-  ladder, she seized the throne from the old emperor by force.
+bio: Avrena is the first monarch of the Der-Euglar dynasty. After years of climbing
+  the military ladder, she seized the throne from the old emperor by force. Mother
+  of Rovilia.
 featured: assets/images/character_images/strength-seeker/avrena/Gpjy3keWMAAurN1.webp
 gallery:
 - assets/images/character_images/strength-seeker/avrena/Gpjy3keWMAAurN1.webp

@@ -3,7 +3,8 @@ title: Rovilia
 universe: Strength Seeker
 species: Angullian
 tags: []
-bio: The only daughter of Avrena. Despite this, she never sat on the dynasty's throne.
+bio: Rovilia is the only daughter of Avrena. Despite this, she never sat on the dynasty's
+  throne.
 featured: assets/images/character_images/strength-seeker/rovilia/avrena_daughter.webp
 gallery:
 - assets/images/character_images/strength-seeker/rovilia/avrena_daughter.webp

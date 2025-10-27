@@ -3,7 +3,7 @@ title: Sunbearer Potentate
 universe: Strength Seeker
 species: Sunbearer
 tags: []
-bio: The ruler of all sunbearers, and the potentate under which they fell to enslavement.
+bio: The ruler of all Sunbearers, and the potentate under which they fell to enslavement.
 featured: assets/images/character_images/strength-seeker/sunbearer-potentate/Sunbearer_potenttaet.webp
 gallery:
 - assets/images/character_images/strength-seeker/sunbearer-potentate/Sunbearer_potenttaet.webp
