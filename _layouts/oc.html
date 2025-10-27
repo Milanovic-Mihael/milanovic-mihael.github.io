@@ -77,7 +77,7 @@
           {% if page.bio %}
           <section class="bio">
             <h2>About</h2>
-            <p>{{ page.bio }}</p>
+            {{ page.bio | markdownify }}
           </section>
           {% endif %}
         </div>
