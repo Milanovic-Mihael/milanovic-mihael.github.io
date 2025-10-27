@@ -23,6 +23,7 @@ gallery:
 - assets/images/character_images/progenies/leanna/Leanna_Back (1).webp
 - assets/images/character_images/progenies/leanna/Leanna_back.webp
 - assets/images/character_images/progenies/leanna/Leanna_dress.webp
+- assets/images/character_images/progenies/leanna/eatingmyfoodfr.webp
 - assets/images/character_images/progenies/leanna/leanna_hot.webp
 - assets/images/character_images/progenies/leanna/Leanbna.webp
 - assets/images/character_images/progenies/leanna/leanna_number_4.webp
