@@ -8,6 +8,7 @@ bio: Joachim is a descendant of the House of Yona, which lost its royal status d
   branch and to punish those responsible for its fall.
 order: 22.0
 gallery:
+- assets/images/character_images/progenies/joachim/Joachim_slashingymyshit.webp
 - assets/images/character_images/progenies/joachim/Joachim.webp
 - assets/images/character_images/progenies/joachim/DESIGN_HIM.webp
 - assets/images/character_images/progenies/joachim/joachim_back.webp
