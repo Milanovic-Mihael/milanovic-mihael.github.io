@@ -65,14 +65,10 @@
 
       {% if page.featured %}
       <div class="oc-header">
-        <div class="featured">
-          <img src="{{ page.featured | relative_url }}" alt="{{ page.title | escape }} featured artwork">
-        </div>
         <div class="oc-info">
           <h1>{{ page.title }}</h1>
-          <div class="oc-meta-line">
-            {% if page.species %}<span class="meta"><strong>Species:</strong> {{ page.species }}</span>{% endif %}
-            {% if page.universe %}<span class="meta"><strong>Universe:</strong> {{ page.universe }}</span>{% endif %}
+          <div class="line-sml-container">
+            <img src="{{ '/assets/images/UI/line_sml.png' | relative_url }}" alt="Divider" class="line-sml">
           </div>
           {% if page.bio %}
           <section class="bio">
@@ -80,6 +76,13 @@
             {{ page.bio | markdownify }}
           </section>
           {% endif %}
+          <div class="oc-meta-line">
+            {% if page.species %}<span class="meta"><strong>Species:</strong> {{ page.species }}</span>{% endif %}
+            {% if page.universe %}<span class="meta"><strong>Universe:</strong> {{ page.universe }}</span>{% endif %}
+          </div>
+        </div>
+        <div class="featured">
+          <img src="{{ page.featured | relative_url }}" alt="{{ page.title | escape }} featured artwork">
         </div>
       </div>
       {% endif %}
