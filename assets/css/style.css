@@ -1101,3 +1101,13 @@ h3 {
     color: var(--color-text-muted);
     text-shadow: 0 0 6px rgba(255, 255, 255, 0.05);
 }
+
+.bio a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+.bio a:hover {
+    color: var(--color-accent-hover);
+    text-decoration: underline;
+}

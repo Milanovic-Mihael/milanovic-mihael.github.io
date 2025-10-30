@@ -4,8 +4,11 @@ universe: Strength Seeker
 species: Vidium
 tags:
 - protag
-bio: Abdom is a Vidium born on Fortis. After a Stellum gate connecting his homeworld
+bio: 'Abdom is a Vidium born on Fortis. After a Stellum gate connecting his homeworld
   briefly activated, he found himself stranded at the far end of the Macrocosm.
+
+
+  [Strength Seeker lore video!](https://www.youtube.com/watch?v=dmlmZ67XxKo)'
 featured: assets/images/character_images/strength-seeker/abdom/ABDOMRRAGGGGGH.webp
 gallery:
 - assets/images/character_images/strength-seeker/abdom/ABDOMMM.webp
