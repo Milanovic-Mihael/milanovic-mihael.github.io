@@ -14,5 +14,5 @@ gallery:
 - assets/images/character_images/the-long-midnight/oskari/oskarifinally.webp
 - assets/images/character_images/the-long-midnight/oskari/Oskari.webp
 - assets/images/character_images/the-long-midnight/oskari/CONCEPT_ART_SNOWFIELD.webp
-order: 37.0
+order: 38.0
 ---

@@ -9,5 +9,5 @@ featured: assets/images/character_images/the-long-midnight/bastien/fucked_up_guy
 gallery:
 - assets/images/character_images/the-long-midnight/bastien/fucked_up_guy_beloved.webp
 - assets/images/character_images/the-long-midnight/bastien/aim_here.webp
-order: 47.0
+order: 48.0
 ---

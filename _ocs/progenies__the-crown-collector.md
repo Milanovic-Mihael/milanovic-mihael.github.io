@@ -8,5 +8,5 @@ featured: assets/images/character_images/progenies/the-crown-collector/crown_col
 gallery:
 - assets/images/character_images/progenies/the-crown-collector/crown_collector.webp
 - assets/images/character_images/progenies/the-crown-collector/crown_collector_-_Copy.webp
-order: 30.0
+order: 31.0
 ---

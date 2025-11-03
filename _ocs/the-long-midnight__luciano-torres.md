@@ -9,5 +9,5 @@ bio: Luciano is a Blessed Human from former Spain, categorized as Svyatogor clas
 featured: assets/images/character_images/the-long-midnight/luciano-torres/huge_spainard.webp
 gallery:
 - assets/images/character_images/the-long-midnight/luciano-torres/huge_spainard.webp
-order: 46.0
+order: 47.0
 ---

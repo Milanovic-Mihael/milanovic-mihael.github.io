@@ -8,5 +8,5 @@ bio: Ignazio di Prima is an Italian politician and the Destinato of Reignergard 
 featured: assets/images/character_images/the-long-midnight/ignazio-di-prima/roman_despot.webp
 gallery:
 - assets/images/character_images/the-long-midnight/ignazio-di-prima/roman_despot.webp
-order: 41.0
+order: 42.0
 ---

@@ -10,5 +10,5 @@ gallery:
 - assets/images/character_images/progenies/marzana/marzana2.webp
 - assets/images/character_images/progenies/marzana/neemsis_girl.webp
 - assets/images/character_images/progenies/marzana/marzana_foreva.webp
-order: 28.0
+order: 29.0
 ---

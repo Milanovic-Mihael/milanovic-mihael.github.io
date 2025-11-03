@@ -26,5 +26,5 @@ gallery:
 - assets/images/character_images/the-long-midnight/elena-bernasconi-manuel-gallo/1782211709614039041_1.webp
 - assets/images/character_images/the-long-midnight/elena-bernasconi-manuel-gallo/1782915217124433962_1.webp
 - assets/images/character_images/the-long-midnight/elena-bernasconi-manuel-gallo/caughtlol.webp
-order: 38.0
+order: 39.0
 ---

@@ -14,5 +14,5 @@ gallery:
 - assets/images/character_images/the-long-midnight/amaya-dewar/batmoment.webp
 - assets/images/character_images/the-long-midnight/amaya-dewar/amayadewaryea.webp
 - assets/images/character_images/the-long-midnight/amaya-dewar/amaya_stronk.webp
-order: 40.0
+order: 41.0
 ---
