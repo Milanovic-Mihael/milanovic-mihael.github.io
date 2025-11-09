@@ -15,6 +15,7 @@ gallery:
 - assets/images/character_images/strength-seeker/abdom/ABDOM_BACK.webp
 - assets/images/character_images/strength-seeker/abdom/ABDOM_BACK_WIHTOUT_SHOT.webp
 - assets/images/character_images/strength-seeker/abdom/abdom_butyeah.webp
+- assets/images/character_images/strength-seeker/abdom/abdom_wakeywakey.webp
 - assets/images/character_images/strength-seeker/abdom/abdom_SUPER.webp
 - assets/images/character_images/strength-seeker/abdom/abdom_BBBEEACCHh.webp
 - assets/images/character_images/strength-seeker/abdom/abdom_clothing.webp
