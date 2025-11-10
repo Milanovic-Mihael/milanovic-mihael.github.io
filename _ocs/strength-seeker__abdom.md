@@ -24,6 +24,7 @@ gallery:
 - assets/images/character_images/strength-seeker/abdom/abdom_HUGE-guybeloved.webp
 - assets/images/character_images/strength-seeker/abdom/ABDOMSTRONNKKK.webp
 - assets/images/character_images/strength-seeker/abdom/Abdom_LIGHTS.gif
+- assets/images/character_images/strength-seeker/abdom/abdom_my_hero.webp
 - assets/images/character_images/strength-seeker/abdom/abdom_thorns.webp
 - assets/images/character_images/strength-seeker/abdom/abdom_cooking.webp
 - assets/images/character_images/strength-seeker/abdom/ABDOMBAKKCCSHOOTT.webp
