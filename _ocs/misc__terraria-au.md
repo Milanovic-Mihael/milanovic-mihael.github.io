@@ -6,7 +6,9 @@ species: ''
 tags: []
 bio: 'Terraria: Pendulum is a story based on the world of Terraria. Keep in mind this
   is just a fun side project I''m doing, so it is not supposed to be lore-accurate
-  to the game itself.'
+  to the game itself.
+  
+  The pendulum always swings back.'
 order: 53.0
 gallery:
 - assets/images/character_images/misc/terraria-au/TheEmpressOfLight.webp
