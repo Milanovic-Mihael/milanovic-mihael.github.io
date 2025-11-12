@@ -2,146 +2,50 @@
 layout: default
 ---
 
-<div class="filters">
-  <button class="filter-btn" data-filter="all">All</button>
-  {% assign universes = "Strength Seeker,Progenies,The Long Midnight" | split: "," %}
-  {% for u in universes %}
-  <button class="filter-btn" data-filter="{{ u | escape }}">{{ u }}</button>
-  {% endfor %}
-  <input type="text" id="oc-search" placeholder="Search characters..." />
-</div>
+{% if page.url == "/" %}
+<link rel="stylesheet" href="{{ '/assets/css/homepage.css' | relative_url }}">
+{% endif %}
 
+<h1 class="homepage-title">My Character Gallery!</h1>
+<p class="homepage-subtitle">Click a universe to view its characters!</p>
 
-<div class="oc-grid">
-  {% assign sorted_ocs = site.ocs | sort: "order" %}
-  {% for oc in sorted_ocs %}
-
-  {% assign protag_class = "" %}
-  {% if oc.tags contains "protag" %}
-  {% assign protag_class = "protagonist" %}
-  {% endif %}
-
-  <div class="oc-card-wrapper" data-universe="{{ oc.universe | escape }}">
-    <a class="oc-card {{ protag_class }}" href="{{ oc.url | relative_url }}" data-universe="{{ oc.universe | escape }}">
-      {% if oc.tags contains "protag" %}
-      <span class="protagonist-icon">🜄</span>
-      {% endif %}
-      <div class="oc-thumb">
-        {% if oc.featured %}
-        <img data-src="{{ oc.featured | relative_url }}" alt="{{ oc.title | escape }}">
-        {% endif %}
-      </div>
-
-      <div class="oc-meta">
-        <div class="title-wrapper">
-          <h2>{{ oc.title }}</h2>
-        </div>
-        {% if oc.species %}<p class="muted">{{ oc.species }}</p>{% endif %}
-        {% if oc.universe %}<span class="tag">{{ oc.universe }}</span>{% endif %}
-      </div>
+<div class="homepage-grid">
+    <!-- Card 1 -->
+    <a href="/oc-grid.html" class="home-card-wrapper" data-universe="Strength Seeker" data-filter="Strength Seeker">
+        <div class="home-card"></div>
+        <div class="frame"></div>
     </a>
 
-    <img class="frame" alt="">
-  </div>
+    <!-- Card 2 -->
+    <a href="/oc-grid.html" class="home-card-wrapper" data-universe="Progenies" data-filter="Progenies">
+        <div class="home-card"></div>
+        <div class="frame"></div>
+    </a>
 
-  {% endfor %}
+    <!-- Card 3 -->
+    <a href="/oc-grid.html" class="home-card-wrapper" data-universe="The Long Midnight" data-filter="The Long Midnight">
+        <div class="home-card"></div>
+        <div class="frame"></div>
+    </a>
 
-  <p class="no-ocs" style="display:none;">No one here... check your search...</p>
+    <!-- Card 4 (Terraria AU / Work) -->
+    <a href="/oc/misc-terraria-au/" class="home-card-wrapper work-wrapper" data-universe="Terraria AU">
+        <div class="home-card"></div>
+        <div class="frame"></div>
+    </a>
+
+    <!-- Card 5 (ALL OCS) -->
+    <a href="/oc-grid.html" class="home-card-wrapper all-ocs-wrapper" data-filter="all">
+        <div class="home-card all-ocs">All Characters ></div>
+        <div class="frame"></div>
+    </a>
+
 </div>
 
-
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const buttons = document.querySelectorAll('.filter-btn');
-    const wrappers = document.querySelectorAll('.oc-card-wrapper');
-    const searchInput = document.getElementById('oc-search');
-    const noMessage = document.querySelector('.no-ocs');
-
-    // Make "All" active on load
-    const activeBtn = document.querySelector('.filter-btn[data-filter="all"]');
-    activeBtn.classList.add('active');
-
-    function filterOCs() {
-      const query = searchInput.value.toLowerCase();
-      const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
-
-      let anyVisible = false;
-
-      wrappers.forEach(wrapper => {
-        const card = wrapper.querySelector('.oc-card');
-        const title = card.querySelector('h2').textContent.toLowerCase();
-        const speciesElem = card.querySelector('.muted'); // your species <p> element
-        const species = speciesElem ? speciesElem.textContent.toLowerCase() : '';
-        const universe = card.getAttribute('data-universe');
-
-        const matchesSearch = title.includes(query) || species.includes(query);
-        const matchesFilter = activeFilter === 'all' || universe === activeFilter;
-
-        wrapper.style.display = (matchesSearch && matchesFilter) ? '' : 'none';
-        if (matchesSearch && matchesFilter) anyVisible = true;
-      });
-
-      noMessage.style.display = anyVisible ? 'none' : '';
-    }
-
-    // Filter buttons
-    buttons.forEach(btn => {
-      btn.addEventListener('click', function () {
-        buttons.forEach(b => b.classList.remove('active'));
-        this.classList.add('active');
-        filterOCs();
-      });
+    document.querySelectorAll('.home-card-wrapper[data-filter]').forEach(link => {
+        link.addEventListener('click', () => {
+            sessionStorage.setItem('presetFilter', link.dataset.filter);
+        });
     });
-
-    // Search input
-    searchInput.addEventListener('input', filterOCs);
-
-    // Assign frame images
-    wrappers.forEach(wrapper => {
-      const universe = wrapper.dataset.universe;
-      const frame = wrapper.querySelector('.frame');
-      const frames = {
-        "Strength Seeker": "/assets/images/frames/frame_strs.png",
-        "Progenies": "/assets/images/frames/frame_prog.png",
-        "The Long Midnight": "/assets/images/frames/frame_midnight.png",
-        "Misc": "/assets/images/frames/frame_misc.png"
-      };
-      frame.src = frames[universe] || "";
-    });
-
-    // Create tooltip element
-    const tooltip = document.createElement('div');
-    tooltip.className = 'protagonist-tooltip';
-    tooltip.textContent = 'This character is the protagonist';
-    document.body.appendChild(tooltip);
-
-    // Handle all protagonist icons
-    const icons = document.querySelectorAll('.protagonist-icon');
-
-    icons.forEach(icon => {
-      icon.addEventListener('mouseenter', function (e) {
-        const rect = icon.getBoundingClientRect();
-
-        // Position tooltip above the icon
-        tooltip.style.left = rect.left + (rect.width / 2) + 'px';
-        tooltip.style.top = rect.top - 8 + 'px';
-        tooltip.style.transform = 'translate(-50%, -100%)';
-
-        // Show tooltip
-        tooltip.classList.add('show');
-      });
-
-      icon.addEventListener('mouseleave', function () {
-        tooltip.classList.remove('show');
-      });
-    });
-
-    // Update tooltip position on scroll
-    let scrollTimeout;
-    window.addEventListener('scroll', function () {
-      if (tooltip.classList.contains('show')) {
-        tooltip.classList.remove('show');
-      }
-    });
-  });
 </script>

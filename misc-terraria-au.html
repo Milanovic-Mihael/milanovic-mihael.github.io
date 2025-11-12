@@ -1,0 +1,13 @@
+---
+layout: terraria_au
+title: "Terraria: Pendulum"
+permalink: /oc/misc-terraria-au/
+---
+
+{% assign terraria = site.ocs | where: "title", "Terraria: Pendulum" | first %}
+
+{% if terraria %}
+{% assign character = terraria %}
+{% else %}
+<p>Error: Terraria AU not found.</p>
+{% endif %}

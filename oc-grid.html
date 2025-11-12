@@ -1,0 +1,165 @@
+---
+layout: default
+title: Character Gallery | MilanovicMihael
+---
+
+<div class="filters">
+  <button class="filter-btn" data-filter="all">All</button>
+  {% assign universes = "Strength Seeker,Progenies,The Long Midnight" | split: "," %}
+  {% for u in universes %}
+  <button class="filter-btn" data-filter="{{ u | escape }}">{{ u }}</button>
+  {% endfor %}
+  <input type="text" id="oc-search" placeholder="Search characters..." />
+</div>
+
+<div class="oc-grid">
+  {% assign sorted_ocs = site.ocs | sort: "order" %}
+  {% for oc in sorted_ocs %}
+  {% unless oc.title == "Terraria: Pendulum" %}
+
+  {% assign protag_class = "" %}
+  {% if oc.tags contains "protag" %}
+  {% assign protag_class = "protagonist" %}
+  {% endif %}
+
+  <div class="oc-card-wrapper" data-universe="{{ oc.universe | escape }}">
+    <a class="oc-card {{ protag_class }}" href="{{ oc.url | relative_url }}" data-universe="{{ oc.universe | escape }}">
+      {% if oc.tags contains "protag" %}
+      <span class="protagonist-icon">🜄</span>
+      {% endif %}
+      <div class="oc-thumb">
+        {% if oc.featured %}
+        <img data-src="{{ oc.featured | relative_url }}" alt="{{ oc.title | escape }}">
+        {% endif %}
+      </div>
+
+      <div class="oc-meta">
+        <div class="title-wrapper">
+          <h2>{{ oc.title }}</h2>
+        </div>
+        {% if oc.species %}<p class="muted">{{ oc.species }}</p>{% endif %}
+        {% if oc.universe %}<span class="tag">{{ oc.universe }}</span>{% endif %}
+      </div>
+    </a>
+
+    <img class="frame" alt="">
+  </div>
+
+  {% endunless %}
+  {% endfor %}
+
+  <p class="no-ocs" style="display:none;">No one here... check your search...</p>
+</div>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const buttons = document.querySelectorAll('.filter-btn');
+    const wrappers = document.querySelectorAll('.oc-card-wrapper');
+    const searchInput = document.getElementById('oc-search');
+    const noMessage = document.querySelector('.no-ocs');
+
+    // Helper to set the active filter button
+    function setActiveButton(filterName) {
+      buttons.forEach(b => b.classList.remove('active'));
+      const btn = document.querySelector(`.filter-btn[data-filter="${filterName}"]`);
+      if (btn) btn.classList.add('active');
+    }
+
+    // Core filtering function
+    function filterOCs() {
+      const query = searchInput.value.toLowerCase();
+      const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
+
+      let anyVisible = false;
+
+      wrappers.forEach(wrapper => {
+        const card = wrapper.querySelector('.oc-card');
+        const title = card.querySelector('h2').textContent.toLowerCase();
+        const speciesElem = card.querySelector('.muted');
+        const species = speciesElem ? speciesElem.textContent.toLowerCase() : '';
+        const universe = wrapper.dataset.universe;
+
+        const matchesSearch = title.includes(query) || species.includes(query);
+        const matchesFilter = activeFilter === 'all' || universe === activeFilter;
+
+        wrapper.style.display = (matchesSearch && matchesFilter) ? '' : 'none';
+        if (matchesSearch && matchesFilter) anyVisible = true;
+      });
+
+      noMessage.style.display = anyVisible ? 'none' : '';
+    }
+
+    // Filter buttons click
+    buttons.forEach(btn => {
+      btn.addEventListener('click', function () {
+        setActiveButton(this.dataset.filter);
+        filterOCs();
+        // Update sessionStorage so the selection persists when navigating to character pages
+        sessionStorage.setItem('presetFilter', this.dataset.filter);
+      });
+    });
+
+    // Search input
+    searchInput.addEventListener('input', filterOCs);
+
+    // Frames for each universe
+    wrappers.forEach(wrapper => {
+      const universe = wrapper.dataset.universe;
+      const frame = wrapper.querySelector('.frame');
+      const frames = {
+        "Strength Seeker": "/assets/images/frames/frame_strs.png",
+        "Progenies": "/assets/images/frames/frame_prog.png",
+        "The Long Midnight": "/assets/images/frames/frame_midnight.png",
+        "Misc": "/assets/images/frames/frame_misc.png"
+      };
+      frame.src = frames[universe] || "";
+    });
+
+    // Protagonist tooltip
+    const tooltip = document.createElement('div');
+    tooltip.className = 'protagonist-tooltip';
+    tooltip.textContent = 'This character is the protagonist';
+    document.body.appendChild(tooltip);
+
+    const icons = document.querySelectorAll('.protagonist-icon');
+    icons.forEach(icon => {
+      icon.addEventListener('mouseenter', function () {
+        const rect = icon.getBoundingClientRect();
+        tooltip.style.left = rect.left + rect.width / 2 + 'px';
+        tooltip.style.top = rect.top - 8 + 'px';
+        tooltip.style.transform = 'translate(-50%, -100%)';
+        tooltip.classList.add('show');
+      });
+      icon.addEventListener('mouseleave', function () {
+        tooltip.classList.remove('show');
+      });
+    });
+
+    window.addEventListener('scroll', function () {
+      if (tooltip.classList.contains('show')) {
+        tooltip.classList.remove('show');
+      }
+    });
+
+    // ---------------------------
+    // SessionStorage filter initialization
+    // ---------------------------
+    function initFilter() {
+      const presetFilter = sessionStorage.getItem('presetFilter');
+      if (presetFilter) {
+        setActiveButton(presetFilter);
+        filterOCs();
+      } else {
+        setActiveButton('all');
+        filterOCs();
+      }
+    }
+
+    // Initialize on normal page load
+    initFilter();
+
+    // Initialize on back/forward navigation (bfcache)
+    window.addEventListener('pageshow', initFilter);
+  });
+</script>
