@@ -4,6 +4,8 @@ layout: default
 
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="{{ '/assets/css/terraria_au.css' | relative_url }}">
+
 
 <head>
     <meta charset="UTF-8">
@@ -18,7 +20,12 @@ layout: default
 
     <main class="container content">
         <article class="special-character">
-            <h1>{{ page.title }}</h1>
+            <div class="title-decor">
+                <div class="decor left"></div>
+                <h1>{{ page.title }}</h1>
+                <div class="decor right"></div>
+            </div>
+
 
             {% if page.bio %}
             <section class="bio">{{ page.bio | markdownify }}</section>

@@ -1,0 +1,30 @@
+.title-decor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.title-decor h1 {
+    margin: 0;
+    font-size: 2em;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.title-decor .decor {
+    width: 2em;
+    height: 2em;
+    background-image: url('/assets/images/UI/text_decor.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-inline: 1em;
+    opacity: 0.3;
+}
+
+
+.title-decor .decor.right {
+    transform: scaleX(-1);
+}

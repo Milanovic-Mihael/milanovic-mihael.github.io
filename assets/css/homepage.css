@@ -102,6 +102,42 @@
     filter: brightness(1.0);
 }
 
+
+.homepage-title-decor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6em;
+    /* space between text and images */
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.homepage-title-decor .decor {
+    width: 2.2em;
+    /* adjust size here */
+    height: 2.2em;
+    background-image: url('/assets/images/UI/select.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+    margin: 10px;
+    /* slight transparency */
+}
+
+.homepage-title-decor .decor.right {
+    transform: scaleX(-1);
+}
+
+.homepage-title-decor h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+
+
 .home-card-wrapper[data-universe="Strength Seeker"] .frame {
     background-image: url("/assets/images/frames/frame_strs_main.png");
 }
