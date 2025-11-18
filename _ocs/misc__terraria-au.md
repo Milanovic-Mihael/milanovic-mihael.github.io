@@ -13,6 +13,7 @@ bio: 'Terraria: Pendulum is a story based on the world of Terraria. Keep in mind
 order: 53.0
 gallery:
 - assets/images/character_images/misc/terraria-au/TheEmpressOfLight.webp
+- assets/images/character_images/misc/terraria-au/theLunaticChillin.webp
 - assets/images/character_images/misc/terraria-au/G5Qm67VX0AEtfYT.webp
 - assets/images/character_images/misc/terraria-au/G5QnJg_XsAAVZDS.webp
 - assets/images/character_images/misc/terraria-au/G5Qm65RWsAA9DdG.webp
