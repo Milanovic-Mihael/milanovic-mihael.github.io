@@ -9,6 +9,12 @@ bio: 'Terraria: Pendulum is a story based on the world of Terraria. Keep in mind
   to the game itself.
 
 
+
+  After the Terrarian defeated the Golem, the balance of the world tipped beyond repair.
+  As the news spread to distant lands, multiple individuals set their sights on the
+  Terrarian, either to offer help or to advance their own schemes.
+
+
   The pendulum always swings back.'
 order: 53.0
 gallery:
