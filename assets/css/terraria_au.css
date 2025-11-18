@@ -14,8 +14,8 @@
 }
 
 .title-decor .decor {
-    width: 2em;
-    height: 2em;
+    width: 5em;
+    height: 2.5em;
     background-image: url('/assets/images/UI/text_decor.png');
     background-size: contain;
     background-repeat: no-repeat;
