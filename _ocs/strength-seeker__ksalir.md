@@ -9,7 +9,8 @@ featured: assets/images/character_images/strength-seeker/ksalir/champ_vs_ksalir 
 gallery:
 - assets/images/character_images/strength-seeker/ksalir/ksalir_back.webp
 - assets/images/character_images/strength-seeker/ksalir/champ_vs_ksalir.webp
-- assets/images/character_images/strength-seeker/ksalir/champ_vs_ksalir (1).webp
+- assets/images/character_images/strength-seeker/ksalir/ksalir_thingy.webp
 - assets/images/character_images/strength-seeker/ksalir/dodge_this.webp
+- assets/images/character_images/strength-seeker/ksalir/champ_vs_ksalir (1).webp
 order: 14.0
 ---
