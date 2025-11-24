@@ -9,5 +9,5 @@ bio: The Thief is a loner-type monster within The Marrow. He earned his nickname
 featured: assets/images/character_images/progenies/the-thief/idknewguy.webp
 gallery:
 - assets/images/character_images/progenies/the-thief/idknewguy.webp
-order: 33.0
+order: 34.0
 ---

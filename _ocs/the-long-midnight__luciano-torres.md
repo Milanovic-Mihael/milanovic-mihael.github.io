@@ -10,5 +10,5 @@ featured: assets/images/character_images/the-long-midnight/luciano-torres/huge_s
 gallery:
 - assets/images/character_images/the-long-midnight/luciano-torres/luciano_torres.webp
 - assets/images/character_images/the-long-midnight/luciano-torres/huge_spainard.webp
-order: 48.0
+order: 49.0
 ---
