@@ -1,7 +1,7 @@
 ---
 title: Ainhoa Ibarrola
 universe: The Long Midnight
-species: ''
+species: Human
 tags: []
 bio: ''
 order: 50.0
