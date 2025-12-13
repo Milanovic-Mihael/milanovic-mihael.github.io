@@ -9,6 +9,7 @@ featured: assets/images/character_images/progenies/brielle/Brielle_2.webp
 gallery:
 - assets/images/character_images/progenies/brielle/Brielle_2.webp
 - assets/images/character_images/progenies/brielle/brielle_by_chloraide.webp
+- assets/images/character_images/progenies/brielle/Brielle_casual_again.webp
 - assets/images/character_images/progenies/brielle/Brielle_ARMPIT.webp
 - assets/images/character_images/progenies/brielle/brielle_cold.webp
 - assets/images/character_images/progenies/brielle/brielle_chilling.webp
