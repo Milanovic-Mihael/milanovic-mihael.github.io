@@ -8,5 +8,6 @@ bio: Csilla is a cursed human from former Hungary, categorized as Gorynich class
 order: 52.0
 gallery:
 - assets/images/character_images/the-long-midnight/csilla-takacs/Csilla.webp
+- assets/images/character_images/the-long-midnight/csilla-takacs/csilla_takacs.webp
 featured: assets/images/character_images/the-long-midnight/csilla-takacs/Csilla.webp
 ---
