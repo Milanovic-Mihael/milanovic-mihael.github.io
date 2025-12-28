@@ -1015,6 +1015,15 @@ h3 {
         border-width: 5px;
         bottom: -5px;
     }
+
+    .go-back-link {
+        padding: var(--spacing-sm) var(--spacing-sm) 0 var(--spacing-sm);
+    }
+
+    .oc-info {
+        padding: 0 var(--spacing-md) var(--spacing-md) var(--spacing-md);
+    }
+
 }
 
 .gallery-item img {
@@ -1110,4 +1119,29 @@ h3 {
 .bio a:hover {
     color: var(--color-accent-hover);
     text-decoration: underline;
+}
+
+.go-back-link {
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.go-back-link img {
+    display: block;
+    width: 40px;
+    height: auto;
+    transition: transform 0.2s ease, filter 0.3s ease, brightness 0.3s ease;
+    cursor: pointer;
+    filter: brightness(0.4) drop-shadow(0 0 0 rgba(75, 102, 150, 0));
+    /* decrease brightness by default */
+}
+
+/* Hover: jump + normal brightness + drop-shadow removed */
+.go-back-link:hover {
+    transform: translateY(-5px);
+}
+
+.go-back-link:hover img {
+    filter: brightness(1) drop-shadow(0 0 15px var(--color-accent-hover));
 }
