@@ -8,6 +8,7 @@ bio: Oskari is a Blessed human born in the area of former Finland. He is categor
   as Svyatagor class.
 featured: assets/images/character_images/the-long-midnight/oskari/Oskari_the_snow.webp
 gallery:
+- assets/images/character_images/the-long-midnight/oskari/oskari_vs_fuckingDog.webp
 - assets/images/character_images/the-long-midnight/oskari/oskari_cool.webp
 - assets/images/character_images/the-long-midnight/oskari/Oskari_the_snow.webp
 - assets/images/character_images/the-long-midnight/oskari/oskaribro.webp
