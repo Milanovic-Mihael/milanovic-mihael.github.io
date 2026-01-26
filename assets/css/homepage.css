@@ -62,6 +62,10 @@
     .all-ocs-wrapper {
         aspect-ratio: 4 / 1;
     }
+
+    .homepage-title-decor {
+        margin-top: 1rem;
+    }
 }
 
 .homepage-title {
