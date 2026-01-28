@@ -7,6 +7,7 @@ bio: Obbovana is a a simple Boletalian temple caretaker. Obsessed with the Radia
   Champion.
 featured: assets/images/character_images/strength-seeker/obbovana/Obbovana.webp
 gallery:
+- assets/images/character_images/strength-seeker/obbovana/Obbovanna.webp
 - assets/images/character_images/strength-seeker/obbovana/Obbovana.webp
 - assets/images/character_images/strength-seeker/obbovana/LOVE_Obbovana.webp
 order: 17.0
