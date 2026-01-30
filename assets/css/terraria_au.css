@@ -29,3 +29,6 @@
     transform: scaleX(-1);
 }
 
+.bio p {
+    font-size: large;
+}

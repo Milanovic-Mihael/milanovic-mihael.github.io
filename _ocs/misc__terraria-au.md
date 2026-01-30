@@ -4,18 +4,14 @@ universe: Misc
 layout: terraria_au
 species: ''
 tags: []
-bio: 'Terraria: Pendulum is a story based on the world of Terraria. Keep in mind this
-  is just a fun side project I''m doing, so it is not supposed to be lore-accurate
-  to the game itself.
-
-
-
-  After the Terrarian defeated the Golem, the balance of the world tipped beyond repair.
-  As the news spread to distant lands, multiple individuals set their sights on the
-  Terrarian, either to offer help or to advance their own schemes.
-
-
-  The pendulum always swings back.'
+bio: "<br>After the Terrarian's victory over the Golem, the balance of the world      
+  finally tipped beyond repair. The Four Grand Seals of the Moon Prisoner now lie vulnerable on the continent of Terraria.
+  <br><br>
+  The news of the event reached far and wide, ultimately prompting many strong figures to act. Some seek to aid his endeavors, and others to halt him.
+  <br><br>
+  Regardless of the actions taken by the pinions, one truth of the world always remains:  
+  <br><br><br>
+  The pendulum always swings back."
 order: 56.0
 gallery:
 - assets/images/character_images/misc/terraria-au/TheEmpressOfLight.webp
