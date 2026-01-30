@@ -23,6 +23,7 @@ gallery:
 - assets/images/character_images/misc/terraria-au/G5QnJnzXAAA6Knd.webp
 - assets/images/character_images/misc/terraria-au/1qhurvrjqvae1.webp
 - assets/images/character_images/misc/terraria-au/G5QnJpNWYAARPT8.webp
+- assets/images/character_images/misc/terraria-au/Absolute_Eidolon_Of_Violence.webp
 - assets/images/character_images/misc/terraria-au/The_terrarian_aurafarming.webp
 - assets/images/character_images/misc/terraria-au/q9y9l3j4ra5e1.webp
 - assets/images/character_images/misc/terraria-au/G5Qm68lX0AATomr.webp
