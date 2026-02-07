@@ -10,6 +10,7 @@ order: 22.0
 gallery:
 - assets/images/character_images/progenies/joachim/Joachim_slashingymyshit.webp
 - assets/images/character_images/progenies/joachim/Joachim.webp
+- assets/images/character_images/progenies/joachim/joachim_kiss.webp
 - assets/images/character_images/progenies/joachim/Joachim_doves.webp
 - assets/images/character_images/progenies/joachim/joachim_SWINGGG.webp
 - assets/images/character_images/progenies/joachim/DESIGN_HIM.webp
