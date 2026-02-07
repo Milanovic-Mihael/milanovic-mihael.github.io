@@ -1,0 +1,182 @@
+.homepage-title {
+    text-align: center;
+    color: #eee;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.homepage-subtitle {
+    text-align: center;
+    color: #808080;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.homepage-title-decor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6em;
+    /* space between text and images */
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.homepage-title-decor .decor {
+    width: 2.2em;
+    /* adjust size here */
+    height: 2.2em;
+    background-image: url('/assets/images/UI/select.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+    margin: 10px;
+    /* slight transparency */
+}
+
+.homepage-title-decor .decor.right {
+    transform: scaleX(-1);
+}
+
+.homepage-title-decor h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+.socmed-btn {
+    transform: translateY(0);
+    position: relative;
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+
+    padding: 1rem 1.5rem;
+    border-radius: 5rem;
+
+    background: rgba(20, 20, 30, 0.85);
+
+    color: var(--color-text-primary);
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: background var(--transition-normal),
+        transform var(--transition-normal),
+        color var(--transition-normal),
+        box-shadow var(--transition-normal);
+}
+
+
+.socmed-btn:hover {
+    transform: translateY(-3px);
+
+    background: rgba(41, 171, 224, 0.15);
+    box-shadow:
+        0 12px 32px rgba(41, 171, 224, 0.35),
+
+        text-shadow: 0 0 5px rgba(41, 171, 224, 0.5);
+}
+
+
+.header-btn.kofi-btn {
+    color: #fff;
+    text-shadow:
+        0 0 5px var(--color-accent),
+        0 0 10px var(--color-accent);
+    transform: translateY(0);
+    transition:
+        transform var(--transition-normal),
+        background var(--transition-normal),
+        color var(--transition-normal),
+        box-shadow var(--transition-normal),
+        filter 0.3s ease;
+}
+
+.header-btn.kofi-btn:hover {
+    transform: translateY(-3px);
+    text-shadow:
+        0 0 5px var(--color-accent),
+        0 0 10px var(--color-accent),
+        0 0 15px var(--color-accent),
+        0 0 20px var(--color-accent);
+}
+
+
+.header-btn.kofi-btn img.kofi-logo {
+    transition: filter 0.3s ease;
+    filter:
+        drop-shadow(0 0 5px var(--color-accent));
+}
+
+.header-btn.kofi-btn:hover img.kofi-logo {
+    filter:
+        drop-shadow(0 0 5px var(--color-accent)) drop-shadow(0 0 10px var(--color-accent));
+}
+
+.socmed-btn::before,
+.socmed-btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 2em;
+    height: 100%;
+    background: url("/assets/images/UI/select.png") no-repeat center / contain;
+    opacity: 0;
+    transform: translateY(-50%) scaleX(1);
+    transition: opacity 0.3s ease, transform 0.3s ease, filter 0.3s ease;
+    pointer-events: none;
+}
+
+.socmed-btn::before {
+    left: -5.2em;
+}
+
+.socmed-btn::after {
+    right: -5.2em;
+    transform: translateY(-50%) scaleX(-1);
+}
+
+.socmed-btn:hover::before {
+    opacity: 1;
+    transform: translateY(-50%) translateX(3em) scaleX(1);
+    filter: drop-shadow(0 0 8px var(--color-accent)) drop-shadow(0 0 4px rgba(41, 171, 224, 0.5));
+
+}
+
+.socmed-btn:hover::after {
+    opacity: 1;
+    transform: translateY(-50%) translateX(-3em) scaleX(-1);
+    filter: drop-shadow(0 0 8px var(--color-accent)) drop-shadow(0 0 4px rgba(41, 171, 224, 0.5));
+}
+
+.socmed-btn.discord {
+    background: #171e5e;
+}
+
+.socmed-btn.discord:hover {
+    background: #5865F2;
+}
+
+.socmed-btn.twitter {
+    background: #181261;
+}
+
+.socmed-btn.twitter:hover {
+    background: #1DA1F2;
+}
+
+.socmed-btn.bluesky {
+    background: #0d3157;
+}
+
+.socmed-btn.bluesky:hover {
+    background: #0285FF;
+}
