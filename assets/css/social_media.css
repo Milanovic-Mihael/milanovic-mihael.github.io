@@ -77,12 +77,9 @@
 
 .socmed-btn:hover {
     transform: translateY(-3px);
-
     background: rgba(41, 171, 224, 0.15);
-    box-shadow:
-        0 12px 32px rgba(41, 171, 224, 0.35),
-
-        text-shadow: 0 0 5px rgba(41, 171, 224, 0.5);
+    box-shadow: 0 6px 16px rgba(41, 171, 224, 0.35);
+    text-shadow: 0 0 5px rgba(41, 171, 224, 0.5);
 }
 
 
