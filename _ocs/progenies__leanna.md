@@ -15,6 +15,7 @@ gallery:
 - assets/images/character_images/progenies/leanna/leann_pretty.webp
 - assets/images/character_images/progenies/leanna/Leanna_act2.webp
 - assets/images/character_images/progenies/leanna/Leanna_REAL.webp
+- assets/images/character_images/progenies/leanna/leanna_snacktime.webp
 - assets/images/character_images/progenies/leanna/Maid_leanna.webp
 - assets/images/character_images/progenies/leanna/empresses_shadow.webp
 - assets/images/character_images/progenies/leanna/Leanna_drying.webp
