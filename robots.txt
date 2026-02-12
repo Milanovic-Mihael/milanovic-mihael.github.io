@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Direct Google and other bots to your sitemap if you have one
+Sitemap: https://milanovic-mihael.github.io/sitemap.xml
