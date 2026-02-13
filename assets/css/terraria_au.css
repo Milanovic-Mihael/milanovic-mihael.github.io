@@ -4,6 +4,7 @@
     align-items: center;
     gap: 5px;
     width: 100%;
+    padding-top: 1rem;
 }
 
 .title-decor h1 {
@@ -27,6 +28,10 @@
 
 .title-decor .decor.right {
     transform: scaleX(-1);
+}
+
+.bio {
+    margin: 0 1rem 0 1rem;
 }
 
 .bio p {

@@ -1,98 +1,80 @@
 ---
 layout: default
+title: "Terraria: Pendulum"
+description: "Official gallery and lore hub for the Terraria: Pendulum. A fan story project based on Terraria, set in an
+alternate universe."
+keywords: "Mihael Milanovic, Terraria Pendulum, Pendulum AU, Terraria Fanart, OC gallery, digital art, Terraria AU"
+og_image: "/assets/images/pendulum_preview.png"
 ---
 
-<!DOCTYPE html>
-<html lang="en">
+<link rel="stylesheet" href="{{ '/assets/css/terraria_au.css' | relative_url }}">
 
-
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} | {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha384-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="{{ '/assets/css/terraria_au.css' | relative_url }}">
-</head>
-
-<body>
-
-    <main class="container content">
-        <article class="special-character">
-            <div class="title-decor">
-                <div class="decor left"></div>
-                <h1>{{ page.title }}</h1>
-                <div class="decor right"></div>
-            </div>
-
-
-            {% if page.bio %}
-            <section class="bio">{{ page.bio | markdownify }}</section>
-            {% endif %}
-
-            <div class="line-sml-container">
-                <img src="{{ '/assets/images/UI/line_sml.png' | relative_url }}" alt="Divider" class="line-sml">
-            </div>
-
-            {% if page.gallery %}
-            <section class="gallery">
-                <h2>Gallery</h2>
-                <div class="gallery-grid">
-                    {% for art in page.gallery %}
-                    <a href="{{ art | relative_url }}" class="gallery-item">
-                        <img src="{{ art | relative_url }}" alt="{{ page.title | escape }} artwork" loading="lazy">
-                    </a>
-                    {% endfor %}
-                </div>
-            </section>
-            {% endif %}
-        </article>
-    </main>
-
-    <!-- Lightbox overlay -->
-    <div id="lightbox" class="lightbox">
-        <span class="close">&times;</span>
-        <img class="lightbox-content" id="lightbox-img">
-        <a class="prev">&#10094;</a>
-        <a class="next">&#10095;</a>
+<article class="special-character">
+    <div class="title-decor">
+        <div class="decor left"></div>
+        <h1>{{ page.title }}</h1>
+        <div class="decor right"></div>
     </div>
 
-    <script src="{{ '/assets/js/lightbox.js' | relative_url }}" defer></script>
+    {% if page.bio %}
+    <section class="bio">{{ page.bio | markdownify }}</section>
+    {% endif %}
 
-    <!-- GIF hover-to-play -->
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const gifs = document.querySelectorAll(".gallery-item img");
+    <div class="line-sml-container">
+        <img src="{{ '/assets/images/UI/line_sml.png' | relative_url }}" alt="Divider" class="line-sml">
+    </div>
 
-            gifs.forEach(img => {
-                if (!img.src.toLowerCase().endsWith(".gif")) return;
+    {% if page.gallery %}
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            {% for art in page.gallery %}
+            <a href="{{ art | relative_url }}" class="gallery-item">
+                <img src="{{ art | relative_url }}" alt="{{ page.title | escape }} artwork" loading="lazy">
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+</article>
 
-                const gifSrc = img.src;
-                const staticImg = new Image();
-                staticImg.src = gifSrc;
-                staticImg.onload = () => {
-                    const canvas = document.createElement("canvas");
-                    canvas.width = staticImg.width;
-                    canvas.height = staticImg.height;
-                    const ctx = canvas.getContext("2d");
-                    ctx.drawImage(staticImg, 0, 0);
-                    img.dataset.static = canvas.toDataURL("image/png");
-                    img.src = img.dataset.static;
-                    img.dataset.gif = gifSrc;
-                };
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+</div>
 
-                img.addEventListener("mouseenter", () => {
-                    if (img.dataset.gif) img.src = img.dataset.gif;
-                });
+<script src="{{ '/assets/js/lightbox.js' | relative_url }}" defer></script>
 
-                img.addEventListener("mouseleave", () => {
-                    if (img.dataset.static) img.src = img.dataset.static;
-                });
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const gifs = document.querySelectorAll(".gallery-item img");
+
+        gifs.forEach(img => {
+            if (!img.src.toLowerCase().endsWith(".gif")) return;
+
+            const gifSrc = img.src;
+            const staticImg = new Image();
+            staticImg.src = gifSrc;
+            staticImg.onload = () => {
+                const canvas = document.createElement("canvas");
+                canvas.width = staticImg.width;
+                canvas.height = staticImg.height;
+                const ctx = canvas.getContext("2d");
+                ctx.drawImage(staticImg, 0, 0);
+                img.dataset.static = canvas.toDataURL("image/png");
+                img.src = img.dataset.static;
+                img.dataset.gif = gifSrc;
+            };
+
+            img.addEventListener("mouseenter", () => {
+                if (img.dataset.gif) img.src = img.dataset.gif;
+            });
+
+            img.addEventListener("mouseleave", () => {
+                if (img.dataset.static) img.src = img.dataset.static;
             });
         });
-    </script>
-</body>
-
-</html>
+    });
+</script>

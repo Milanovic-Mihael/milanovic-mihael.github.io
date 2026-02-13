@@ -29,7 +29,7 @@ title: Character Gallery | MilanovicMihael
       {% endif %}
       <div class="oc-thumb">
         {% if oc.featured %}
-        <img data-src="{{ oc.featured | relative_url }}" alt="{{ oc.title | escape }}">
+        <img src="{{ oc.featured | relative_url }}" alt="{{ oc.title | escape }}" loading="lazy">
         {% endif %}
       </div>
 
