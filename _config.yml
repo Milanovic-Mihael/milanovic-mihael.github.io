@@ -1,18 +1,17 @@
 title: MilanovicMihael
-description: "My site lol"
-baseurl: "" # keep empty for project pages, or set to "/my-oc-website"
-url: ""
+description: "Original character gallery of Mihael Milanovic."
+url: "https://milanovic-mihael.github.io" 
+baseurl: "" 
 
-# GitHub Pages-safe config
 markdown: kramdown
-theme: minima
+highlighter: rouge 
+exclude: [ "node_modules", "vendor", "Gemfile", "Gemfile.lock" ]
 
 collections:
   ocs:
     output: true
     permalink: /oc/:name/
 
-# Defaults so OC pages use the oc layout by default
 defaults:
   - scope:
       path: ""
