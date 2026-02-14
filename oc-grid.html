@@ -3,6 +3,8 @@ layout: default
 title: Character Gallery | MilanovicMihael
 ---
 
+<link rel="stylesheet" href="{{ '/assets/css/oc-grid.css' | relative_url }}">
+
 <div class="filters">
   <button class="filter-btn" data-filter="all">All</button>
   {% assign universes = "Strength Seeker,Progenies,The Long Midnight" | split: "," %}
@@ -93,10 +95,16 @@ title: Character Gallery | MilanovicMihael
     // Filter buttons click
     buttons.forEach(btn => {
       btn.addEventListener('click', function () {
-        setActiveButton(this.dataset.filter);
+        const filter = this.dataset.filter;
+        setActiveButton(filter);
         filterOCs();
-        // Update sessionStorage so the selection persists when navigating to character pages
-        sessionStorage.setItem('presetFilter', this.dataset.filter);
+        sessionStorage.setItem('presetFilter', filter);
+
+        // This updates the URL in the address bar without reloading the page
+        const newUrl = filter === 'all'
+          ? window.location.pathname
+          : `?universe=${encodeURIComponent(filter)}`;
+        window.history.replaceState({ path: newUrl }, '', newUrl);
       });
     });
 
@@ -146,14 +154,16 @@ title: Character Gallery | MilanovicMihael
     // SessionStorage filter initialization
     // ---------------------------
     function initFilter() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlFilter = urlParams.get('universe'); // Checks for ?universe=Progenies
       const presetFilter = sessionStorage.getItem('presetFilter');
-      if (presetFilter) {
-        setActiveButton(presetFilter);
-        filterOCs();
-      } else {
-        setActiveButton('all');
-        filterOCs();
-      }
+
+      // Priority: URL first, then Session, then "all"
+      const finalFilter = urlFilter || presetFilter || 'all';
+
+      setActiveButton(finalFilter);
+      filterOCs();
+      document.querySelector('.oc-grid').classList.add('loaded');
     }
 
     // Initialize on normal page load

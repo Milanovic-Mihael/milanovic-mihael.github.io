@@ -50,7 +50,10 @@ layout: default
 <script>
     document.querySelectorAll('.home-card-wrapper[data-filter]').forEach(link => {
         link.addEventListener('click', () => {
-            sessionStorage.setItem('presetFilter', link.dataset.filter);
+            const filter = link.dataset.filter;
+            // Use the Liquid tag to ensure the path is always correct
+            const baseUrl = "{{ '/oc-grid.html' | relative_url }}";
+            link.href = `${baseUrl}?universe=${encodeURIComponent(filter)}`;
         });
     });
 </script>
