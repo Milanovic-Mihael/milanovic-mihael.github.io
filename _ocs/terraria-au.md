@@ -2,7 +2,7 @@
 title: 'Terraria: Pendulum'
 universe: Misc
 layout: terraria_au
-og_image: "/assets/images/pendulum_preview.png"
+og_image: /assets/images/pendulum_preview.png
 species: ''
 tags: []
 bio: '<br>After the Terrarian''s victory over the Golem, the balance of the world
@@ -32,5 +32,8 @@ gallery:
 - assets/images/character_images/misc/terraria-au/The_terrarian_aurafarming.webp
 - assets/images/character_images/misc/terraria-au/q9y9l3j4ra5e1.webp
 - assets/images/character_images/misc/terraria-au/G5Qm68lX0AATomr.webp
-featured: assets/images/character_images/misc/terraria-au/1qhurvrjqvae1.webp
+featured: assets/images/character_images/misc/terraria-au/G5Qm67VX0AEtfYT.webp
+redirect_from:
+- /oc/misc-terraria-au/
+- /oc/misc-terraria-au.html
 ---
