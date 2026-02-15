@@ -15,6 +15,7 @@ gallery:
 - assets/images/character_images/the-long-midnight/elena-bernasconi-manuel-gallo/nameless_guy_mirror.webp
 - assets/images/character_images/the-long-midnight/elena-bernasconi-manuel-gallo/nameless_woman.webp
 - assets/images/character_images/the-long-midnight/elena-bernasconi-manuel-gallo/elena_manuel_HELL.webp
+- assets/images/character_images/the-long-midnight/elena-bernasconi-manuel-gallo/them_actually.webp
 - assets/images/character_images/the-long-midnight/elena-bernasconi-manuel-gallo/areYouAlive.webp
 - assets/images/character_images/the-long-midnight/elena-bernasconi-manuel-gallo/IwishIcouldSitNextToYou.webp
 - assets/images/character_images/the-long-midnight/elena-bernasconi-manuel-gallo/IHadADream.webp
