@@ -1167,7 +1167,7 @@ h3 {
     display: none !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
     .pswp__button--arrow--left,
     .pswp__button--arrow--right {
