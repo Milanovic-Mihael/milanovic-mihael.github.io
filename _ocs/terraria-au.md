@@ -17,6 +17,7 @@ gallery:
 - assets/images/character_images/misc/terraria-au/terrarian_and_stella.webp
 - assets/images/character_images/misc/terraria-au/BestFriend.webp
 - assets/images/character_images/misc/terraria-au/TheDryad.webp
+- assets/images/character_images/misc/terraria-au/theEmpressOfLightAndRage.webp
 - assets/images/character_images/misc/terraria-au/TheEmpressOfLight.webp
 - assets/images/character_images/misc/terraria-au/theLunaticChillin.webp
 - assets/images/character_images/misc/terraria-au/G5Qm67VX0AEtfYT.webp
