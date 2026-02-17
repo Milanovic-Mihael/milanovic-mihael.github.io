@@ -10,7 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
             zoomOnAttributes: true,
             doubleTapZoom: 2,
             // Ensure the lightbox doesn't close when you're trying to tap/zoom
-            closeOnSlideClick: false
+            closeOnSlideClick: false,
+            openEffect: 'fade',
+            closeEffect: 'fade'
         });
 
         lightbox.on('slide_after_load', (data) => {

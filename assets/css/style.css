@@ -1,3 +1,8 @@
+.glightbox-container,
+.glightbox-container * {
+    touch-action: manipulation !important;
+}
+
 :root {
     --color-bg-primary: #121213;
     --color-bg-secondary: #27272c;
@@ -1206,14 +1211,12 @@ h3 {
     padding: 20px;
 }
 
-/* Enable specific touch actions for GLightbox to capture gestures */
 .gslide-image img {
+    touch-action: none !important;
     will-change: transform;
-    transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: none !important;
     user-select: none;
     -webkit-user-drag: none;
-    /* Allow pinch and double-tap, but prevent browser page-zoom */
-    touch-action: manual !important;
 }
 
 .gslide-image {
@@ -1221,7 +1224,6 @@ h3 {
     backface-visibility: hidden;
     perspective: 1000;
     transform: translate3d(0, 0, 0);
-    /* Essential: allows the script to see the taps */
     touch-action: none;
 }
 
