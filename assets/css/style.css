@@ -1152,8 +1152,17 @@ h3 {
 }
 
 .pswp__img {
-    background: transparent;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    touch-action: auto !important;
+    object-fit: contain;
+}
+
+.pswp__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.pswp__button--zoom {
+    display: none !important;
 }

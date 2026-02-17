@@ -36,7 +36,7 @@ layout: default
     <div class="gallery-grid">
       {% for art in page.gallery %}
       <div class="gallery-item">
-        <a href="{{ art | relative_url }}" class="glightbox" data-pswp-src="{{ art | relative_url }}" target="_blank">
+        <a href="{{ art | relative_url }}" class="glightbox">
           <img src="{{ art | relative_url }}" alt="{{ page.title | escape }} artwork" loading="lazy">
         </a>
       </div>
