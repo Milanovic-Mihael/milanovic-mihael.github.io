@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
             touchFollowAxis: false,
             zoomOnAttributes: true,
             doubleTapZoom: 2,
-            width: '100vw',
-            height: 'auto'
+            // Ensure the lightbox doesn't close when you're trying to tap/zoom
+            closeOnSlideClick: false
         });
 
         lightbox.on('slide_after_load', (data) => {
