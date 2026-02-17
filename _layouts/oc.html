@@ -35,7 +35,7 @@ layout: default
     <h2>Gallery</h2>
     <div class="gallery-grid">
       {% for art in page.gallery %}
-      <a href="{{ art | relative_url }}" class="gallery-item">
+      <a href="{{ art | relative_url }}" class="glightbox gallery-item" data-gallery="oc-gallery">
         <img src="{{ art | relative_url }}" alt="{{ page.title | escape }} artwork" loading="lazy">
       </a>
       {% endfor %}
@@ -43,36 +43,3 @@ layout: default
   </section>
   {% endif %}
 </article>
-
-<div id="lightbox" class="lightbox">
-  <span class="close">&times;</span>
-  <img class="lightbox-content" id="lightbox-img">
-  <a class="prev">&#10094;</a>
-  <a class="next">&#10095;</a>
-</div>
-
-<script src="{{ '/assets/js/lightbox.js' | relative_url }}" defer></script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const gifs = document.querySelectorAll(".gallery-item img");
-    gifs.forEach(img => {
-      if (!img.src.toLowerCase().endsWith(".gif")) return;
-      const gifSrc = img.src;
-      const staticImg = new Image();
-      staticImg.src = gifSrc;
-      staticImg.onload = () => {
-        const canvas = document.createElement("canvas");
-        canvas.width = staticImg.width;
-        canvas.height = staticImg.height;
-        const ctx = canvas.getContext("2d");
-        ctx.drawImage(staticImg, 0, 0);
-        img.dataset.static = canvas.toDataURL("image/png");
-        img.src = img.dataset.static;
-        img.dataset.gif = gifSrc;
-      };
-      img.addEventListener("mouseenter", () => { if (img.dataset.gif) img.src = img.dataset.gif; });
-      img.addEventListener("mouseleave", () => { if (img.dataset.static) img.src = img.dataset.static; });
-    });
-  });
-</script>
