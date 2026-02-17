@@ -1151,83 +1151,9 @@ h3 {
     filter: brightness(1) drop-shadow(0 0 15px var(--color-accent-hover));
 }
 
-:root {
-    --glightbox-animation-duration: 150ms;
-}
-
-.gzoomIn,
-.gzoomOut,
-.gfadeIn,
-.gfadeOut {
-    animation-duration: var(--glightbox-animation-duration) !important;
-    transition-duration: var(--glightbox-animation-duration) !important;
-}
-
-/* GLightbox Theme Overrides */
-.glightbox-container .gslide-description {
-    background: #1a1a1a;
-    /* Matches dark backgrounds */
-}
-
-.glightbox-container .gslide-title {
-    color: #eee;
-    font-family: 'Playfair Display', serif;
-    /* Or your site's heading font */
-}
-
-/* Style the counter (e.g., 1 / 10) */
-.gcounter {
-    background-color: rgba(0, 0, 0, 0.75);
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-size: 0.9rem;
-}
-
-.gnext,
-.gprev {
-    background-color: rgba(0, 0, 0, 0.3) !important;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-}
-
-.gnext:hover,
-.gprev:hover {
-    background-color: rgba(0, 0, 0, 0.8) !important;
-}
-
-.gzoomIn,
-.gzoomOut {
-    animation-duration: 150ms !important;
-}
-
-.glightbox-container {
-    touch-action: none;
-}
-
-.gnext,
-.gprev {
-    padding: 20px;
-}
-
-.gslide-image img {
-    touch-action: none !important;
-    will-change: transform;
-    transition: none !important;
-    user-select: none;
-    -webkit-user-drag: none;
-}
-
-.gslide-image {
+.pswp__img {
+    background: transparent;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    perspective: 1000;
-    transform: translate3d(0, 0, 0);
-    touch-action: none;
-}
-
-.gslide {
-    user-select: none;
-    -webkit-user-drag: none;
+    touch-action: auto !important;
 }
