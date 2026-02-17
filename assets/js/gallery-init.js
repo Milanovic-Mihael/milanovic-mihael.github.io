@@ -6,12 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
             zoomable: true,
             draggable: true,
             touchNavigation: true,
-            openEffect: 'zoom',
-            closeEffect: 'zoom',
-            closeOnSlideClick: false
+            touchFollowAxis: false,
+            zoomOnAttributes: true,
+            doubleTapZoom: 2,
+            width: '100vw',
+            height: 'auto'
         });
 
-        // Preloading Logic
         lightbox.on('slide_after_load', (data) => {
             const { index, slideConfig, slideIndex } = data;
             const nextIndex = (index + 1) % lightbox.elements.length;

@@ -1196,3 +1196,33 @@ h3 {
 .gzoomOut {
     animation-duration: 150ms !important;
 }
+
+.glightbox-container {
+    touch-action: none;
+}
+
+.gnext,
+.gprev {
+    padding: 20px;
+}
+
+.gslide-image img {
+    will-change: transform;
+    transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.gslide-image,
+.gslide-image img {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    touch-action: pinch-zoom;
+}
+
+.gslide {
+    user-select: none;
+    -webkit-user-drag: none;
+}
