@@ -6,6 +6,7 @@ tags: []
 bio: Nia is a Cursed human from former Wales, categorized as Kikimora class.
 featured: assets/images/character_images/the-long-midnight/nia-evans/nia_evans.webp
 gallery:
+- assets/images/character_images/the-long-midnight/nia-evans/nia_evan_yknow.webp
 - assets/images/character_images/the-long-midnight/nia-evans/nia_evans.webp
 - assets/images/character_images/the-long-midnight/nia-evans/nia_evans_right.webp
 - assets/images/character_images/the-long-midnight/nia-evans/NIA.webp
