@@ -18,14 +18,14 @@
   <meta property="og:image" content="{{ page.og_image | default: '/assets/images/preview.png' | absolute_url }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
 
-  <link rel="canonical" href="https://milanovicmihael.com/">
-
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ page.title | default: 'Mihael Milanovic - Art and Character Gallery' }}">
   <meta name="twitter:description"
     content="{{ page.description | default: 'Explore original characters and digital art by Mihael Milanovic.' }}">
   <meta name="twitter:image" content="{{ page.og_image | default: '/assets/images/preview.png' | absolute_url }}">
+
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
 
   <!-- Favicons -->
 

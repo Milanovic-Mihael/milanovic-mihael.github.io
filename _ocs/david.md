@@ -8,6 +8,7 @@ bio: David is a totter wayfarer who began exploring the Expanse for quick financ
 featured: assets/images/character_images/progenies/david/david_but_face.webp
 gallery:
 - assets/images/character_images/progenies/david/david_but_face.webp
+- assets/images/character_images/progenies/david/Davidmy4armedgoat.webp
 - assets/images/character_images/progenies/david/david_and_abigail_chilling.webp
 - assets/images/character_images/progenies/david/David_yeah.webp
 - assets/images/character_images/progenies/david/david.webp
