@@ -11,6 +11,10 @@ title: Character Gallery | MilanovicMihael
   {% for u in universes %}
   <button class="filter-btn" data-filter="{{ u | escape }}">{{ u }}</button>
   {% endfor %}
+
+  <label for="oc-search"
+    style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;">Search
+    characters</label>
   <input type="text" id="oc-search" placeholder="Search characters..." />
 </div>
 
@@ -25,7 +29,8 @@ title: Character Gallery | MilanovicMihael
   {% endif %}
 
   <div class="oc-card-wrapper" data-universe="{{ oc.universe | escape }}">
-    <a class="oc-card {{ protag_class }}" href="{{ oc.url | relative_url }}" data-universe="{{ oc.universe | escape }}">
+    <a class="oc-card {{ protag_class }}" href="{{ oc.url | relative_url }}" data-universe="{{ oc.universe | escape }}"
+      aria-label="View character: {{ oc.title | escape }}">
       {% if oc.tags contains "protag" %}
       <span class="protagonist-icon">🜄</span>
       {% endif %}
@@ -53,7 +58,6 @@ title: Character Gallery | MilanovicMihael
   <p class="no-ocs" style="display:none;">No one here... check your search...</p>
 </div>
 
-
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const buttons = document.querySelectorAll('.filter-btn');
@@ -61,115 +65,87 @@ title: Character Gallery | MilanovicMihael
     const searchInput = document.getElementById('oc-search');
     const noMessage = document.querySelector('.no-ocs');
 
-    // Helper to set the active filter button
     function setActiveButton(filterName) {
-      buttons.forEach(b => b.classList.remove('active'));
-      const btn = document.querySelector(`.filter-btn[data-filter="${filterName}"]`);
-      if (btn) btn.classList.add('active');
+      buttons.forEach(b => b.classList.toggle('active', b.dataset.filter === filterName));
     }
 
-    // Core filtering function
     function filterOCs() {
       const query = searchInput.value.toLowerCase();
       const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
-
       let anyVisible = false;
 
       wrappers.forEach(wrapper => {
-        const card = wrapper.querySelector('.oc-card');
-        const title = card.querySelector('h2').textContent.toLowerCase();
-        const speciesElem = card.querySelector('.muted');
+        const title = wrapper.querySelector('h2').textContent.toLowerCase();
+        const speciesElem = wrapper.querySelector('.muted');
         const species = speciesElem ? speciesElem.textContent.toLowerCase() : '';
         const universe = wrapper.dataset.universe;
 
         const matchesSearch = title.includes(query) || species.includes(query);
         const matchesFilter = activeFilter === 'all' || universe === activeFilter;
+        const isVisible = matchesSearch && matchesFilter;
 
-        wrapper.style.display = (matchesSearch && matchesFilter) ? '' : 'none';
-        if (matchesSearch && matchesFilter) anyVisible = true;
+        wrapper.style.display = isVisible ? '' : 'none';
+        if (isVisible) anyVisible = true;
       });
-
       noMessage.style.display = anyVisible ? 'none' : '';
     }
 
-    // Filter buttons click
+    // Efficiency: Event listener refactoring
     buttons.forEach(btn => {
-      btn.addEventListener('click', function () {
-        const filter = this.dataset.filter;
+      btn.addEventListener('click', () => {
+        const filter = btn.dataset.filter;
         setActiveButton(filter);
         filterOCs();
         sessionStorage.setItem('presetFilter', filter);
-
-        // This updates the URL in the address bar without reloading the page
-        const newUrl = filter === 'all'
-          ? window.location.pathname
-          : `?universe=${encodeURIComponent(filter)}`;
+        const newUrl = filter === 'all' ? window.location.pathname : `?universe=${encodeURIComponent(filter)}`;
         window.history.replaceState({ path: newUrl }, '', newUrl);
       });
     });
 
-    // Search input
     searchInput.addEventListener('input', filterOCs);
 
-    // Frames for each universe
+    // Frame logic
     wrappers.forEach(wrapper => {
-      const universe = wrapper.dataset.universe;
       const frame = wrapper.querySelector('.frame');
       const frames = {
-        "Strength Seeker": "/assets/images/frames/frame_strs.png",
-        "Progenies": "/assets/images/frames/frame_prog.png",
-        "The Long Midnight": "/assets/images/frames/frame_midnight.png",
-        "Misc": "/assets/images/frames/frame_misc.png"
+        "Strength Seeker": "/assets/images/frames/frame_strs.webp",
+        "Progenies": "/assets/images/frames/frame_prog.webp",
+        "The Long Midnight": "/assets/images/frames/frame_midnight.webp",
+        "Misc": "/assets/images/frames/frame_misc.webp"
       };
-      frame.src = frames[universe] || "";
+      frame.src = frames[wrapper.dataset.universe] || "";
     });
 
-    // Protagonist tooltip
+    // Tooltip efficiency
     const tooltip = document.createElement('div');
     tooltip.className = 'protagonist-tooltip';
     tooltip.textContent = 'This character is the protagonist';
     document.body.appendChild(tooltip);
 
-    const icons = document.querySelectorAll('.protagonist-icon');
-    icons.forEach(icon => {
-      icon.addEventListener('mouseenter', function () {
+    document.querySelectorAll('.protagonist-icon').forEach(icon => {
+      icon.addEventListener('mouseenter', () => {
         const rect = icon.getBoundingClientRect();
-        tooltip.style.left = rect.left + rect.width / 2 + 'px';
-        tooltip.style.top = rect.top - 8 + 'px';
-        tooltip.style.transform = 'translate(-50%, -100%)';
+        Object.assign(tooltip.style, {
+          left: `${rect.left + rect.width / 2}px`,
+          top: `${rect.top - 8}px`,
+          transform: 'translate(-50%, -100%)'
+        });
         tooltip.classList.add('show');
       });
-      icon.addEventListener('mouseleave', function () {
-        tooltip.classList.remove('show');
-      });
+      icon.addEventListener('mouseleave', () => tooltip.classList.remove('show'));
     });
 
-    window.addEventListener('scroll', function () {
-      if (tooltip.classList.contains('show')) {
-        tooltip.classList.remove('show');
-      }
-    });
+    window.addEventListener('scroll', () => tooltip.classList.remove('show'));
 
-    // ---------------------------
-    // SessionStorage filter initialization
-    // ---------------------------
     function initFilter() {
       const urlParams = new URLSearchParams(window.location.search);
-      const urlFilter = urlParams.get('universe'); // Checks for ?universe=Progenies
-      const presetFilter = sessionStorage.getItem('presetFilter');
-
-      // Priority: URL first, then Session, then "all"
-      const finalFilter = urlFilter || presetFilter || 'all';
-
+      const finalFilter = urlParams.get('universe') || sessionStorage.getItem('presetFilter') || 'all';
       setActiveButton(finalFilter);
       filterOCs();
       document.querySelector('.oc-grid').classList.add('loaded');
     }
 
-    // Initialize on normal page load
     initFilter();
-
-    // Initialize on back/forward navigation (bfcache)
     window.addEventListener('pageshow', initFilter);
   });
 </script>

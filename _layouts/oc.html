@@ -2,16 +2,17 @@
 layout: default
 ---
 <article class="oc-page">
-  <a href="{{ '/oc-grid/' | relative_url }}" class="go-back-link">
-    <img src="{{ '/assets/images/UI/go_back.png' | relative_url }}" alt="Go Back">
+  <a href="{{ '/oc-grid/' | relative_url }}" class="go-back-link" aria-label="Go back to character grid">
+    <img src="{{ '/assets/images/UI/go_back.webp' | relative_url }}" alt="" width="200" height="209">
   </a>
 
   {% if page.featured %}
-  <div class="oc-header">
+  <header class="oc-header">
     <div class="oc-info">
       <h1>{{ page.title }}</h1>
       <div class="line-sml-container">
-        <img src="{{ '/assets/images/UI/line_sml.png' | relative_url }}" alt="Divider" class="line-sml">
+        <img src="{{ '/assets/images/UI/line_sml.webp' | relative_url }}" alt="" class="line-sml" width="2204"
+          height="64">
       </div>
       {% if page.bio %}
       <section class="bio">
@@ -25,9 +26,10 @@ layout: default
       </div>
     </div>
     <div class="featured">
-      <img src="{{ page.featured | relative_url }}" alt="{{ page.title | escape }} featured artwork">
+      <img src="{{ page.featured | relative_url }}" alt="{{ page.title | escape }} featured artwork"
+        fetchpriority="high">
     </div>
-  </div>
+  </header>
   {% endif %}
 
   {% if page.gallery %}
@@ -36,7 +38,8 @@ layout: default
     <div class="gallery-grid">
       {% for art in page.gallery %}
       <div class="gallery-item">
-        <a href="{{ art | relative_url }}" class="glightbox">
+        <a href="{{ art | relative_url }}" class="glightbox"
+          aria-label="View {{ page.title | escape }} artwork in full screen">
           <img src="{{ art | relative_url }}" alt="{{ page.title | escape }} artwork" loading="lazy">
         </a>
       </div>

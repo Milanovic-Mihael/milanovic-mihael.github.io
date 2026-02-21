@@ -28,7 +28,7 @@
     width: 2.2em;
     /* adjust size here */
     height: 2.2em;
-    background-image: url('/assets/images/UI/select.png');
+    background-image: url('/assets/images/UI/select.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -125,7 +125,7 @@
     top: 50%;
     width: 2em;
     height: 100%;
-    background: url("/assets/images/UI/select.png") no-repeat center / contain;
+    background: url("/assets/images/UI/select.webp") no-repeat center / contain;
     opacity: 0;
     transform: translateY(-50%) scaleX(1);
     transition: opacity 0.3s ease, transform 0.3s ease, filter 0.3s ease;

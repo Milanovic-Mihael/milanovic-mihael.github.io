@@ -1,35 +1,32 @@
 <header class="site-header">
     <div class="header-container">
-        <!-- Logo / brand -->
         <a class="brand" href="{{ '/' | relative_url }}">
             <img src="{{ '/assets/images/pfp.jpg' | relative_url }}" alt="Brand">
         </a>
 
-        <!-- Header buttons -->
         <nav class="header-buttons">
             <a href="/" class="header-btn">
-                <i class="fa-solid fa-house"></i>
+                <i class="fa-solid fa-house" aria-hidden="true"></i>
                 Character Gallery
             </a>
             <a href="/social_media/" class="header-btn">
-                <i class="fa-brands fa-discord"></i>
+                <i class="fa-brands fa-discord" aria-hidden="true"></i>
                 Social Media
             </a>
-            <a href="https://www.inprnt.com/profile/milanovicmihael/" class="header-btn">
-                <i class="fa-solid fa-print"></i>
+            <a href="https://www.inprnt.com/profile/milanovicmihael/" class="header-btn" target="_blank" rel="noopener">
+                <i class="fa-solid fa-print" aria-hidden="true"></i>
                 Prints
             </a>
-            <a href="https://ko-fi.com/milanovicmihael" class="header-btn kofi-btn">
-                <img src="{{ '/assets/images/kofi/kofi_symbol.svg' | relative_url }}" alt="Ko-fi logo"
-                    class="kofi-logo">
+            <a href="https://ko-fi.com/milanovicmihael" class="header-btn kofi-btn" target="_blank" rel="noopener">
+                <img src="{{ '/assets/images/kofi/kofi_symbol.svg' | relative_url }}" alt="Ko-fi logo" class="kofi-logo"
+                    width="24" height="24">
                 Support My Work
             </a>
         </nav>
     </div>
 
-
-
     <div class="line-container">
-        <img src="{{ '/assets/images/UI/line.png' | relative_url }}" alt="Divider" class="header-divider">
+        <img src="{{ '/assets/images/UI/line.webp' | relative_url }}" alt="" class="header-divider" width="380"
+            height="9">
     </div>
 </header>

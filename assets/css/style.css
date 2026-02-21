@@ -57,7 +57,6 @@ canvas#bg {
     pointer-events: none;
 }
 
-
 html,
 body {
     overflow-x: hidden;
@@ -111,8 +110,6 @@ body {
     margin-top: var(--spacing-md);
 }
 
-
-
 .site-header .header-container {
     display: flex;
     align-items: center;
@@ -141,73 +138,49 @@ body {
     height: 50px;
 }
 
+/* Shared pseudo-element base for brand icons */
+.brand::before,
 .brand::after {
     content: "";
     position: absolute;
     width: 36px;
     height: 36px;
-    background-image: url("/assets/images/UI/icon_hover.png");
+    background-image: url("/assets/images/UI/icon_hover.webp");
     background-size: contain;
     background-repeat: no-repeat;
     pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease, filter 0.5s ease;
+    filter: drop-shadow(0 0 4px var(--color-accent)) drop-shadow(0 0 8px var(--color-accent));
+}
 
+.brand::after {
     top: 67%;
     left: 20%;
     transform-origin: 10% 10%;
     transform: translate(12px, -12px) rotate(270deg);
-    opacity: 0;
-
-    transition: opacity 0.5s ease, transform 0.5s ease, filter 0.5s ease;
-    filter: drop-shadow(0 0 4px var(--color-accent)) drop-shadow(0 0 8px var(--color-accent));
 }
 
 .brand::before {
-    content: "";
-    position: absolute;
-    width: 36px;
-    height: 36px;
-    background-image: url("/assets/images/UI/icon_hover.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    pointer-events: none;
-
     top: 20%;
     left: 67%;
     transform-origin: 10% 10%;
     transform: translate(-12px, 12px) rotate(90deg);
-    opacity: 0;
-
-    transition: opacity 0.5s ease, transform 0.5s ease, filter 0.5s ease;
-    filter: drop-shadow(0 0 4px var(--color-accent)) drop-shadow(0 0 8px var(--color-accent));
 }
 
-
-.brand:hover::after,
-.brand:hover::before {
+.brand:hover::before,
+.brand:hover::after {
     opacity: 1;
-}
-
-.brand::after {
-    transform: translate(12px, -12px) rotate(270deg);
 }
 
 .brand:hover::after {
     transform: translate(12px, -12px) rotate(360deg);
-    /* 270 → 360 = 90° short path */
-}
-
-/* Top-left orbit */
-.brand::before {
-    transform: translate(-12px, 12px) rotate(90deg);
 }
 
 .brand:hover::before {
     transform: translate(-12px, 12px) rotate(180deg);
 }
 
-
-
-/* Keyframes for orbit */
 @keyframes orbit {
     0% {
         transform: translate(20px, -20px) rotate(270deg);
@@ -228,8 +201,6 @@ body {
     }
 }
 
-
-
 .site-header .container {
     display: flex;
     align-items: center;
@@ -237,31 +208,6 @@ body {
     gap: var(--spacing-lg);
     padding-bottom: var(--spacing-2xl);
     margin-bottom: var(--spacing-sm);
-}
-
-@media (max-width: 600px) {
-    .site-header .container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: var(--spacing-sm);
-    }
-
-    .site-header .header-container {
-        flex-direction: column;
-        align-items: center;
-        gap: var(--spacing-sm);
-    }
-
-    .header-buttons {
-        width: 100%;
-        flex-wrap: wrap;
-        gap: var(--spacing-sm);
-    }
-
-    .header-btn {
-        flex: 1 1 auto;
-        text-align: center;
-    }
 }
 
 .header-buttons {
@@ -284,7 +230,6 @@ body {
     cursor: pointer;
     text-decoration: none;
     overflow: visible;
-    /* allow swirls outside button */
     transition:
         background var(--transition-normal),
         transform var(--transition-normal),
@@ -324,11 +269,9 @@ body {
         0 0 20px var(--color-accent);
 }
 
-
 .header-btn.kofi-btn img.kofi-logo {
     transition: filter 0.3s ease;
-    filter:
-        drop-shadow(0 0 5px var(--color-accent));
+    filter: drop-shadow(0 0 5px var(--color-accent));
 }
 
 .header-btn.kofi-btn:hover img.kofi-logo {
@@ -343,9 +286,8 @@ body {
     top: 50%;
     width: 2em;
     height: 100%;
-    background: url("/assets/images/UI/select.png") no-repeat center / contain;
+    background: url("/assets/images/UI/select.webp") no-repeat center / contain;
     opacity: 0;
-    transform: translateY(-50%) scaleX(1);
     transition: opacity 0.3s ease, transform 0.3s ease, filter 0.3s ease;
     pointer-events: none;
     filter: drop-shadow(0 0 0 rgba(75, 102, 150, 0));
@@ -353,6 +295,7 @@ body {
 
 .header-btn::before {
     left: -4.2em;
+    transform: translateY(-50%) scaleX(1);
 }
 
 .header-btn::after {
@@ -421,14 +364,13 @@ h3 {
     overflow: visible;
 }
 
-/* Corner pseudo-elements for all buttons */
 .filter-btn::before,
 .filter-btn::after {
     content: "";
     position: absolute;
     width: 22px;
     height: 22px;
-    background-image: url("/assets/images/UI/select_filter.png");
+    background-image: url("/assets/images/UI/select_filter.webp");
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0;
@@ -436,7 +378,6 @@ h3 {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Positioning */
 .filter-btn::before {
     top: 40%;
     right: 0%;
@@ -450,10 +391,7 @@ h3 {
 }
 
 .filter-btn.active::before,
-.filter-btn.active::after {
-    opacity: 1;
-}
-
+.filter-btn.active::after,
 .filter-btn:hover::before,
 .filter-btn:hover::after {
     opacity: 1;
@@ -463,10 +401,6 @@ h3 {
 .filters:has(.filter-btn:hover) .filter-btn.active:not(:hover)::after {
     opacity: 0;
 }
-
-
-
-
 
 .filter-btn[data-filter="Strength Seeker"].active {
     background: radial-gradient(circle, rgba(18, 18, 19, 0) 0%, var(--color-strs) 100%);
@@ -518,22 +452,12 @@ h3 {
     color: #fff;
 }
 
-
-
 .oc-grid {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: var(--spacing-md);
 }
-
-@media (max-width: 500px) {
-    .oc-grid {
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-        gap: var(--spacing-sm);
-    }
-}
-
 
 /* OC Card Wrapper */
 .oc-card-wrapper {
@@ -572,15 +496,15 @@ h3 {
 }
 
 .oc-card-wrapper[data-universe="Strength Seeker"] .frame {
-    background-image: url("/assets/images/frames/frame_strs.png");
+    background-image: url("/assets/images/frames/frame_strs.webp");
 }
 
 .oc-card-wrapper[data-universe="Progenies"] .frame {
-    background-image: url("/assets/images/frames/frame_prog.png");
+    background-image: url("/assets/images/frames/frame_prog.webp");
 }
 
 .oc-card-wrapper[data-universe="The Long Midnight"] .frame {
-    background-image: url("/assets/images/frames/frame_midnight.png");
+    background-image: url("/assets/images/frames/frame_midnight.webp");
 }
 
 /* Universe-specific shadow colors */
@@ -608,7 +532,6 @@ h3 {
     overflow: visible;
     text-decoration: none;
     color: var(--color-text-primary);
-    box-shadow: 0 0 0 var(--color-glow);
     transition: box-shadow var(--transition-fast), transform var(--transition-fast);
     aspect-ratio: 1 / 1.3;
     background: var(--color-bg-card);
@@ -821,11 +744,12 @@ h3 {
 }
 
 .gallery-item img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
     background: #222;
+    transition: opacity 0.2s ease;
 }
 
 /* Lightbox */
@@ -908,6 +832,7 @@ h3 {
     transform: scaleY(-1);
 }
 
+/* Mobile styles */
 @media (max-width: 768px) {
     .filter-btn {
         padding: 0.5rem 0.5rem;
@@ -942,18 +867,19 @@ h3 {
     .header-btn {
         font-size: 0.85rem;
         padding: 0.4rem 0.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        gap: var(--spacing-sm);
     }
 
     .oc-info {
         padding: 1rem;
     }
 
-    .site-header .container {
-        flex-direction: column;
-        align-items: center;
-        gap: var(--spacing-sm);
-    }
-
+    .site-header .container,
     .site-header .header-container {
         flex-direction: column;
         align-items: center;
@@ -967,24 +893,19 @@ h3 {
         align-items: center;
     }
 
-    .header-btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        text-align: center;
-        gap: var(--spacing-sm);
-    }
-
     .gallery-grid {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .oc-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: var(--spacing-sm);
     }
 
     .oc-header .featured {
         width: 30%;
         height: auto;
         object-fit: cover;
-        display: block;
         display: none;
     }
 
@@ -1028,15 +949,6 @@ h3 {
     .oc-info {
         padding: 0 var(--spacing-md) var(--spacing-md) var(--spacing-md);
     }
-
-}
-
-.gallery-item img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 0.2s ease;
 }
 
 #oc-search {
@@ -1073,7 +985,6 @@ h3 {
     cursor: help;
 }
 
-/* Tooltip styles */
 .protagonist-tooltip {
     position: fixed;
     background: rgba(0, 0, 0, 0.9);
@@ -1139,10 +1050,8 @@ h3 {
     transition: transform 0.2s ease, filter 0.3s ease, brightness 0.3s ease;
     cursor: pointer;
     filter: brightness(0.4) drop-shadow(0 0 0 rgba(75, 102, 150, 0));
-    /* decrease brightness by default */
 }
 
-/* Hover: jump + normal brightness + drop-shadow removed */
 .go-back-link:hover {
     transform: translateY(-5px);
 }
