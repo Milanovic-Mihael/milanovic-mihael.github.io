@@ -140,7 +140,13 @@
     line-height: 1.2;
 }
 
-
+.home-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.4rem;
+    display: block;
+}
 
 .home-card-wrapper[data-universe="Strength Seeker"] .frame {
     background-image: url("/assets/images/frames/frame_strs_main.webp");
@@ -160,20 +166,4 @@
 
 .home-card-wrapper[data-universe="Misc"] .frame {
     background-image: url("/assets/images/frames/frame_misc_main.webp");
-}
-
-.home-card-wrapper[data-universe="Strength Seeker"] .home-card {
-    background-image: url("/assets/images/UI/button_strs.webp");
-}
-
-.home-card-wrapper[data-universe="Progenies"] .home-card {
-    background-image: url("/assets/images/UI/button_prog.webp");
-}
-
-.home-card-wrapper[data-universe="The Long Midnight"] .home-card {
-    background-image: url("/assets/images/UI/button_midnight.webp");
-}
-
-.home-card-wrapper[data-universe="Terraria AU"] .home-card {
-    background-image: url("/assets/images/UI/button_terrariaau.webp");
 }
