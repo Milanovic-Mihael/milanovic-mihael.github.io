@@ -4,28 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#000000">
 
-  <title>{{ page.title | default: site.title }}</title>
+  <title>{% if page.title %} {{ page.title }} | MilanovicMihael {% else %} MilanovicMihael {% endif %}</title>
   <meta name="description"
-    content="{{ page.description | default: 'My character gallery with links to my art and social media. Created by Mihael Milanovic.' }}">
-  <meta name="keywords"
-    content="{{ page.keywords | default: 'Mihael Milanovic, milanovicmihael, digital art, portfolio, OC gallery, mihaelmilanovic' }}">
+    content="{{ page.description | default: 'My original characters, their artworks, and where to find me online. Check the gallery, shop prints, or join the Discord.' }}">
   <meta name="twitter:site" content="@MilanovicMihael">
 
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="preconnect" href="https://www.googletagmanager.com">
 
-  <meta property="og:title" content="{{ page.title | default: 'Mihael Milanovic - Art and Character Gallery' }}">
+  <meta property="og:title"
+    content="{% if page.title %}{{ page.title }} | MilanovicMihael{% else %}MilanovicMihael | OC Gallery & Digital Art{% endif %}">
   <meta property="og:description"
-    content="{{ page.description | default: 'My character gallery and links to my stuff!' }}">
+    content="{{ page.description | default: 'My original characters, their artworks, and where to find me online. Check the gallery, shop prints, or join the Discord.' }}">
   <meta property="og:image" content="{{ page.og_image | default: '/assets/images/preview.png' | absolute_url }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ page.title | default: 'Mihael Milanovic - Art and Character Gallery' }}">
+  <meta name="twitter:creator" content="@MilanovicMihael">
+  <meta name="twitter:title" content="{{ page.title | default: 'MilanovicMihael | OC Gallery & Digital Art' }}">
   <meta name="twitter:description"
-    content="{{ page.description | default: 'Explore original characters and digital art by Mihael Milanovic.' }}">
+    content="{{ page.description | default: 'My original characters, their artworks, and where to find me online. Check the gallery, shop prints, or join the Discord.' }}">
   <meta name="twitter:image" content="{{ page.og_image | default: '/assets/images/preview.png' | absolute_url }}">
 
   <link rel="canonical" href="{{ page.url | absolute_url }}">
@@ -59,6 +61,7 @@
     "@graph": [
       {
         "@type": "Person",
+        "@id": "https://milanovicmihael.com/#person",
         "name": "Mihael Milanovic",
         "url": "https://milanovicmihael.com/",
         "image": "https://milanovicmihael.com/assets/images/pfp.jpg",
@@ -81,7 +84,11 @@
           "name": "Mihael Milanovic"
         },
         "description": "Digital art portfolio and original character gallery by Mihael Milanovic.",
-        "alternateName": ["MilanovicMihael Gallery", "Mihael's OC Gallery"]
+        "alternateName": ["MilanovicMihael Gallery", "Mihael's OC Gallery"],
+        "@id": "https://milanovicmihael.com/#website",
+        "publisher": {
+          "@id": "https://milanovicmihael.com/#person"
+        }
       }
     ]
   }
