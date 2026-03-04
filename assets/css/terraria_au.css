@@ -1,39 +1,19 @@
-.title-decor {
+.title-terraria-au {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 5px;
-    width: 100%;
-    padding-top: 1rem;
+    justify-content: center;
 }
 
-.title-decor h1 {
-    margin: 0;
-    font-size: 2em;
-    line-height: 1.2;
-    text-align: center;
-}
-
-.title-decor .decor {
-    width: 5em;
-    height: 2.5em;
-    background-image: url('/assets/images/UI/text_decor.webp');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-inline: 1em;
-    opacity: 0.3;
-}
-
-
-.title-decor .decor.right {
-    transform: scaleX(-1);
+.terraria-logo {
+    width: 40%;
+    height: auto;
 }
 
 .bio {
-    margin: 0 1rem 0 1rem;
+    margin-bottom: 1rem;
 }
 
 .bio p {
     font-size: large;
+    margin-top: 0;
 }
