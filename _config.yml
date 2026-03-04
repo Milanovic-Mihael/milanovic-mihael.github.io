@@ -1,12 +1,12 @@
 title: MilanovicMihael
 author: "Mihael Milanovic"
 description: "Original character gallery of Mihael Milanovic."
-url: "https://milanovicmihael.com" 
-baseurl: "" 
+url: "https://milanovicmihael.com"
+baseurl: ""
 
 markdown: kramdown
-highlighter: rouge 
-exclude: [ "node_modules", "vendor", "Gemfile", "Gemfile.lock" ]
+highlighter: rouge
+exclude: ["node_modules", "vendor", "Gemfile", "Gemfile.lock"]
 
 collections:
   ocs:
@@ -23,3 +23,6 @@ defaults:
 plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
+
+include:
+  - assets/thumbnails

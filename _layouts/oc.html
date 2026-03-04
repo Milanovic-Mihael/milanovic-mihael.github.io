@@ -36,11 +36,11 @@ layout: default
   <section class="gallery">
     <h2>Gallery</h2>
     <div class="gallery-grid">
-      {% for art in page.gallery %}
+      {% for img in page.gallery %}
       <div class="gallery-item">
-        <a href="{{ art | relative_url }}" class="glightbox"
-          aria-label="View {{ page.title | escape }} artwork in full screen">
-          <img src="{{ art | relative_url }}" alt="{{ page.title | escape }} artwork" loading="lazy">
+        {% assign thumb = img | replace: 'assets/images/', 'assets/thumbnails/' %}
+        <a href="{{ img | relative_url }}" class="glightbox">
+          <img src="{{ thumb | relative_url }}" alt="{{ page.title | escape }}" loading="lazy" width="400">
         </a>
       </div>
       {% endfor %}

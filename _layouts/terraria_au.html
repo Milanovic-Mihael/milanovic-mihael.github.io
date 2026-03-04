@@ -30,8 +30,9 @@ og_image: "/assets/images/pendulum_preview.png"
         <h2>Gallery</h2>
         <div class="gallery-grid">
             {% for art in page.gallery %}
+            {% assign thumb = art | replace: 'assets/images/', 'assets/thumbnails/' %}
             <a href="{{ art | relative_url }}" class="glightbox gallery-item" data-gallery="terraria-gallery">
-                <img src="{{ art | relative_url }}" alt="{{ page.title | escape }} artwork" loading="lazy">
+                <img src="{{ thumb | relative_url }}" alt="{{ page.title | escape }} artwork" loading="lazy">
             </a>
             {% endfor %}
         </div>
