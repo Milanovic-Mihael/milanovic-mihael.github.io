@@ -177,3 +177,7 @@
 .socmed-btn.bluesky:hover {
     background: #0285FF;
 }
+
+.socmed-btn {
+    color: #fff !important;
+}

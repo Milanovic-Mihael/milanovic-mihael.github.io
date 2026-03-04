@@ -17,3 +17,12 @@
     font-size: large;
     margin-top: 0;
 }
+
+.lore-cta {
+    margin-top: 5rem;
+    font-style: italic;
+}
+
+.lore-cta a {
+    color: var(--color-accent);
+}
