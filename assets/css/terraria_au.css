@@ -5,7 +5,7 @@
 }
 
 .terraria-logo {
-    width: 40%;
+    width: clamp(200px, 40%, 400px);
     height: auto;
 }
 
