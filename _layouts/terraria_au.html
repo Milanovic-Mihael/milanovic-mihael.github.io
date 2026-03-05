@@ -3,7 +3,6 @@ layout: default
 title: "Terraria: Pendulum"
 description: "Official gallery and lore hub for the Terraria: Pendulum. A fan story project based on Terraria, set in an
 alternate universe."
-keywords: "Mihael Milanovic, Terraria Pendulum, Pendulum AU, Terraria Fanart, OC gallery, digital art, Terraria AU"
 og_image: "/assets/images/pendulum_preview.png"
 ---
 
@@ -11,8 +10,11 @@ og_image: "/assets/images/pendulum_preview.png"
 
 <article class="special-character">
     <div class="title-terraria-au">
-        <img src="{{ '/assets/images/UI/Terraria_Pendulum_Logo.webp' | relative_url }}" alt="Terraria logo"
-            class="terraria-logo" width="400" height="200">
+        <h1 class="visually-hidden">Terraria: Pendulum by MilanovicMihael</h1>
+
+        <img src="{{ '/assets/images/UI/Terraria_Pendulum_Logo.webp' | relative_url }}"
+            alt="Terraria: Pendulum Official Logo - An AU by MilanovicMihael" class="terraria-logo" width="400"
+            height="200">
     </div>
 
     {% if page.bio %}
@@ -29,15 +31,35 @@ og_image: "/assets/images/pendulum_preview.png"
 
     {% if page.gallery %}
     <section class="gallery">
-        <h2>Gallery</h2>
+        <h2>Terraria: Pendulum Gallery</h2>
         <div class="gallery-grid">
             {% for art in page.gallery %}
             {% assign thumb = art | replace: 'assets/images/', 'assets/thumbnails/' %}
+            {% comment %} This grabs the filename and removes the extension {% endcomment %}
+            {% assign filename = art | split: '/' | last | split: '.' | first | replace: '-', ' ' | replace: '_', ' ' %}
+
             <a href="{{ art | relative_url }}" class="glightbox gallery-item" data-gallery="terraria-gallery">
-                <img src="{{ thumb | relative_url }}" alt="{{ page.title | escape }} artwork" loading="lazy">
+                <img src="{{ thumb | relative_url }}"
+                    alt="{{ filename | capitalize }} - Terraria: Pendulum by MilanovicMihael" loading="lazy">
             </a>
             {% endfor %}
         </div>
     </section>
     {% endif %}
 </article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "CreativeWork",
+  "name": "Terraria: Pendulum",
+  "alternateName": "Pendulum AU",
+  "author": {
+    "@type": "Person",
+    "name": "MilanovicMihael",
+    "url": "https://milanovicmihael.com" 
+  },
+  "description": "An alternate universe fan story project based on the game Terraria.",
+  "genre": "Fantasy / Fan Fiction / Digital Art"
+}
+</script>
