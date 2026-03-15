@@ -10,6 +10,7 @@ featured: assets/images/character_images/progenies/leanna/leanna_but_IThinkSo.we
 gallery:
 - assets/images/character_images/progenies/leanna/Leanna_swqing.webp
 - assets/images/character_images/progenies/leanna/Leanna_eating_fatty.webp
+- assets/images/character_images/progenies/leanna/Leanna_modern_fit.webp
 - assets/images/character_images/progenies/leanna/Leann_sitting_nshit.webp
 - assets/images/character_images/progenies/leanna/leanna_but_IThinkSo.webp
 - assets/images/character_images/progenies/leanna/leann_pretty.webp
