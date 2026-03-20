@@ -35,6 +35,7 @@ gallery:
 - assets/images/character_images/misc/terraria-au/G5Qm65RWsAA9DdG.webp
 - assets/images/character_images/misc/terraria-au/theSummoner_VS_StarGazer.webp
 - assets/images/character_images/misc/terraria-au/spooky_armor.webp
+- assets/images/character_images/misc/terraria-au/lucille_DAMNN.webp
 - assets/images/character_images/misc/terraria-au/Lucille_Shroomite.webp
 - assets/images/character_images/misc/terraria-au/G5QnJnzXAAA6Knd.webp
 - assets/images/character_images/misc/terraria-au/1qhurvrjqvae1.webp
