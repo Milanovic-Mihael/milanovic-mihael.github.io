@@ -35,3 +35,10 @@
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
 }
+
+.disclaimer {
+    color: var(--color-text-secondary);
+    font-style: italic;
+    text-align: center;
+    margin-top: 1rem;
+}
