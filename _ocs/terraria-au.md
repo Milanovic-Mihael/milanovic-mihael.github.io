@@ -14,6 +14,7 @@ bio: '<br>After the Terrarian''s victory over the Golem, the balance of the worl
   always swings back.'
 order: 56.0
 gallery:
+- assets/images/character_images/misc/terraria-au/the_terrarian_NAKEYNAKED.webp
 - assets/images/character_images/misc/terraria-au/Guide_and_dryad.webp
 - assets/images/character_images/misc/terraria-au/TheShaleWarden.webp
 - assets/images/character_images/misc/terraria-au/Terrarian_and_The_Witch_Doctor.webp
