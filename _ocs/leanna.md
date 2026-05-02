@@ -15,6 +15,7 @@ gallery:
 - assets/images/character_images/progenies/leanna/leanna_but_IThinkSo.webp
 - assets/images/character_images/progenies/leanna/leann_pretty.webp
 - assets/images/character_images/progenies/leanna/Leanna_act2.webp
+- assets/images/character_images/progenies/leanna/Leanna_and_abigail_goldenweek.webp
 - assets/images/character_images/progenies/leanna/Leanna_REAL.webp
 - assets/images/character_images/progenies/leanna/leanna_snacktime.webp
 - assets/images/character_images/progenies/leanna/Maid_leanna.webp
