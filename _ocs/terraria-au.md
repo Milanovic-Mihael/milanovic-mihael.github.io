@@ -14,6 +14,7 @@ bio: '<br>After the Terrarian''s victory over the Golem, the balance of the worl
   always swings back.'
 order: 56.0
 gallery:
+- assets/images/character_images/misc/terraria-au/druid_and_dryad_and_history.webp
 - assets/images/character_images/misc/terraria-au/the_lunatic_cultist_vs_archlord.webp
 - assets/images/character_images/misc/terraria-au/valeria_losses.webp
 - assets/images/character_images/misc/terraria-au/lucille_shot.webp
