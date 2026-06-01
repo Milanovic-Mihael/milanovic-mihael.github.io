@@ -14,6 +14,7 @@ bio: '<br>After the Terrarian''s victory over the Golem, the balance of the worl
   always swings back.'
 order: 56.0
 gallery:
+- assets/images/character_images/misc/terraria-au/field_of_flowers.webp
 - assets/images/character_images/misc/terraria-au/leshi_natures_vassal.webp
 - assets/images/character_images/misc/terraria-au/Wall_of_flesh_NAKEEEDDD.webp
 - assets/images/character_images/misc/terraria-au/wall_of_flesh.webp
