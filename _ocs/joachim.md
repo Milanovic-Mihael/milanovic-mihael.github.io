@@ -16,6 +16,7 @@ gallery:
 - assets/images/character_images/progenies/the-prisoner-of-zarakel/Joachim_VS_thePriosner.webp
 - assets/images/character_images/progenies/joachim/DESIGN_HIM.webp
 - assets/images/character_images/progenies/joachim/joachim_back.webp
+- assets/images/character_images/progenies/joachim/joachim_suit.webp
 - assets/images/character_images/progenies/joachim/joachim_nakeynakey.webp
 featured: assets/images/character_images/progenies/joachim/Joachim.webp
 ---
