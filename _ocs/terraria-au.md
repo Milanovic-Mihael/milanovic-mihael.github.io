@@ -14,6 +14,7 @@ bio: '<br>After the Terrarian''s victory over the Golem, the balance of the worl
   always swings back.'
 order: 56.0
 gallery:
+- assets/images/character_images/misc/terraria-au/Stella_cooking.webp
 - assets/images/character_images/misc/terraria-au/Valeria.webp
 - assets/images/character_images/misc/terraria-au/TheTempleMassacre.webp
 - assets/images/character_images/misc/terraria-au/ossa_the_overkeeper.webp
