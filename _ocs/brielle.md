@@ -7,6 +7,7 @@ bio: Brielle is a grand wayfarer from the House of Kanta, a long line of guardsm
   keeping their territory secure from monster attacks.
 featured: assets/images/character_images/progenies/brielle/Brielle_2.webp
 gallery:
+- assets/images/character_images/progenies/brielle/Brielle_standing.webp
 - assets/images/character_images/progenies/brielle/Brielle_2.webp
 - assets/images/character_images/progenies/brielle/brielle_by_chloraide.webp
 - assets/images/character_images/progenies/brielle/Brielle_casual_again.webp
