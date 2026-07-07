@@ -10,6 +10,7 @@ featured: assets/images/character_images/the-long-midnight/luciano-torres/huge_s
 gallery:
 - assets/images/character_images/the-long-midnight/luciano-torres/luciano_torres.webp
 - assets/images/character_images/the-long-midnight/ainhoa-ibarrola/Ainhoa_AND_Luciano.webp
+- assets/images/character_images/the-long-midnight/luciano-torres/luciano_and_ainhoa_YEAGHH.webp
 - assets/images/character_images/the-long-midnight/luciano-torres/huge_spainard.webp
 order: 49.0
 ---
