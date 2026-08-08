@@ -16,11 +16,13 @@
 .bio p {
     font-size: large;
     margin-top: 0;
+    color: var(--color-text-primary);
 }
 
 .lore-cta {
     margin-top: 5rem;
     font-style: italic;
+    text-align: center;
 }
 
 .lore-cta a {
@@ -37,8 +39,9 @@
 }
 
 .disclaimer {
-    color: var(--color-text-secondary);
-    font-style: italic;
+    color: var(--color-text-primary);
     text-align: center;
-    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-style: italic;
+    margin: 0.5rem;
 }
