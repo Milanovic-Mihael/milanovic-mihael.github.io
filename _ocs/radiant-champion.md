@@ -11,6 +11,7 @@ bio: 'The Radiant Champion is a Calumian born on Zavi''cttan and one of the few 
   [The Radiant Champion Edit - by Vitotcher](https://www.youtube.com/watch?v=CxhnybSDAos)'
 featured: assets/images/character_images/strength-seeker/radiant-champion/Radiant_champion.webp
 gallery:
+- assets/images/character_images/strength-seeker/radiant-champion/radiant_champ_leads.webp
 - assets/images/character_images/strength-seeker/radiant-champion/radiant_champ.webp
 - assets/images/character_images/strength-seeker/radiant-champion/Radiant_Kill.webp
 - assets/images/character_images/strength-seeker/radiant-champion/Radiant_champion.webp
