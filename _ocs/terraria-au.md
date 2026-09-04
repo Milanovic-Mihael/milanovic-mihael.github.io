@@ -14,6 +14,7 @@ bio: '<br>After the Terrarian''s victory over the Golem, the balance of the worl
   always swings back.'
 order: 56.0
 gallery:
+- assets/images/character_images/misc/terraria-au/koshtur_paladin.webp
 - assets/images/character_images/misc/terraria-au/Dryadisque.webp
 - assets/images/character_images/misc/terraria-au/tinkerer_mechanic_Pendulum.webp
 - assets/images/character_images/misc/terraria-au/Legate_back_Giollas_scratchboard.webp
