@@ -14,6 +14,7 @@ bio: '<br>After the Terrarian''s victory over the Golem, the balance of the worl
   always swings back.'
 order: 56.0
 gallery:
+- assets/images/character_images/misc/terraria-au/the_selenic_oracle.webp
 - assets/images/character_images/misc/terraria-au/FishDeboningTime.webp
 - assets/images/character_images/misc/terraria-au/Leshi_pretty.webp
 - assets/images/character_images/misc/terraria-au/frost_moon.webp
