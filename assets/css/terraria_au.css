@@ -45,3 +45,11 @@
     font-style: italic;
     margin: 0.5rem;
 }
+
+.pendulum_characters {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 0.5rem auto 1rem;
+}
