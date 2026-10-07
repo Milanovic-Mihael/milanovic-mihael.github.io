@@ -15,6 +15,7 @@ bio: '<br>After the Terrarian''s victory over the Golem, the balance of the worl
 order: 56.0
 gallery:
 - assets/images/character_images/misc/terraria-au/TerrariaPendulumTerms.webp
+- assets/images/character_images/misc/terraria-au/valeria_the_child.webp
 - assets/images/character_images/misc/terraria-au/absolute_deliverance_wars.webp
 - assets/images/character_images/misc/terraria-au/Pendulum_Paladin.webp
 - assets/images/character_images/misc/terraria-au/Pulp_Pendulum.webp
