@@ -12,7 +12,7 @@ bio: '<br>After the Terrarian''s victory over the Golem, the balance of the worl
   his endeavors, and others to halt him. <br><br> Regardless of the actions taken
   by the pinions, one truth of the world always remains: <br><br><br> The pendulum
   always swings back.'
-order: 56.0
+order: 55.0
 gallery:
 - assets/images/character_images/misc/terraria-au/TerrariaPendulumTerms.webp
 - assets/images/character_images/misc/terraria-au/Trameta_Enokis_wife.webp

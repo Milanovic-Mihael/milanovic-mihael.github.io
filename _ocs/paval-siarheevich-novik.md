@@ -6,7 +6,7 @@ tags: []
 bio: Paval is a Blessed Human from the Belarus region, categorized as Svyatogor class.
   He's the current Commander-in-Chief of the Pan-Slavic Confederacy. The Exoarmor
   he wears had to be custom-made due to his enormous size.
-order: 44.0
+order: 45.0
 gallery:
 - assets/images/character_images/the-long-midnight/paval-siarheevich-novik/BIGGFELLAAAAWWYEAHH.webp
 - assets/images/character_images/the-long-midnight/paval-siarheevich-novik/TheEasternBulwarkBaby.webp

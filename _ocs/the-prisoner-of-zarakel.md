@@ -4,7 +4,7 @@ universe: Progenies
 species: Monsterized Human
 tags: []
 bio: Change never comes from within.
-order: 33.0
+order: 34.0
 gallery:
 - assets/images/character_images/progenies/the-prisoner-of-zarakel/Joachim_VS_thePriosner.webp
 - assets/images/character_images/progenies/the-prisoner-of-zarakel/theprisonerLow.webp
