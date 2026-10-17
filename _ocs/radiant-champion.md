@@ -20,6 +20,7 @@ gallery:
 - assets/images/character_images/strength-seeker/radiant-champion/champ_vs_ksalir.webp
 - assets/images/character_images/strength-seeker/radiant-champion/the_radiant_chill.webp
 - assets/images/character_images/strength-seeker/radiant-champion/radiant_chapion_slash.webp
+- assets/images/character_images/strength-seeker/radiant-champion/do_I_wanna_know_Strs.webp
 - assets/images/character_images/strength-seeker/radiant-champion/radiantchampionvscuteandfunny.webp
 - assets/images/character_images/strength-seeker/radiant-champion/mygoatman.webp
 - assets/images/character_images/strength-seeker/radiant-champion/radiant_chapmion_Fuzzy.webp
