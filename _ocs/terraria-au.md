@@ -16,6 +16,7 @@ order: 55.0
 gallery:
 - assets/images/character_images/misc/terraria-au/TerrariaPendulumTerms.webp
 - assets/images/character_images/misc/terraria-au/Map_closeup.webp
+- assets/images/character_images/misc/terraria-au/giolla_the_Goat.webp
 - assets/images/character_images/misc/terraria-au/Trameta_Enokis_wife.webp
 - assets/images/character_images/misc/terraria-au/joshua_disney_princess.webp
 - assets/images/character_images/misc/terraria-au/valeria_the_child.webp
