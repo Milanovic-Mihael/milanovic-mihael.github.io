@@ -16,6 +16,7 @@ order: 55.0
 gallery:
 - assets/images/character_images/misc/terraria-au/TerrariaPendulumTerms.webp
 - assets/images/character_images/misc/terraria-au/Map_closeup.webp
+- assets/images/character_images/misc/terraria-au/The_sun_hates_me.webp
 - assets/images/character_images/misc/terraria-au/legate_and_giolla.webp
 - assets/images/character_images/misc/terraria-au/giolla_the_Goat.webp
 - assets/images/character_images/misc/terraria-au/Trameta_Enokis_wife.webp
