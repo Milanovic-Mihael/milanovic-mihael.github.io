@@ -6,15 +6,6 @@ const initGallery = () => {
     if (lightbox) return;
     if (!document.querySelector('.gallery-grid')) return;
 
-    document.querySelectorAll('.gallery-grid a.glightbox').forEach(a => {
-        const img = new Image();
-        img.src = a.href;
-        img.onload = () => {
-            a.dataset.pswpWidth = img.naturalWidth;
-            a.dataset.pswpHeight = img.naturalHeight;
-        };
-    });
-
     lightbox = new PhotoSwipeLightbox({
         gallery: '.gallery-grid',
         children: 'a.glightbox',
@@ -29,12 +20,19 @@ const initGallery = () => {
 
     lightbox.addFilter('itemData', (itemData) => {
         const anchor = itemData.element;
-        if (anchor && anchor.dataset.pswpWidth) {
-            itemData.width = parseInt(anchor.dataset.pswpWidth);
-            itemData.height = parseInt(anchor.dataset.pswpHeight);
+        if (anchor && anchor.dataset.pswpWidth && anchor.dataset.pswpHeight) {
+            itemData.width = parseInt(anchor.dataset.pswpWidth, 10);
+            itemData.height = parseInt(anchor.dataset.pswpHeight, 10);
         } else {
-            itemData.width = 2000;
-            itemData.height = 2000;
+            const thumbImg = anchor ? anchor.querySelector('img') : null;
+            if (thumbImg && thumbImg.naturalWidth && thumbImg.naturalHeight) {
+                const ratio = thumbImg.naturalWidth / thumbImg.naturalHeight;
+                itemData.width = ratio >= 1 ? 2400 : Math.round(2400 * ratio);
+                itemData.height = ratio >= 1 ? Math.round(2400 / ratio) : 2400;
+            } else {
+                itemData.width = 2000;
+                itemData.height = 2000;
+            }
         }
         return itemData;
     });
@@ -79,4 +77,3 @@ if (document.readyState === 'loading') {
     initGallery();
     initGifs();
 }
-

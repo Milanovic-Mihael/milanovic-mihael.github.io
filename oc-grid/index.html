@@ -66,12 +66,15 @@ title: Character Gallery
     const noMessage = document.querySelector('.no-ocs');
 
     function setActiveButton(filterName) {
-      buttons.forEach(b => b.classList.toggle('active', b.dataset.filter === filterName));
+      const matchingBtn = Array.from(buttons).find(b => b.dataset.filter === filterName);
+      const effectiveFilter = matchingBtn ? filterName : 'all';
+      buttons.forEach(b => b.classList.toggle('active', b.dataset.filter === effectiveFilter));
     }
 
     function filterOCs() {
       const query = searchInput.value.toLowerCase();
-      const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
+      const activeBtn = document.querySelector('.filter-btn.active');
+      const activeFilter = activeBtn ? activeBtn.dataset.filter : 'all';
       let anyVisible = false;
 
       wrappers.forEach(wrapper => {
@@ -139,7 +142,9 @@ title: Character Gallery
 
     function initFilter() {
       const urlParams = new URLSearchParams(window.location.search);
-      const finalFilter = urlParams.get('universe') || sessionStorage.getItem('presetFilter') || 'all';
+      const rawFilter = urlParams.get('universe') || sessionStorage.getItem('presetFilter') || 'all';
+      const hasMatchingBtn = Array.from(buttons).some(b => b.dataset.filter === rawFilter);
+      const finalFilter = hasMatchingBtn ? rawFilter : 'all';
       setActiveButton(finalFilter);
       filterOCs();
       document.querySelector('.oc-grid').classList.add('loaded');
