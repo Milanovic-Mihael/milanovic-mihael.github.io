@@ -9,6 +9,7 @@ bio: Jacob is the "Hero of the Known World" and the man responsible for leading 
 featured: assets/images/character_images/progenies/jacob-the-relinquished-hero/jacob.webp
 gallery:
 - assets/images/character_images/progenies/jacob-the-relinquished-hero/jacob_the_hero.webp
+- assets/images/character_images/progenies/jacob-the-relinquished-hero/Jacob_backkk.webp
 - assets/images/character_images/progenies/jacob-the-relinquished-hero/jacob.webp
 - assets/images/character_images/progenies/jacob-the-relinquished-hero/Jacob_the_flowerman.webp
 - assets/images/character_images/progenies/jacob-the-relinquished-hero/Jacob_former_hero.webp
