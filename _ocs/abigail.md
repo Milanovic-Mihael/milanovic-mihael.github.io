@@ -10,7 +10,8 @@ gallery:
 - assets/images/character_images/progenies/abigail/abigal_gunn.webp
 - assets/images/character_images/progenies/abigail/abigail_2025.webp
 - assets/images/character_images/progenies/abigail/david_and_abigail_chilling.webp
-- assets/images/character_images/progenies/abigail/idk_goblin.webp
+- assets/images/character_images/progenies/abigail/abigail_in_qipao.webp
 - assets/images/character_images/progenies/leanna/Leanna_and_abigail_goldenweek.webp
+- assets/images/character_images/progenies/abigail/idk_goblin.webp
 order: 24.0
 ---
