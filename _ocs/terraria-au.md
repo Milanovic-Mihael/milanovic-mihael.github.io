@@ -16,6 +16,7 @@ order: 55.0
 gallery:
 - assets/images/character_images/misc/terraria-au/TerrariaPendulumTerms.webp
 - assets/images/character_images/misc/terraria-au/Map_closeup.webp
+- assets/images/character_images/misc/terraria-au/Enoki_and_Trameta.webp
 - assets/images/character_images/misc/terraria-au/dryad_fire.webp
 - assets/images/character_images/misc/terraria-au/stella_and_lucille_bickerinngg.webp
 - assets/images/character_images/misc/terraria-au/josuha_and_lucille_help_help_her.webp
