@@ -6,7 +6,15 @@ baseurl: ""
 
 markdown: kramdown
 highlighter: rouge
-exclude: ["node_modules", "vendor", "Gemfile", "Gemfile.lock"]
+exclude:
+  - "node_modules"
+  - "vendor"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "**/*.clip"
+  - "*.clip"
+  - "**/*.af"
+  - "*.af"
 
 collections:
   ocs:
