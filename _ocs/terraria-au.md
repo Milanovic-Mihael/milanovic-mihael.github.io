@@ -16,6 +16,7 @@ order: 55.0
 gallery:
 - assets/images/character_images/misc/terraria-au/TerrariaPendulumTerms.webp
 - assets/images/character_images/misc/terraria-au/Map_closeup.webp
+- assets/images/character_images/misc/terraria-au/moon_prrisoner_sealed.webp
 - assets/images/character_images/misc/terraria-au/enoki_and_trameta_firstmeet.webp
 - assets/images/character_images/misc/terraria-au/Enoki_and_Trameta.webp
 - assets/images/character_images/misc/terraria-au/dryad_fire.webp
