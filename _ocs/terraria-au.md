@@ -16,6 +16,7 @@ order: 55.0
 gallery:
 - assets/images/character_images/misc/terraria-au/TerrariaPendulumTerms.webp
 - assets/images/character_images/misc/terraria-au/Map_closeup.webp
+- assets/images/character_images/misc/terraria-au/Lucille_job.webp
 - assets/images/character_images/misc/terraria-au/Move_and_never_stop_moving.webp
 - assets/images/character_images/misc/terraria-au/moon_prrisoner_sealed.webp
 - assets/images/character_images/misc/terraria-au/enoki_and_trameta_firstmeet.webp
